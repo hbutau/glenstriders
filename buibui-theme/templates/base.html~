@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      {% block head %}
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="Buibui Software" />
+        <title>{% block title %} {{ SITENAME|striptags }} {% endblock %}</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{ CSS_FILE }}" rel="stylesheet" />
+        <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/buibui.css" rel="stylesheet" />
+	{% if FEED_ALL_ATOM %}
+                                <link href="{{ FEED_DOMAIN }}/{% if FEED_ALL_ATOM_URL %}{{ FEED_ALL_ATOM_URL }}{% else %}{{ FEED_ALL_ATOM }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ SITENAME|striptags }} Atom Feed" />
+                        {% endif %}
+                        {% if FEED_ALL_RSS %}
+                        <link href="{{ FEED_DOMAIN }}/{% if FEED_ALL_RSS_URL %}{{ FEED_ALL_RSS_URL }}{% else %}{{ FEED_ALL_RSS }}{% endif %}" type="application/rss+xml" rel="alternate" title="{{ SITENAME|striptags }} RSS Feed" />
+         {% endif %}
+
+	{% block extra_head %} {% endblock extra_head %}
+	{% endblock head %}
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark buibui-bg-dark">
+            <div class="container px-5">
+              <a class="navbar-brand" href="{{ SITEURL }}">
+		<img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/assets/img/buibui-logo.png" width=200>
+	      </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+		      {% for title, link in MENUITEMS %}
+                        <li class="nav-item"><a class="nav-link" href="{{ link }}">{{ title }}</a></li>
+			{% endfor %}
+
+			{% if DISPLAY_PAGES_ON_MENU -%}
+                                        {% for pg in pages %}
+                                                <li{% if pg == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ pg.url }}">{{ pg.title }}</a></li>
+                                        {% endfor %}
+                                {% endif %}
+                                {% if DISPLAY_CATEGORIES_ON_MENU -%}
+                                        {% for cat, null in categories %}
+                                                <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+                                        {% endfor %}
+                                {% endif %}
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="buibui-bg-dark buibui-py-5">
+            <div class="container px-5">
+                <div class="row  gx-5 justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="text-center my-5">
+                            <h1 class="display-5 fw-bolder text-white mb-4">{{ HEROTEXT }}</h1>
+                            <p class="lead text-white-50 mb-4">{{ HEROSUBTEXT }} </p>
+                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                                <a class="btn hero-btn-primary btn-lg px-4 me-sm-3" href="#features">{{ HERO_CTA_BUTTON_TEXT }}</a>
+                               <a class="btn btn-outline-light btn-lg px-4" href="#!">About Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+	{% block content %} {% endblock content %}
+                <!-- Footer-->
+        <footer class="py-5 buibui-bg-dark">
+            <div class="container px-5"><p class="m-0 text-center text-white">Copyright &copy; Buibui 2025</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
