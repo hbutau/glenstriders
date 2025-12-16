@@ -44,8 +44,23 @@ THEME = "buibui-theme"
 
 CSS_FILE = "styles.css"
 
-# Hero section
+# Scout Template Configuration
 
+# Hero section
+HERO_TAG = "GlenStriders Running Club"
 HEROTEXT = "We are busy running"
-HERO_CTA_BUTTON_TEXT  = "Join Us On Whatsapp"
+HERO_CTA_BUTTON_TEXT = "Join Us On Whatsapp"
+HERO_CTA_LINK = "https://chat.whatsapp.com/I0s2GOH2cOS9Rl0RxY7DUZ"
 HEROSUBTEXT = "Glen Striders are out chasing kilometers and making memories. Our site is under construction, but we will be back soon!"
+
+# Optional hero features list
+# HERO_FEATURES = [
+#     "Community of passionate runners",
+#     "Regular training sessions",
+#     "Social events and races"
+# ]
+
+# Footer configuration
+FOOTER_ADDRESS = ""
+FOOTER_PHONE = ""
+FOOTER_EMAIL = ""
