@@ -190,6 +190,10 @@ h6 {
     order: 1;
   }
 
+  .header .logo img {
+    max-height: 32px;
+  }
+
   .header .btn-getstarted {
     order: 2;
     margin: 0 15px 0 0;
@@ -198,6 +202,18 @@ h6 {
 
   .header .navmenu {
     order: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .logo img {
+    max-height: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header .logo img {
+    max-height: 24px;
   }
 }
 
