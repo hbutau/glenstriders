@@ -25,8 +25,10 @@ LINKS = (
 
 # Social widget
 SOCIAL = (
-    ("You can add links in your config file", "#"),
-    ("Another social link", "#"),
+    ("facebook", "https://www.facebook.com/glenstriders"),
+    ("youtube", "https://www.youtube.com/@glenstriders"),
+    ("tiktok", "https://www.tiktok.com/@glenstriders"),
+    ("twitter-x", "https://x.com/glenstriders"),
 )
 
 DEFAULT_PAGINATION = 10

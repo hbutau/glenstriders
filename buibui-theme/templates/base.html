@@ -161,18 +161,25 @@
 
   </main>
 
-  <footer id="footer" class="footer">
+  <footer id="footer" class="footer position-relative light-background">
 
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
-          <a href="{{ SITEURL }}/" class="d-flex align-items-center">
+          <a href="{{ SITEURL }}/" class="logo d-flex align-items-center">
             <span class="sitename">{{ SITENAME|striptags }}</span>
           </a>
           <div class="footer-contact pt-3">
             <p>{{ FOOTER_ADDRESS|default("") }}</p>
             <p class="mt-3"><strong>Phone:</strong> <span>{{ FOOTER_PHONE|default("") }}</span></p>
             <p><strong>Email:</strong> <span>{{ FOOTER_EMAIL|default("") }}</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            {% if SOCIAL %}
+            {% for name, link in SOCIAL %}
+            <a href="{{ link }}"><i class="bi bi-{{ name|lower }}"></i></a>
+            {% endfor %}
+            {% endif %}
           </div>
         </div>
 
@@ -187,13 +194,7 @@
 
         <div class="col-lg-4 col-md-12">
           <h4>Follow Us</h4>
-          <div class="social-links d-flex">
-            {% if SOCIAL %}
-            {% for name, link in SOCIAL %}
-            <a href="{{ link }}"><i class="bi bi-{{ name|lower }}"></i></a>
-            {% endfor %}
-            {% endif %}
-          </div>
+          <p>Join our community and stay updated with our latest activities, events, and running tips on social media.</p>
         </div>
 
       </div>
