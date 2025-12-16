@@ -15,19 +15,17 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Blogroll
-LINKS = (
-    ("Pelican", "https://getpelican.com/"),
-    ("Python.org", "https://www.python.org/"),
-    ("Jinja2", "https://palletsprojects.com/p/jinja/"),
-    ("You can modify those links in your config file", "#"),
-)
+# Blogroll - Not used in Scout template
+# LINKS = (
+#     ("Link Name", "https://example.com"),
+# )
 
-# Social widget
-SOCIAL = (
-    ("You can add links in your config file", "#"),
-    ("Another social link", "#"),
-)
+# Social widget - Use Bootstrap icon names (e.g., 'facebook', 'twitter', 'instagram')
+# SOCIAL = (
+#     ("facebook", "https://facebook.com/yourpage"),
+#     ("twitter", "https://twitter.com/yourhandle"),
+#     ("instagram", "https://instagram.com/yourhandle"),
+# )
 
 DEFAULT_PAGINATION = 10
 

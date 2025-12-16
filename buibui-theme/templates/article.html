@@ -16,23 +16,42 @@
   {% endif %}
 {% endblock %}
 
-{% block content %}
-  <section id="content" class="body">
-    <article>
-      <header>
-        <h1 class="entry-title">
-          <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
-             title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h1>
-        {% include 'twitter.html' %}
-      </header>
+{% block hero %}
+{% endblock hero %}
 
-      <div class="entry-content">
-        {% include 'article_infos.html' %}
-        {{ article.content }}
-      </div><!-- /.entry-content -->
-      {% if DISQUS_SITENAME and SITEURL and article.status != "draft" %}
-        <div class="comments">
-          <h2>Comments !</h2>
+{% block content %}
+  <section id="article" class="article section">
+    <div class="container" data-aos="fade-up">
+      <article class="article-content">
+        <header class="article-header mb-4">
+          <h1 class="article-title">{{ article.title }}</h1>
+          <div class="article-meta">
+            <span class="article-date"><i class="bi bi-calendar"></i> {{ article.date.strftime('%B %d, %Y') }}</span>
+            {% if article.author %}
+            <span class="article-author"><i class="bi bi-person"></i> {{ article.author }}</span>
+            {% endif %}
+            {% if article.category %}
+            <span class="article-category"><i class="bi bi-folder"></i> {{ article.category }}</span>
+            {% endif %}
+          </div>
+        </header>
+
+        <div class="article-body">
+          {{ article.content }}
+        </div>
+
+        {% if article.tags %}
+        <div class="article-tags mt-4">
+          <i class="bi bi-tags"></i>
+          {% for tag in article.tags %}
+          <a href="{{ SITEURL }}/{{ tag.url }}" class="badge bg-secondary">{{ tag }}</a>
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if DISQUS_SITENAME and SITEURL and article.status != "draft" %}
+        <div class="article-comments mt-5">
+          <h3>Comments</h3>
           <div id="disqus_thread"></div>
           <script type="text/javascript">
             var disqus_shortname = '{{ DISQUS_SITENAME }}';
@@ -46,8 +65,9 @@
           </script>
           <noscript>Please enable JavaScript to view the comments.</noscript>
         </div>
-      {% endif %}
+        {% endif %}
 
-    </article>
+      </article>
+    </div>
   </section>
 {% endblock %}
