@@ -51,7 +51,7 @@ HERO_TAG = "GlenStriders Running Club"
 HEROTEXT = "We are busy running"
 HERO_CTA_BUTTON_TEXT = "Join Us On Whatsapp"
 HERO_CTA_LINK = "https://chat.whatsapp.com/I0s2GOH2cOS9Rl0RxY7DUZ"
-HEROSUBTEXT = "Glen Striders are out chasing kilometers and making memories. Our site is under construction, but we will be back soon!"
+HEROSUBTEXT = "Established on the principles of community spirit, Glen Striders is home to runners of all levels. Whether you're taking your first step or training for your tenth marathon, you'll find a supportive team to help you reach the finish line."
 
 # Optional hero features list
 # HERO_FEATURES = [
