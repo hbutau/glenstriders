@@ -721,7 +721,10 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  padding: 80px 0;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  padding: 60px 0;
 }
 
 .hero .hero-content {
@@ -743,10 +746,7 @@ section,
   margin-bottom: 1rem;
 }
 
-.hero .hero-tag i {
-  color: var(--accent-color);
-  margin-right: 0.5rem;
-}
+
 
 .hero .hero-tag span {
   color: var(--accent-color);
