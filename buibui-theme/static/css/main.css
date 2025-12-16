@@ -159,6 +159,12 @@ h6 {
   margin-right: 8px;
 }
 
+.header .logo .logo-image {
+  height: 36px;
+  width: auto;
+  filter: brightness(0) saturate(100%) invert(16%) sepia(47%) saturate(2481%) hue-rotate(252deg) brightness(77%) contrast(102%);
+}
+
 .header .logo h1 {
   font-size: 26px;
   margin: 0;
