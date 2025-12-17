@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 pelican = "*"
 rich = "*"
+typing-extensions = "*"
+markdown = "*"
 
 [dev-packages]
 
