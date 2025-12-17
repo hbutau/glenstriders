@@ -30,7 +30,7 @@
 
     <!-- Shop Items -->
     <div class="row g-4 mb-5 justify-content-center">
-      <div class="col-md-6 col-lg-5" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
         <div class="feature-box text-center">
           <div class="shop-item-image mb-4">
             <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/shop/vest.jpeg" alt="Glen Striders Club Vest" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
@@ -39,14 +39,14 @@
           <h3 style="color: var(--accent-color); margin: 1rem 0;">$8</h3>
           <p>Official Glen Striders running vest. High-quality, breathable fabric perfect for training and races.</p>
           <div class="mt-3">
-            <a href="https://chat.whatsapp.com/I0s2GOH2cOS9Rl0RxY7DUZ" class="btn btn-primary">
+            <button class="btn btn-whatsapp" onclick="openOrderForm('vest')">
               <i class="bi bi-whatsapp"></i> Order via WhatsApp
-            </a>
+            </button>
           </div>
         </div>
       </div>
 
-      <div class="col-md-6 col-lg-5" data-aos="fade-up" data-aos-delay="200">
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
         <div class="feature-box text-center">
           <div class="shop-item-image mb-4">
             <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/shop/tshirt.jpeg" alt="Glen Striders T-Shirt" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
@@ -55,9 +55,27 @@
           <h3 style="color: var(--accent-color); margin: 1rem 0;">$10</h3>
           <p>Comfortable Glen Striders t-shirt. Made from premium cotton blend, ideal for casual wear and training.</p>
           <div class="mt-3">
-            <a href="https://chat.whatsapp.com/I0s2GOH2cOS9Rl0RxY7DUZ" class="btn btn-primary">
+            <button class="btn btn-whatsapp" onclick="openOrderForm('tshirt')">
               <i class="bi bi-whatsapp"></i> Order via WhatsApp
-            </a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="feature-box text-center">
+          <div class="shop-item-image mb-4">
+            <div style="display: flex; align-items: center; justify-content: center; height: 250px; background: color-mix(in srgb, var(--accent-color), transparent 90%); border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+              <i class="bi bi-people-fill" style="font-size: 80px; color: var(--accent-color);"></i>
+            </div>
+          </div>
+          <h4>Club Subscription</h4>
+          <h3 style="color: var(--accent-color); margin: 1rem 0;">Join Us</h3>
+          <p>Become a member of Glen Striders! Choose individual or couple membership to access all club benefits.</p>
+          <div class="mt-3">
+            <button class="btn btn-whatsapp" onclick="openOrderForm('subscription')">
+              <i class="bi bi-whatsapp"></i> Subscribe via WhatsApp
+            </button>
           </div>
         </div>
       </div>
@@ -68,14 +86,117 @@
       <div class="col-lg-8 text-center" data-aos="fade-up">
         <div style="padding: 2rem; background: color-mix(in srgb, var(--accent-color), transparent 90%); border-radius: 12px;">
           <h3 style="color: var(--accent-color);">How to Order</h3>
-          <p class="lead mb-4">To place an order, contact us via WhatsApp with the item name, size, and quantity. We'll confirm availability and arrange payment and delivery.</p>
-          <a href="https://chat.whatsapp.com/I0s2GOH2cOS9Rl0RxY7DUZ" class="btn btn-primary btn-lg">
-            <i class="bi bi-whatsapp"></i> Contact Us
-          </a>
+          <p class="lead mb-4">Click the "Order via WhatsApp" button on any product, fill in your details, and we'll send your order directly to our WhatsApp. We'll confirm availability and arrange payment and delivery.</p>
         </div>
       </div>
     </div>
 
   </div>
 </section>
+
+<!-- Order Forms Modal -->
+<div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="orderModalLabel">Place Your Order</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Vest/T-Shirt Form -->
+        <form id="apparelForm" style="display: none;">
+          <div class="mb-3">
+            <label for="apparelName" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="apparelName" required>
+          </div>
+          <div class="mb-3">
+            <label for="apparelSize" class="form-label">Size</label>
+            <select class="form-select" id="apparelSize" required>
+              <option value="">Choose size...</option>
+              <option value="Small">Small</option>
+              <option value="Medium">Medium</option>
+              <option value="Large">Large</option>
+              <option value="Extra Large">Extra Large</option>
+              <option value="XXL">XXL</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="apparelQuantity" class="form-label">Quantity</label>
+            <input type="number" class="form-control" id="apparelQuantity" min="1" value="1" required>
+          </div>
+          <div class="mb-3">
+            <label for="apparelNotes" class="form-label">Additional Notes (Optional)</label>
+            <textarea class="form-control" id="apparelNotes" rows="2"></textarea>
+          </div>
+        </form>
+
+        <!-- Subscription Form -->
+        <form id="subscriptionForm" style="display: none;">
+          <div class="mb-3">
+            <label for="subscriberName" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="subscriberName" required>
+          </div>
+          <div class="mb-3">
+            <label for="subscriptionType" class="form-label">Subscription Type</label>
+            <select class="form-select" id="subscriptionType" required>
+              <option value="">Choose type...</option>
+              <option value="Individual">Individual Membership</option>
+              <option value="Couple">Couple Membership</option>
+            </select>
+          </div>
+          <div class="mb-3" id="partnerNameDiv" style="display: none;">
+            <label for="partnerName" class="form-label">Partner's Name</label>
+            <input type="text" class="form-control" id="partnerName">
+          </div>
+          <div class="mb-3">
+            <label for="subscriberPhone" class="form-label">Your Phone Number</label>
+            <input type="tel" class="form-control" id="subscriberPhone" required>
+          </div>
+          <div class="mb-3">
+            <label for="subscriberNotes" class="form-label">Additional Information (Optional)</label>
+            <textarea class="form-control" id="subscriberNotes" rows="2"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-whatsapp" onclick="submitOrder()">
+          <i class="bi bi-whatsapp"></i> Send to WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+/* WhatsApp Button Styling */
+.btn-whatsapp {
+  background-color: #25D366;
+  border-color: #25D366;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: #20BA5A;
+  border-color: #20BA5A;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(37, 211, 102, 0.3);
+}
+
+.btn-whatsapp:active {
+  transform: translateY(0);
+}
+
+.btn-whatsapp i {
+  margin-right: 0.5rem;
+  font-size: 1.1em;
+}
+</style>
+
+<script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/shop.js"></script>
 {% endblock %}
