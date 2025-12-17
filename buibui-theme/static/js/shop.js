@@ -68,14 +68,21 @@ function submitOrder() {
   let isValid = false;
   
   if (currentOrderType === 'vest' || currentOrderType === 'tshirt') {
-    // Validate apparel form
+    // Get form and validate
+    const form = document.getElementById('apparelForm');
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+    
+    // Get values after validation
     const name = document.getElementById('apparelName').value.trim();
     const size = document.getElementById('apparelSize').value;
     const quantity = document.getElementById('apparelQuantity').value;
     const notes = document.getElementById('apparelNotes').value.trim();
     
-    if (!name || !size || !quantity) {
-      alert('Please fill in all required fields.');
+    if (!size) {
+      form.classList.add('was-validated');
       return;
     }
     
@@ -98,14 +105,21 @@ function submitOrder() {
     isValid = true;
     
   } else if (currentOrderType === 'subscription') {
-    // Validate subscription form
+    // Get form and validate
+    const form = document.getElementById('subscriptionForm');
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+    
+    // Get values after validation
     const name = document.getElementById('subscriberName').value.trim();
     const type = document.getElementById('subscriptionType').value;
     const phone = document.getElementById('subscriberPhone').value.trim();
     const notes = document.getElementById('subscriberNotes').value.trim();
     
-    if (!name || !type || !phone) {
-      alert('Please fill in all required fields.');
+    if (!type) {
+      form.classList.add('was-validated');
       return;
     }
     
@@ -113,7 +127,7 @@ function submitOrder() {
     if (type === 'Couple') {
       const partnerName = document.getElementById('partnerName').value.trim();
       if (!partnerName) {
-        alert('Please enter your partner\'s name for couple membership.');
+        form.classList.add('was-validated');
         return;
       }
     }
