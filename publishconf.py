@@ -8,6 +8,7 @@ sys.path.append(os.curdir)
 from pelicanconf import *
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
+# IMPORTANT: Set this to your actual domain for proper sitemap generation (e.g., "https://www.glenstriders.com")
 SITEURL = ""
 RELATIVE_URLS = False
 

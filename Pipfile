@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 pelican = "*"
+pelican-sitemap = "*"
 rich = "*"
 typing-extensions = "*"
 markdown = "*"

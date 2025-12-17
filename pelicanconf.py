@@ -66,3 +66,20 @@ HEROSUBTEXT = "Established on the principles of community spirit, Glen Striders 
 FOOTER_ADDRESS = ""
 FOOTER_PHONE = ""
 FOOTER_EMAIL = ""
+
+# Sitemap Configuration
+PLUGINS = ['pelican.plugins.sitemap']
+
+SITEMAP = {
+    'format': 'xml',
+    'priorities': {
+        'articles': 0.5,
+        'indexes': 0.5,
+        'pages': 0.5
+    },
+    'changefreqs': {
+        'articles': 'monthly',
+        'indexes': 'daily',
+        'pages': 'monthly'
+    }
+}
