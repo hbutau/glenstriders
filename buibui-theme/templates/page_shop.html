@@ -2,6 +2,9 @@
 {% block html_lang %}{{ page.lang }}{% endblock %}
 {% block title %}{{ page.title|striptags }}{% endblock %}
 
+{% block meta_description %}Glen Striders Club Shop - Running gear and fitness apparel for athletes in Glen-View, Budiriro, Glen Norah, and High Glen, Harare, Zimbabwe{% endblock %}
+{% block meta_keywords %}running gear Harare, fitness apparel Glen-View, running clothes Zimbabwe, sports wear Budiriro, athletic wear Glen Norah, running vest High Glen, fitness merchandise Harare{% endblock %}
+
 {% block extra_head %}
   {% import 'translations.html' as translations with context %}
   {% if translations.entry_hreflang(page) %}

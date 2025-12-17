@@ -2,6 +2,9 @@
 {% block html_lang %}{{ page.lang }}{% endblock %}
 {% block title %}{{ page.title|striptags }}{% endblock %}
 
+{% block meta_description %}Join Glen Striders Running Club - Affordable membership for runners and fitness enthusiasts in Glen-View, Budiriro, Glen Norah, and High Glen areas of Harare. Weekly training sessions for all levels.{% endblock %}
+{% block meta_keywords %}join running club Harare, fitness membership Glen-View, running club membership Zimbabwe, fitness group Budiriro, jogging club Glen Norah, running training High Glen, affordable fitness Harare{% endblock %}
+
 {% block extra_head %}
   {% import 'translations.html' as translations with context %}
   {% if translations.entry_hreflang(page) %}
