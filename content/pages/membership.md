@@ -1,6 +1,7 @@
 Title: Membership
 Date: 2024-12-16
 Slug: membership
+Template: page_membership
 Status: published
 
 ## Join Glen Striders Running Club

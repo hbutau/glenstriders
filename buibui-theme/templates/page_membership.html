@@ -1,0 +1,404 @@
+{% extends "base.html" %}
+{% block html_lang %}{{ page.lang }}{% endblock %}
+{% block title %}{{ page.title|striptags }}{% endblock %}
+
+{% block extra_head %}
+  {% import 'translations.html' as translations with context %}
+  {% if translations.entry_hreflang(page) %}
+    {{ translations.entry_hreflang(page) }}
+  {% endif %}
+{% endblock %}
+
+{% block content %}
+<!-- Membership Page -->
+<section id="membership" class="about section">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    
+    <!-- Page Title -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8 text-center" data-aos="fade-up" data-aos-delay="200">
+        <h2 class="section-heading">Join Glen Striders Running Club</h2>
+        <p class="lead">Welcome to Glen Striders Running Club! We're excited that you're considering joining our vibrant community of passionate runners. Whether you're a beginner taking your first steps or an experienced marathoner, there's a place for you here.</p>
+      </div>
+    </div>
+
+    <!-- Membership Fees Cards -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8 text-center mb-4">
+        <h3 class="section-heading">Membership Fees</h3>
+        <p class="lead">Our annual membership fees are designed to be affordable while supporting the club's activities</p>
+      </div>
+    </div>
+    
+    <div class="row g-4 mb-5 justify-content-center">
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="feature-box">
+          <div class="icon-container">
+            <i class="bi bi-person"></i>
+          </div>
+          <h4>Individual Membership</h4>
+          <h3 style="color: var(--accent-color); margin: 1rem 0;">$20</h3>
+          <p class="text-muted">per year</p>
+          <p>Perfect for solo runners looking to join a supportive community</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="feature-box">
+          <div class="icon-container">
+            <i class="bi bi-people"></i>
+          </div>
+          <h4>Couples Membership</h4>
+          <h3 style="color: var(--accent-color); margin: 1rem 0;">$35</h3>
+          <p class="text-muted">per year</p>
+          <p>Great value for couples who want to run together</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Membership Benefits -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8 text-center mb-4">
+        <h3 class="section-heading">Membership Benefits</h3>
+        <p class="lead">When you become a member of Glen Striders, you'll enjoy</p>
+      </div>
+    </div>
+
+    <div class="row g-4 mb-5">
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="feature-box">
+          <div class="icon-container">
+            <i class="bi bi-clipboard-check"></i>
+          </div>
+          <h4>Structured Training Programs</h4>
+          <p>Access to professionally designed training plans for all levels</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="feature-box">
+          <div class="icon-container">
+            <i class="bi bi-people-fill"></i>
+          </div>
+          <h4>Group Training Sessions</h4>
+          <p>Join our regular Monday, Tuesday, Thursday, and Saturday runs</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="feature-box">
+          <div class="icon-container">
+            <i class="bi bi-person-badge"></i>
+          </div>
+          <h4>Expert Coaching</h4>
+          <p>Guidance from experienced coaches and seasoned runners</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="feature-box">
+          <div class="icon-container">
+            <i class="bi bi-calendar-event"></i>
+          </div>
+          <h4>Social Events</h4>
+          <p>Be part of our running community through social gatherings and club events</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="feature-box">
+          <div class="icon-container">
+            <i class="bi bi-trophy"></i>
+          </div>
+          <h4>Race Support</h4>
+          <p>Encouragement and support at local and regional races</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="feature-box">
+          <div class="icon-container">
+            <i class="bi bi-bag"></i>
+          </div>
+          <h4>Club Kit</h4>
+          <p>Access to purchase official Glen Striders running gear</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="feature-box">
+          <div class="icon-container">
+            <i class="bi bi-heart"></i>
+          </div>
+          <h4>Community Support</h4>
+          <p>Connect with like-minded runners who share your passion</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="feature-box">
+          <div class="icon-container">
+            <i class="bi bi-graph-up"></i>
+          </div>
+          <h4>Progress Tracking</h4>
+          <p>Monitor your improvement alongside supportive teammates</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Who Can Join -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8 text-center mb-4">
+        <h3 class="section-heading">Who Can Join?</h3>
+        <p class="lead">Glen Striders welcomes runners of all abilities</p>
+      </div>
+    </div>
+
+    <div class="row g-4 mb-5">
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="feature-box">
+          <div class="icon-container">
+            <i class="bi bi-star"></i>
+          </div>
+          <h4>Beginners</h4>
+          <p>Never run before? No problem! We'll support you from your very first step</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="feature-box">
+          <div class="icon-container">
+            <i class="bi bi-activity"></i>
+          </div>
+          <h4>Recreational Runners</h4>
+          <p>Looking to stay fit and enjoy running in a social environment</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="feature-box">
+          <div class="icon-container">
+            <i class="bi bi-lightning"></i>
+          </div>
+          <h4>Competitive Runners</h4>
+          <p>Training for your next personal best or podium finish</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="feature-box">
+          <div class="icon-container">
+            <i class="bi bi-award"></i>
+          </div>
+          <h4>Marathon Enthusiasts</h4>
+          <p>Preparing for long-distance events with experienced training partners</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Weekly Training Schedule -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8 text-center mb-4">
+        <h3 class="section-heading">Weekly Training Schedule</h3>
+        <p class="lead">As a member, you can participate in our regular training sessions</p>
+      </div>
+    </div>
+
+    <div class="row g-4 mb-5">
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="feature-box">
+          <div class="icon-container">
+            <i class="bi bi-sunrise"></i>
+          </div>
+          <h4>Monday</h4>
+          <p><strong>Recovery Runs</strong><br>Gentle runs to start the week</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="feature-box">
+          <div class="icon-container">
+            <i class="bi bi-speedometer"></i>
+          </div>
+          <h4>Tuesday</h4>
+          <p><strong>10K/5K Runs</strong><br>Distance training for building endurance</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="feature-box">
+          <div class="icon-container">
+            <i class="bi bi-stopwatch"></i>
+          </div>
+          <h4>Thursday</h4>
+          <p><strong>Time Trials</strong><br>Speed work and performance testing</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="feature-box">
+          <div class="icon-container">
+            <i class="bi bi-flag"></i>
+          </div>
+          <h4>Saturday</h4>
+          <p><strong>Long Runs</strong><br>Extended distance training in a social setting</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- How to Join -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8 text-center mb-4">
+        <h3 class="section-heading">How to Join</h3>
+        <p class="lead">Ready to become part of the Glen Striders family? Here's how to join</p>
+      </div>
+    </div>
+
+    <div class="row g-4 mb-5">
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="feature-box">
+          <div class="icon-container">
+            <i class="bi bi-chat-dots"></i>
+          </div>
+          <h4>1. Connect with Us</h4>
+          <p>Join our WhatsApp group or contact us through our social media channels</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="feature-box">
+          <div class="icon-container">
+            <i class="bi bi-file-text"></i>
+          </div>
+          <h4>2. Complete Form</h4>
+          <p>Fill out our simple membership registration</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="feature-box">
+          <div class="icon-container">
+            <i class="bi bi-credit-card"></i>
+          </div>
+          <h4>3. Pay Fee</h4>
+          <p>Submit your annual membership fee</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="feature-box">
+          <div class="icon-container">
+            <i class="bi bi-play-circle"></i>
+          </div>
+          <h4>4. Start Running</h4>
+          <p>Join us at any of our weekly training sessions</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8 text-center" data-aos="fade-up">
+        <h3 class="section-heading">Get in Touch</h3>
+        <p class="lead mb-4">For more information about membership or to sign up</p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+          <a href="https://chat.whatsapp.com/I0s2GOH2cOS9Rl0RxY7DUZ" class="btn btn-primary">
+            <i class="bi bi-whatsapp"></i> Join WhatsApp Group
+          </a>
+          <a href="https://www.facebook.com/glenstriders" class="btn btn-outline-primary">
+            <i class="bi bi-facebook"></i> Facebook Page
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <h3 class="section-heading text-center mb-4">Frequently Asked Questions</h3>
+        
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item mb-3" data-aos="fade-up">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                Do I need to be fit to join?
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                No! We welcome runners of all fitness levels. Our training sessions cater to everyone from complete beginners to experienced athletes.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item mb-3" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                What equipment do I need?
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Just a good pair of running shoes to start! As you progress, you may want to invest in moisture-wicking clothing and a running watch, but these aren't required initially.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item mb-3" data-aos="fade-up" data-aos-delay="200">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                Can I try before I join?
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Absolutely! We encourage prospective members to join us for a training session to experience our club atmosphere before committing to membership.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item mb-3" data-aos="fade-up" data-aos-delay="300">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                Are there any other costs besides membership?
+              </button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                The annual membership fee covers your participation in all regular training sessions. Any special events, races, or optional club kit purchases would be additional.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item mb-3" data-aos="fade-up" data-aos-delay="400">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                What if I need to cancel my membership?
+              </button>
+            </h2>
+            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                We understand circumstances change. Please contact a club committee member to discuss your situation.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="row justify-content-center mt-5">
+      <div class="col-lg-8 text-center" data-aos="fade-up">
+        <div style="padding: 2rem; background: color-mix(in srgb, var(--accent-color), transparent 90%); border-radius: 12px;">
+          <h3 style="color: var(--accent-color);">Join Glen Striders Today!</h3>
+          <p class="lead mb-4">Become part of a community that will support, motivate, and celebrate your running journey!</p>
+          <a href="https://chat.whatsapp.com/I0s2GOH2cOS9Rl0RxY7DUZ" class="btn btn-primary btn-lg">
+            <i class="bi bi-whatsapp"></i> Get Started
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+{% endblock %}
