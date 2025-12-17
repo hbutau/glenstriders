@@ -3155,14 +3155,15 @@ section,
 
 /* Membership Page Color Variables */
 :root {
-  --membership-benefit-blue: #3498db;
-  --membership-benefit-red: #e74c3c;
-  --membership-benefit-green: #2ecc71;
-  --membership-benefit-orange: #f39c12;
-  --membership-who-purple: #9b59b6;
-  --membership-who-teal: #1abc9c;
-  --membership-who-orange: #e67e22;
-  --membership-who-red: #c0392b;
+  --membership-brand-purple: #442178;
+  --membership-benefit-purple-1: #442178;
+  --membership-benefit-purple-2: #6b3ba8;
+  --membership-benefit-purple-3: #8855c4;
+  --membership-benefit-purple-4: #a570e0;
+  --membership-who-purple-1: #442178;
+  --membership-who-purple-2: #5e2d95;
+  --membership-who-purple-3: #7839b2;
+  --membership-who-purple-4: #9245cf;
 }
 
 /* Membership Fees Section - Premium Pricing Cards */
@@ -3210,19 +3211,19 @@ section,
 }
 
 .membership-benefits .feature-box:nth-child(4n+1) {
-  border-left-color: var(--membership-benefit-blue);
+  border-left-color: var(--membership-benefit-purple-1);
 }
 
 .membership-benefits .feature-box:nth-child(4n+2) {
-  border-left-color: var(--membership-benefit-red);
+  border-left-color: var(--membership-benefit-purple-2);
 }
 
 .membership-benefits .feature-box:nth-child(4n+3) {
-  border-left-color: var(--membership-benefit-green);
+  border-left-color: var(--membership-benefit-purple-3);
 }
 
 .membership-benefits .feature-box:nth-child(4n+4) {
-  border-left-color: var(--membership-benefit-orange);
+  border-left-color: var(--membership-benefit-purple-4);
 }
 
 .membership-benefits .feature-box:hover {
@@ -3231,23 +3232,23 @@ section,
 }
 
 .membership-benefits .feature-box:nth-child(4n+1) .icon-container {
-  background: color-mix(in srgb, var(--membership-benefit-blue), transparent 90%);
-  color: var(--membership-benefit-blue);
+  background: color-mix(in srgb, var(--membership-benefit-purple-1), transparent 90%);
+  color: var(--membership-benefit-purple-1);
 }
 
 .membership-benefits .feature-box:nth-child(4n+2) .icon-container {
-  background: color-mix(in srgb, var(--membership-benefit-red), transparent 90%);
-  color: var(--membership-benefit-red);
+  background: color-mix(in srgb, var(--membership-benefit-purple-2), transparent 90%);
+  color: var(--membership-benefit-purple-2);
 }
 
 .membership-benefits .feature-box:nth-child(4n+3) .icon-container {
-  background: color-mix(in srgb, var(--membership-benefit-green), transparent 90%);
-  color: var(--membership-benefit-green);
+  background: color-mix(in srgb, var(--membership-benefit-purple-3), transparent 90%);
+  color: var(--membership-benefit-purple-3);
 }
 
 .membership-benefits .feature-box:nth-child(4n+4) .icon-container {
-  background: color-mix(in srgb, var(--membership-benefit-orange), transparent 90%);
-  color: var(--membership-benefit-orange);
+  background: color-mix(in srgb, var(--membership-benefit-purple-4), transparent 90%);
+  color: var(--membership-benefit-purple-4);
 }
 
 .membership-benefits .feature-box:hover .icon-container {
@@ -3279,19 +3280,19 @@ section,
 }
 
 .who-can-join .feature-box:nth-child(1) {
-  border-color: color-mix(in srgb, var(--membership-who-purple), transparent 70%);
+  border-color: color-mix(in srgb, var(--membership-who-purple-1), transparent 70%);
 }
 
 .who-can-join .feature-box:nth-child(2) {
-  border-color: color-mix(in srgb, var(--membership-who-teal), transparent 70%);
+  border-color: color-mix(in srgb, var(--membership-who-purple-2), transparent 70%);
 }
 
 .who-can-join .feature-box:nth-child(3) {
-  border-color: color-mix(in srgb, var(--membership-who-orange), transparent 70%);
+  border-color: color-mix(in srgb, var(--membership-who-purple-3), transparent 70%);
 }
 
 .who-can-join .feature-box:nth-child(4) {
-  border-color: color-mix(in srgb, var(--membership-who-red), transparent 70%);
+  border-color: color-mix(in srgb, var(--membership-who-purple-4), transparent 70%);
 }
 
 .who-can-join .feature-box:hover {
@@ -3308,76 +3309,23 @@ section,
 }
 
 .who-can-join .feature-box:nth-child(1) .icon-container {
-  border-color: var(--membership-who-purple);
-  color: var(--membership-who-purple);
+  border-color: var(--membership-who-purple-1);
+  color: var(--membership-who-purple-1);
 }
 
 .who-can-join .feature-box:nth-child(2) .icon-container {
-  border-color: var(--membership-who-teal);
-  color: var(--membership-who-teal);
+  border-color: var(--membership-who-purple-2);
+  color: var(--membership-who-purple-2);
 }
 
 .who-can-join .feature-box:nth-child(3) .icon-container {
-  border-color: var(--membership-who-orange);
-  color: var(--membership-who-orange);
+  border-color: var(--membership-who-purple-3);
+  color: var(--membership-who-purple-3);
 }
 
 .who-can-join .feature-box:nth-child(4) .icon-container {
-  border-color: var(--membership-who-red);
-  color: var(--membership-who-red);
-}
-
-/* Weekly Training Schedule - Timeline Style */
-.training-schedule .feature-box {
-  background: var(--surface-color);
-  border-radius: 15px 15px 15px 0;
-  position: relative;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
-}
-
-.training-schedule .feature-box::before {
-  content: "";
-  position: absolute;
-  left: -20px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 20px;
-  height: 4px;
-  background: var(--accent-color);
-}
-
-.training-schedule .feature-box::after {
-  content: "";
-  position: absolute;
-  left: -28px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 16px;
-  height: 16px;
-  background: var(--accent-color);
-  border-radius: 50%;
-  border: 3px solid var(--surface-color);
-  box-shadow: 0 0 0 2px var(--accent-color);
-}
-
-.training-schedule .feature-box:hover {
-  transform: translateX(10px);
-  box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.15);
-}
-
-.training-schedule .feature-box .icon-container {
-  width: 75px;
-  height: 75px;
-  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), #000 30%));
-  color: var(--contrast-color);
-  font-size: 1.9rem;
-}
-
-.training-schedule .feature-box h4 {
-  color: var(--accent-color);
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  border-color: var(--membership-who-purple-4);
+  color: var(--membership-who-purple-4);
 }
 
 /* How to Join Section - Step Cards with Progress */
@@ -3443,11 +3391,6 @@ section,
 
 /* Responsive Adjustments for Membership Page */
 @media (max-width: 991px) {
-  .training-schedule .feature-box::before,
-  .training-schedule .feature-box::after {
-    display: none;
-  }
-}
 
 @media (max-width: 767px) {
   .membership-fees .feature-box,
