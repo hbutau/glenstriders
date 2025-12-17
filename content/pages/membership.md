@@ -6,8 +6,6 @@ Status: published
 
 ## Join Glen Striders Running Club
 
-Welcome to Glen Striders Running Club! We're excited that you're considering joining our vibrant community of passionate runners. Whether you're a beginner taking your first steps or an experienced marathoner, there's a place for you here.
-
 ### Membership Benefits
 
 When you become a member of Glen Striders, you'll enjoy:
