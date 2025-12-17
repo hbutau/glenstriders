@@ -3153,6 +3153,18 @@ section,
 # Membership Page - Custom Styling
 --------------------------------------------------------------*/
 
+/* Membership Page Color Variables */
+:root {
+  --membership-benefit-blue: #3498db;
+  --membership-benefit-red: #e74c3c;
+  --membership-benefit-green: #2ecc71;
+  --membership-benefit-orange: #f39c12;
+  --membership-who-purple: #9b59b6;
+  --membership-who-teal: #1abc9c;
+  --membership-who-orange: #e67e22;
+  --membership-who-red: #c0392b;
+}
+
 /* Membership Fees Section - Premium Pricing Cards */
 .membership-fees .feature-box {
   background: linear-gradient(135deg, var(--surface-color) 0%, color-mix(in srgb, var(--accent-color), transparent 95%) 100%);
@@ -3198,19 +3210,19 @@ section,
 }
 
 .membership-benefits .feature-box:nth-child(4n+1) {
-  border-left-color: #3498db;
+  border-left-color: var(--membership-benefit-blue);
 }
 
 .membership-benefits .feature-box:nth-child(4n+2) {
-  border-left-color: #e74c3c;
+  border-left-color: var(--membership-benefit-red);
 }
 
 .membership-benefits .feature-box:nth-child(4n+3) {
-  border-left-color: #2ecc71;
+  border-left-color: var(--membership-benefit-green);
 }
 
 .membership-benefits .feature-box:nth-child(4n+4) {
-  border-left-color: #f39c12;
+  border-left-color: var(--membership-benefit-orange);
 }
 
 .membership-benefits .feature-box:hover {
@@ -3219,23 +3231,23 @@ section,
 }
 
 .membership-benefits .feature-box:nth-child(4n+1) .icon-container {
-  background: color-mix(in srgb, #3498db, transparent 90%);
-  color: #3498db;
+  background: color-mix(in srgb, var(--membership-benefit-blue), transparent 90%);
+  color: var(--membership-benefit-blue);
 }
 
 .membership-benefits .feature-box:nth-child(4n+2) .icon-container {
-  background: color-mix(in srgb, #e74c3c, transparent 90%);
-  color: #e74c3c;
+  background: color-mix(in srgb, var(--membership-benefit-red), transparent 90%);
+  color: var(--membership-benefit-red);
 }
 
 .membership-benefits .feature-box:nth-child(4n+3) .icon-container {
-  background: color-mix(in srgb, #2ecc71, transparent 90%);
-  color: #2ecc71;
+  background: color-mix(in srgb, var(--membership-benefit-green), transparent 90%);
+  color: var(--membership-benefit-green);
 }
 
 .membership-benefits .feature-box:nth-child(4n+4) .icon-container {
-  background: color-mix(in srgb, #f39c12, transparent 90%);
-  color: #f39c12;
+  background: color-mix(in srgb, var(--membership-benefit-orange), transparent 90%);
+  color: var(--membership-benefit-orange);
 }
 
 .membership-benefits .feature-box:hover .icon-container {
@@ -3267,19 +3279,19 @@ section,
 }
 
 .who-can-join .feature-box:nth-child(1) {
-  border-color: color-mix(in srgb, #9b59b6, transparent 70%);
+  border-color: color-mix(in srgb, var(--membership-who-purple), transparent 70%);
 }
 
 .who-can-join .feature-box:nth-child(2) {
-  border-color: color-mix(in srgb, #1abc9c, transparent 70%);
+  border-color: color-mix(in srgb, var(--membership-who-teal), transparent 70%);
 }
 
 .who-can-join .feature-box:nth-child(3) {
-  border-color: color-mix(in srgb, #e67e22, transparent 70%);
+  border-color: color-mix(in srgb, var(--membership-who-orange), transparent 70%);
 }
 
 .who-can-join .feature-box:nth-child(4) {
-  border-color: color-mix(in srgb, #c0392b, transparent 70%);
+  border-color: color-mix(in srgb, var(--membership-who-red), transparent 70%);
 }
 
 .who-can-join .feature-box:hover {
@@ -3296,23 +3308,23 @@ section,
 }
 
 .who-can-join .feature-box:nth-child(1) .icon-container {
-  border-color: #9b59b6;
-  color: #9b59b6;
+  border-color: var(--membership-who-purple);
+  color: var(--membership-who-purple);
 }
 
 .who-can-join .feature-box:nth-child(2) .icon-container {
-  border-color: #1abc9c;
-  color: #1abc9c;
+  border-color: var(--membership-who-teal);
+  color: var(--membership-who-teal);
 }
 
 .who-can-join .feature-box:nth-child(3) .icon-container {
-  border-color: #e67e22;
-  color: #e67e22;
+  border-color: var(--membership-who-orange);
+  color: var(--membership-who-orange);
 }
 
 .who-can-join .feature-box:nth-child(4) .icon-container {
-  border-color: #c0392b;
-  color: #c0392b;
+  border-color: var(--membership-who-red);
+  color: var(--membership-who-red);
 }
 
 /* Weekly Training Schedule - Timeline Style */
