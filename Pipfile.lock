@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "f22a10649d960b9eb9e9ce5a262539d630035a7a4177e4b6d43748c02a62c6de"
+            "sha256": "1c18d9341fc5cae7e435589feec9c0859f93b6d5534993ab219375f751424a2b"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -18,11 +18,11 @@
     "default": {
         "anyio": {
             "hashes": [
-                "sha256:0287e96f4d26d4149305414d4e3bc32f0dcd0862365a4bddea19d7a1ec38c4fc",
-                "sha256:82a8d0b81e318cc5ce71a5f1f8b5c4e63619620b63141ef8c995fa0db95a57c4"
+                "sha256:73c693b567b0c55130c104d0b43a9baf3aa6a31fc6110116509f27bf75e21ec0",
+                "sha256:dad2376a628f98eeca4881fc56cd06affd18f659b17a747d3ff0307ced94b1bb"
             ],
             "markers": "python_version >= '3.9'",
-            "version": "==4.11.0"
+            "version": "==4.12.0"
         },
         "blinker": {
             "hashes": [
@@ -34,11 +34,11 @@
         },
         "docutils": {
             "hashes": [
-                "sha256:9fdb771707c8784c8f2728b67cb2c691305933d68137ef95a75db5f4dfbc213d",
-                "sha256:b0e98d679283fc3bb0ead8a5da7f501baa632654e7056e9c5846842213d674d8"
+                "sha256:21486ae730e4ca9f622677b1412b879af1791efcfba517e4c6f60be543fc8cdd",
+                "sha256:bd772e4aca73aff037958d44f2be5229ded4c09927fcf8690c577b66234d6ceb"
             ],
             "markers": "python_version >= '3.9'",
-            "version": "==0.22.2"
+            "version": "==0.22.3"
         },
         "feedgenerator": {
             "hashes": [
@@ -194,12 +194,21 @@
         },
         "pelican": {
             "hashes": [
-                "sha256:aca6993f6b8a03a20f6828471089cb0504a4dca71e0d30b341fa80ab65668fa4",
-                "sha256:b90234487b818d391733acc1306b785934009749b1fc112b879df9bd89478bd8"
+                "sha256:0d5e9c0cc9c6713ab6c25b2c4b64844f34d9be8c8c8cc7f42c3a8aa6b3bbbe33",
+                "sha256:522a26598d3555a48b8392a582843f96bc9dafd5efe16b8f6a0b292441290620"
             ],
             "index": "pypi",
             "markers": "python_version >= '3.9' and python_version < '4.0'",
-            "version": "==4.11.0"
+            "version": "==4.11.0.post0"
+        },
+        "pelican-sitemap": {
+            "hashes": [
+                "sha256:09ba150dd1b54ef855f18e7ec920160d7118e932e0dac1c6e8bf3a41e938e682",
+                "sha256:93f72d035dd0ec2f5cee38b2766bbd7f6a54bf186635ae1261a6deac422dcfb7"
+            ],
+            "index": "pypi",
+            "markers": "python_version ~= '3.9'",
+            "version": "==1.2.2"
         },
         "pygments": {
             "hashes": [

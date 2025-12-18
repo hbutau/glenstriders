@@ -81,7 +81,7 @@ function submitOrder() {
     
     // Build WhatsApp message for apparel
     const itemName = currentOrderType === 'vest' ? 'Club Vest' : 'T-Shirt';
-    const price = currentOrderType === 'vest' ? '$8' : '$10';
+    const price = currentOrderType === 'vest' ? '$10' : '$8';
     
     message = `*New Order from Glen Striders Shop*\n\n`;
     message += `*Item:* ${itemName}\n`;
