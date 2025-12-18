@@ -32,7 +32,7 @@
     <div class="row g-4 mb-5">
       <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
         <div class="gallery-item">
-          <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/gallery/team-1.jpeg" alt="Glen Striders Team" class="img-fluid gallery-image" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/gallery/team-1.jpeg', 'Glen Striders Team')">
+          <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/gallery/team-1.jpeg" alt="Glen Striders Team" class="img-fluid gallery-image" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this)">
           <div class="gallery-overlay">
             <i class="bi bi-zoom-in"></i>
           </div>
@@ -41,7 +41,7 @@
 
       <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
         <div class="gallery-item">
-          <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/gallery/team-2.jpeg" alt="Glen Striders Community" class="img-fluid gallery-image" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/gallery/team-2.jpeg', 'Glen Striders Community')">
+          <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/gallery/team-2.jpeg" alt="Glen Striders Community" class="img-fluid gallery-image" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this)">
           <div class="gallery-overlay">
             <i class="bi bi-zoom-in"></i>
           </div>
@@ -50,7 +50,7 @@
 
       <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
         <div class="gallery-item">
-          <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/gallery/club-vest.jpeg" alt="Glen Striders Club Vest" class="img-fluid gallery-image" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/gallery/club-vest.jpeg', 'Glen Striders Club Vest')">
+          <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/gallery/club-vest.jpeg" alt="Glen Striders Club Vest" class="img-fluid gallery-image" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this)">
           <div class="gallery-overlay">
             <i class="bi bi-zoom-in"></i>
           </div>
@@ -59,7 +59,7 @@
 
       <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
         <div class="gallery-item">
-          <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/gallery/club-shirt.jpeg" alt="Glen Striders Club T-Shirt" class="img-fluid gallery-image" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/gallery/club-shirt.jpeg', 'Glen Striders Club T-Shirt')">
+          <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/gallery/club-shirt.jpeg" alt="Glen Striders Club T-Shirt" class="img-fluid gallery-image" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this)">
           <div class="gallery-overlay">
             <i class="bi bi-zoom-in"></i>
           </div>
@@ -68,7 +68,7 @@
 
       <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
         <div class="gallery-item">
-          <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/logo.webp" alt="Glen Striders Logo" class="img-fluid gallery-image" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/logo.webp', 'Glen Striders Logo')">
+          <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/logo.webp" alt="Glen Striders Logo" class="img-fluid gallery-image" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this)">
           <div class="gallery-overlay">
             <i class="bi bi-zoom-in"></i>
           </div>
@@ -77,7 +77,7 @@
 
       <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
         <div class="gallery-item">
-          <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/glen-striders-text-logo.webp" alt="Glen Striders Text Logo" class="img-fluid gallery-image" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/glen-striders-text-logo.webp', 'Glen Striders Text Logo')">
+          <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/glen-striders-text-logo.webp" alt="Glen Striders Text Logo" class="img-fluid gallery-image" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this)">
           <div class="gallery-overlay">
             <i class="bi bi-zoom-in"></i>
           </div>
@@ -202,10 +202,10 @@
 </style>
 
 <script>
-function showImage(src, alt) {
-  document.getElementById('modalImage').src = src;
-  document.getElementById('modalImage').alt = alt;
-  document.getElementById('imageModalLabel').textContent = alt;
+function showImage(img) {
+  document.getElementById('modalImage').src = img.src;
+  document.getElementById('modalImage').alt = img.alt;
+  document.getElementById('imageModalLabel').textContent = img.alt;
 }
 </script>
 {% endblock %}
