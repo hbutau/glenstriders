@@ -3412,8 +3412,8 @@ section,
     padding: 15px;
   }
   
-  .strava-widget-container iframe {
-    width: 100% !important;
+  #strava-activities .strava-widget-container iframe {
+    width: 100%;
     height: 400px;
   }
 }
