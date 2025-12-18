@@ -3389,6 +3389,35 @@ section,
   z-index: 1;
 }
 
+/*--------------------------------------------------------------
+# Strava Activities Widget Section
+--------------------------------------------------------------*/
+.strava-widget-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--surface-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.strava-widget-container iframe {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .strava-widget-container {
+    padding: 15px;
+  }
+  
+  .strava-widget-container iframe {
+    width: 100% !important;
+    height: 400px;
+  }
+}
+
 /* Responsive Adjustments for Membership Page */
 @media (max-width: 991px) {
 
