@@ -155,7 +155,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 26px;
   width: auto;
   margin-right: 8px;
   filter: brightness(0) saturate(100%) invert(16%) sepia(47%) saturate(2481%) hue-rotate(252deg) brightness(77%) contrast(102%);
@@ -191,7 +191,7 @@ h6 {
   }
 
   .header .logo img {
-    max-height: 32px;
+    max-height: 26px;
   }
 
   .header .btn-getstarted {
@@ -207,13 +207,13 @@ h6 {
 
 @media (max-width: 768px) {
   .header .logo img {
-    max-height: 28px;
+    max-height: 24px;
   }
 }
 
 @media (max-width: 480px) {
   .header .logo img {
-    max-height: 24px;
+    max-height: 20px;
   }
 }
 
