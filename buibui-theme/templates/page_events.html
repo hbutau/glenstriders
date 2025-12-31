@@ -23,7 +23,15 @@
     <!-- Page Title -->
     <div class="row justify-content-center mb-5">
       <div class="col-lg-8 text-center" data-aos="fade-up" data-aos-delay="200">
-        <h2 class="section-heading" id="month-title">Running Events Calendar</h2>
+        <div class="month-navigation">
+          <button id="prev-month" class="month-nav-btn" aria-label="Previous month">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <h2 class="section-heading" id="month-title">Running Events Calendar</h2>
+          <button id="next-month" class="month-nav-btn" aria-label="Next month">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
         <p class="lead">Join Glen Striders at these upcoming events. Check back regularly for updates and new events!</p>
       </div>
     </div>
@@ -52,6 +60,50 @@
 </section>
 
 <style>
+/* Month Navigation */
+.month-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.month-nav-btn {
+  background: var(--accent-color);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.month-nav-btn:hover {
+  background: color-mix(in srgb, var(--accent-color), black 15%);
+  transform: scale(1.1);
+}
+
+.month-nav-btn:active {
+  transform: scale(0.95);
+}
+
+.month-nav-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.month-navigation h2 {
+  margin: 0;
+  flex: 0 0 auto;
+}
+
 /* Events Table Styling */
 .events-table-container {
   overflow-x: auto;
@@ -254,20 +306,23 @@ function formatDateDisplay(dateStr, day) {
   return `${day} ${dayNum} ${month}`;
 }
 
-// Function to display events for current month
-function displayCurrentMonthEvents() {
-  const now = new Date();
-  const currentMonth = now.getMonth(); // 0-11
-  const currentYear = now.getFullYear();
+// Current displayed month and year
+let displayedMonth = new Date().getMonth(); // 0-11
+let displayedYear = new Date().getFullYear();
+
+// Function to display events for a specific month
+function displayMonthEvents(month, year) {
+  displayedMonth = month;
+  displayedYear = year;
   
   // Update title
   const monthTitle = document.getElementById('month-title');
-  monthTitle.textContent = `${getMonthName(currentMonth)} ${currentYear} Running Events`;
+  monthTitle.textContent = `${getMonthName(month)} ${year} Running Events`;
   
-  // Filter events for current month
-  const currentMonthEvents = events2025.filter(event => {
+  // Filter events for the specified month
+  const monthEvents = events2025.filter(event => {
     const eventDate = new Date(event.date);
-    return eventDate.getMonth() === currentMonth && eventDate.getFullYear() === currentYear;
+    return eventDate.getMonth() === month && eventDate.getFullYear() === year;
   });
   
   // Get tbody element
@@ -275,8 +330,8 @@ function displayCurrentMonthEvents() {
   tbody.innerHTML = '';
   
   // Add events to table
-  if (currentMonthEvents.length > 0) {
-    currentMonthEvents.forEach(event => {
+  if (monthEvents.length > 0) {
+    monthEvents.forEach(event => {
       const row = document.createElement('tr');
       row.innerHTML = `
         <td>${formatDateDisplay(event.date, event.day)}</td>
@@ -293,9 +348,61 @@ function displayCurrentMonthEvents() {
     `;
     tbody.appendChild(row);
   }
+  
+  // Update button states
+  updateNavigationButtons();
+}
+
+// Function to update navigation button states
+function updateNavigationButtons() {
+  const prevBtn = document.getElementById('prev-month');
+  const nextBtn = document.getElementById('next-month');
+  
+  // Disable previous button if we're at January 2025
+  if (displayedMonth === 0 && displayedYear === 2025) {
+    prevBtn.disabled = true;
+  } else {
+    prevBtn.disabled = false;
+  }
+  
+  // Disable next button if we're at December 2025
+  if (displayedMonth === 11 && displayedYear === 2025) {
+    nextBtn.disabled = true;
+  } else {
+    nextBtn.disabled = false;
+  }
+}
+
+// Function to navigate to previous month
+function previousMonth() {
+  if (displayedMonth === 0) {
+    displayedMonth = 11;
+    displayedYear--;
+  } else {
+    displayedMonth--;
+  }
+  displayMonthEvents(displayedMonth, displayedYear);
+}
+
+// Function to navigate to next month
+function nextMonth() {
+  if (displayedMonth === 11) {
+    displayedMonth = 0;
+    displayedYear++;
+  } else {
+    displayedMonth++;
+  }
+  displayMonthEvents(displayedMonth, displayedYear);
 }
 
 // Load events when page loads
-document.addEventListener('DOMContentLoaded', displayCurrentMonthEvents);
+document.addEventListener('DOMContentLoaded', function() {
+  // Display current month events
+  displayMonthEvents(displayedMonth, displayedYear);
+  
+  // Add event listeners to navigation buttons
+  document.getElementById('prev-month').addEventListener('click', previousMonth);
+  document.getElementById('next-month').addEventListener('click', nextMonth);
+});
 </script>
 {% endblock %}
