@@ -1,0 +1,612 @@
+{% extends "base.html" %}
+{% block html_lang %}{{ page.lang }}{% endblock %}
+{% block title %}{{ page.title|striptags }}{% endblock %}
+
+{% block meta_description %}Glen Striders Running Events Calendar - Join us for marathons, fun runs, and running events in Harare, Zimbabwe{% endblock %}
+{% block meta_keywords %}running events Harare, marathon Zimbabwe, fun run Glen-View, running calendar Harare, race events Zimbabwe, Glen Striders events{% endblock %}
+
+{% block extra_head %}
+  {% import 'translations.html' as translations with context %}
+  {% if translations.entry_hreflang(page) %}
+    {{ translations.entry_hreflang(page) }}
+  {% endif %}
+{% endblock %}
+
+{% block hero %}{% endblock %}
+{% block home_sections %}{% endblock %}
+
+{% block content %}
+<!-- Events Page -->
+<section id="events" class="about section">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    
+    <!-- Page Title -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8 text-center" data-aos="fade-up" data-aos-delay="200">
+        <h2 class="section-heading">2025 Running Events Calendar</h2>
+        <p class="lead">Join Glen Striders at these upcoming events throughout the year. Check back regularly for updates and new events!</p>
+      </div>
+    </div>
+
+    <!-- Events Table -->
+    <div class="row justify-content-center">
+      <div class="col-lg-10" data-aos="fade-up" data-aos-delay="300">
+        <div class="events-table-container">
+          <table class="events-table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Race</th>
+                <th>Venue</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Saturday 4 Jan</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 5 Jan</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 11 Jan</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 12 Jan</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 18 Jan</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 19 Jan</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 24 Jan</td>
+                <td>Riot Comrades Marathon</td>
+                <td>Harare</td>
+              </tr>
+              <tr>
+                <td>Sunday 25 Jan</td>
+                <td>Nyaradzo Fun Run</td>
+                <td>Old Georgians</td>
+              </tr>
+              <tr>
+                <td>Sunday 25 Jan</td>
+                <td>Dr. Oliver Mutukudzi Memorial Half Marathon</td>
+                <td>Pakare Paye Arts</td>
+              </tr>
+              <tr>
+                <td>Saturday 1 Feb</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 2 Feb</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 8 Feb</td>
+                <td>Old Mutual Harare Marathon</td>
+                <td>QGSC</td>
+              </tr>
+              <tr>
+                <td>Saturday 15 Feb</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 16 Feb</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 21 Feb</td>
+                <td>Old Mutual Harare Marathon</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 21 Feb</td>
+                <td>The Salvation Army Sports Fellowship</td>
+                <td>Harare</td>
+              </tr>
+              <tr>
+                <td>Sunday 22 Feb</td>
+                <td>AAC Chitungwiza Run</td>
+                <td>chitungwiza</td>
+              </tr>
+              <tr>
+                <td>Sunday 22 Feb</td>
+                <td>HAC 21km Challenge</td>
+                <td>ogsc</td>
+              </tr>
+              <tr>
+                <td>Sunday 22 Feb</td>
+                <td>Musahvunda Half Marathon</td>
+                <td>Harare</td>
+              </tr>
+              <tr>
+                <td>Sunday 2 March</td>
+                <td>Riot Memorial Day Fundraising</td>
+                <td>Harare</td>
+              </tr>
+              <tr>
+                <td>Sunday 1 March</td>
+                <td>CBZ Peter Gradwell Marathon</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 8 March</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 9 March</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 15 March</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 16 March</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 22 March</td>
+                <td>Eastview Elites Water Run</td>
+                <td>Harare</td>
+              </tr>
+              <tr>
+                <td>Sunday 29 March</td>
+                <td>Nyaradzo Run</td>
+                <td>Harare</td>
+              </tr>
+              <tr>
+                <td>Saturday 5 Apr</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 6 Apr</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 12 Apr</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 13 Apr</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 19 Apr</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 20 Apr</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 26 Apr</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 27 Apr</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>1 May</td>
+                <td>Nedbank Half Marathon</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 3 May</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 4 May</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 10 May</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 11 May</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 17 May</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 18 May</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 24 May</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 25 May</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 31 May</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 1 Jun</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>7 June</td>
+                <td>Zuva Half Marathon</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 14 Jun</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 15 Jun</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 21 Jun</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 22 Jun</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 28 Jun</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 29 Jun</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>5 July</td>
+                <td>Econet Victoria Falls Marathon</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>12 July</td>
+                <td>HAC Chishawasha Cross Country Series 1</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 19 Jul</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 20 Jul</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 26 Jul</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 27 Jul</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2 August</td>
+                <td>HAC Beatrice Gijima Cross Country Series 2</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>9 August</td>
+                <td>HAC Kariba Half Marathon</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 16 Aug</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 17 Aug</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>23 August</td>
+                <td>Stanbic Bank Half Marathon</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 30 Aug</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 31 Aug</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 6 Sep</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 7 Sep</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 13 Sep</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 14 Sep</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 20 Sep</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 21 Sep</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 27 Sep</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 28 Sep</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 4 Oct</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 5 Oct</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 11 Oct</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 12 Oct</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 18 Oct</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 19 Oct</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 25 Oct</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 26 Oct</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 1 Nov</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 2 Nov</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 8 Nov</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 9 Nov</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 15 Nov</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 16 Nov</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 22 Nov</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 23 Nov</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 29 Nov</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 30 Nov</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 6 Dec</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 7 Dec</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 13 Dec</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 14 Dec</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 20 Dec</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 21 Dec</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday 27 Dec</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday 28 Dec</td>
+                <td>Glen Striders Event</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+/* Events Table Styling */
+.events-table-container {
+  overflow-x: auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.events-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.events-table thead {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.events-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  border: 1px solid #dee2e6;
+}
+
+.events-table td {
+  padding: 0.75rem 1rem;
+  border: 1px solid #dee2e6;
+  vertical-align: top;
+}
+
+.events-table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.events-table tbody tr:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+  transition: background-color 0.2s ease;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .events-table-container {
+    padding: 1rem;
+  }
+  
+  .events-table {
+    font-size: 0.9rem;
+  }
+  
+  .events-table th,
+  .events-table td {
+    padding: 0.5rem;
+  }
+}
+</style>
+{% endblock %}
