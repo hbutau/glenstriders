@@ -56,21 +56,25 @@ Your content here...
 ```
 
 #### Updating Events
-Edit `buibui-theme/static/data/events-2026.json`:
-```json
-{
-  "date": "2026-01-03",
-  "day": "Saturday", 
-  "race": "Event Name",
-  "venue": "Location"
-}
+Edit `content/pages/events.md` and add/modify rows in the markdown table:
+```markdown
+| 2026-03-15 | Sunday | Event Name | Venue |
+```
+
+#### Updating Shop Products
+Edit `content/pages/shop.md` and add/modify product sections:
+```markdown
+#### Product Name - $XX
+Product description.
+
+**Image:** filename.jpeg
 ```
 
 #### Updating Pages
 Edit the corresponding `.md` file in `content/pages/`:
 - `content/pages/membership.md` - Membership information
 - `content/pages/shop.md` - Shop/merchandise
-- `content/pages/events.md` - Events page metadata
+- `content/pages/events.md` - Events calendar data
 
 ## Project Structure
 

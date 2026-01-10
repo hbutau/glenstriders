@@ -16,6 +16,11 @@
 {% block home_sections %}{% endblock %}
 
 {% block content %}
+<!-- Hidden content for JavaScript parsing -->
+<div id="page-content-source" style="display: none;">
+  {{ page.content }}
+</div>
+
 <!-- Events Page -->
 <section id="events" class="about section">
   <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -185,25 +190,70 @@
 </style>
 
 <script>
-// Events data for 2026 - loaded from external JSON file
+// Events data for 2026 - extracted from HTML table in page content
 let events2026 = [];
 
-// Load events data from JSON file
-fetch('{{ SITEURL }}/{{ THEME_STATIC_DIR }}/data/events-2026.json')
-  .then(response => response.json())
-  .then(data => {
-    events2026 = data;
-    // Initialize the events display after data is loaded
-    initializeEvents();
-  })
-  .catch(error => {
-    console.error('Error loading events data:', error);
-    // Display error message to user
+// Parse events from the HTML table
+function parseEventsFromHTML() {
+  // Find the hidden content div
+  const contentDiv = document.getElementById('page-content-source');
+  if (!contentDiv) {
+    console.error('Content source div not found');
+    return;
+  }
+  
+  // Find the table in the hidden content
+  const tables = contentDiv.querySelectorAll('table');
+  let eventsTable = null;
+  
+  // Find the events table (it should have Date, Day, Race, Venue columns)
+  for (let table of tables) {
+    const headers = table.querySelectorAll('thead th');
+    if (headers.length >= 3 && 
+        headers[0].textContent.trim() === 'Date' &&
+        headers[1].textContent.trim() === 'Day') {
+      eventsTable = table;
+      break;
+    }
+  }
+  
+  if (!eventsTable) {
+    console.error('Events table not found');
     const tbody = document.getElementById('events-tbody');
     if (tbody) {
-      tbody.innerHTML = '<tr><td colspan="3" style="text-align: center; padding: 2rem; color: #dc3545;">Unable to load events. Please try again later.</td></tr>';
+      tbody.innerHTML = '<tr><td colspan="3" style="text-align: center; padding: 2rem; color: #dc3545;">Unable to load events. Please check the content file.</td></tr>';
+    }
+    return;
+  }
+  
+  // Parse table rows
+  const rows = eventsTable.querySelectorAll('tbody tr');
+  rows.forEach(row => {
+    const cells = row.querySelectorAll('td');
+    if (cells.length >= 3) {
+      events2026.push({
+        date: cells[0].textContent.trim(),
+        day: cells[1].textContent.trim(),
+        race: cells[2].textContent.trim(),
+        venue: cells[3] ? cells[3].textContent.trim() : ''
+      });
     }
   });
+  
+  // Initialize the events display after parsing
+  if (events2026.length > 0) {
+    initializeEvents();
+  } else {
+    console.error('No events found in table');
+    const tbody = document.getElementById('events-tbody');
+    if (tbody) {
+      tbody.innerHTML = '<tr><td colspan="3" style="text-align: center; padding: 2rem; color: #dc3545;">No events available.</td></tr>';
+    }
+  }
+}
+
+// Parse events when page loads
+document.addEventListener('DOMContentLoaded', parseEventsFromHTML);
 
 // Function to get month name
 function getMonthName(month) {
@@ -318,11 +368,5 @@ function initializeEvents() {
   document.getElementById('prev-month').addEventListener('click', previousMonth);
   document.getElementById('next-month').addEventListener('click', nextMonth);
 }
-
-// Load events when page loads
-document.addEventListener('DOMContentLoaded', function() {
-  // Events will be initialized after JSON data is loaded
-  // See fetch() call above
-});
 </script>
 {% endblock %}

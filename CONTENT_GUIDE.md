@@ -7,9 +7,9 @@ This project uses [Pelican](https://getpelican.com/), a static site generator, t
 ```
 content/
 ├── pages/              # Static pages (About, Events, Membership, etc.)
-│   ├── events.md
-│   ├── membership.md
-│   └── shop.md
+│   ├── events.md       # Events calendar with table of events
+│   ├── membership.md   # Membership information
+│   └── shop.md         # Shop items and products
 └── *.md               # Blog posts/articles
 ```
 
@@ -57,31 +57,51 @@ Status: published
 ```
 
 Available custom templates:
-- `page_events` - Events calendar with interactive month navigation
+- `page_events` - Events calendar with interactive month navigation (parses events from markdown table)
 - `page_membership` - Membership information with pricing cards
-- `page_shop` - Shop page with product listings
+- `page_shop` - Shop page with product listings (parses products from markdown)
 
 ## Managing Events Data
 
-Events are stored in a JSON file that can be easily edited:
+Events are now stored directly in the `content/pages/events.md` file as a markdown table:
 
-**File:** `buibui-theme/static/data/events-2026.json`
+```markdown
+### Events List
 
-The JSON structure is:
-```json
-[
-  {
-    "date": "2026-01-03",
-    "day": "Saturday",
-    "race": "Event Name",
-    "venue": "Location"
-  }
-]
+| Date | Day | Race | Venue |
+|------|-----|------|-------|
+| 2026-01-03 | Saturday | Glen Striders Event | |
+| 2026-01-23 | Friday | Riot Comrades Marathon | Harare |
 ```
 
 To update events:
-1. Edit `buibui-theme/static/data/events-2026.json`
-2. Add, remove, or modify events as needed
+1. Edit `content/pages/events.md`
+2. Add, remove, or modify rows in the markdown table
+3. Rebuild the site with `make html`
+
+The template automatically parses the markdown table and displays events in an interactive monthly calendar.
+
+## Managing Shop Products
+
+Shop products are stored in the `content/pages/shop.md` file:
+
+```markdown
+#### T-Shirt - $12
+Comfortable Glen Striders t-shirt. Made from premium cotton blend.
+
+**Image:** vest.jpeg
+
+---
+
+#### Club Vest - $10
+Official Glen Striders running vest.
+
+**Image:** tshirt.jpeg
+```
+
+To update shop items:
+1. Edit `content/pages/shop.md`
+2. Add or modify products using the format above
 3. Rebuild the site with `make html`
 
 ## Building the Site
@@ -132,8 +152,7 @@ buibui-theme/
 ├── static/
 │   ├── css/           # Stylesheets
 │   ├── js/            # JavaScript files
-│   ├── img/           # Images
-│   └── data/          # Data files (like events.json)
+│   └── img/           # Images
 └── templates/         # Jinja2 templates
     ├── base.html      # Base template
     ├── index.html     # Homepage
@@ -151,6 +170,7 @@ buibui-theme/
 ## Tips
 
 - Use the existing pages as templates for new content
+- Events and shop data are now in markdown - easy to edit without technical knowledge
 - Check the [Pelican documentation](https://docs.getpelican.com/) for advanced features
 - Test your changes locally before deploying
 - Keep your content organized with categories and tags
@@ -174,6 +194,29 @@ Edit `buibui-theme/static/css/main.css` and modify the CSS variables.
 
 1. Place images in `content/images/` or `buibui-theme/static/img/`
 2. Reference in content: `![Alt text]({static}/images/photo.jpg)`
+
+### Adding a New Event
+
+1. Open `content/pages/events.md`
+2. Add a new row to the table:
+```markdown
+| 2026-03-15 | Sunday | New Event Name | Venue Name |
+```
+3. Rebuild: `make html`
+
+### Adding a New Shop Product
+
+1. Open `content/pages/shop.md`
+2. Add a new product section:
+```markdown
+---
+
+#### Product Name - $XX
+Product description here.
+
+**Image:** filename.jpeg
+```
+3. Rebuild: `make html`
 
 ## Support
 

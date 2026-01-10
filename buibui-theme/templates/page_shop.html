@@ -16,6 +16,11 @@
 {% block home_sections %}{% endblock %}
 
 {% block content %}
+<!-- Hidden content for JavaScript parsing -->
+<div id="page-content-source" style="display: none;">
+  {{ page.content }}
+</div>
+
 <!-- Shop Page -->
 <section id="shop" class="about section">
   <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -28,57 +33,9 @@
       </div>
     </div>
 
-    <!-- Shop Items -->
-    <div class="row g-4 mb-5 justify-content-center">
-      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="feature-box text-center">
-          <div class="shop-item-image mb-4">
-            <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/shop/vest.jpeg" alt="Glen Striders T-Shirt" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-          </div>
-          <h4>T-Shirt</h4>
-          <h3 style="color: var(--accent-color); margin: 1rem 0;">$12</h3>
-          <p>Comfortable Glen Striders t-shirt. Made from premium cotton blend, ideal for casual wear and training.</p>
-          <div class="mt-3">
-            <button class="btn btn-whatsapp" onclick="openOrderForm('tshirt')">
-              <i class="bi bi-whatsapp"></i> Order via WhatsApp
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="feature-box text-center">
-          <div class="shop-item-image mb-4">
-            <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/shop/tshirt.jpeg" alt="Glen Striders Club Vest" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-          </div>
-          <h4>Club Vest</h4>
-          <h3 style="color: var(--accent-color); margin: 1rem 0;">$10</h3>
-          <p>Official Glen Striders running vest. High-quality, breathable fabric perfect for training and races.</p>
-          <div class="mt-3">
-            <button class="btn btn-whatsapp" onclick="openOrderForm('vest')">
-              <i class="bi bi-whatsapp"></i> Order via WhatsApp
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="feature-box text-center">
-          <div class="shop-item-image mb-4">
-            <div style="display: flex; align-items: center; justify-content: center; height: 250px; background: color-mix(in srgb, var(--accent-color), transparent 90%); border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-              <i class="bi bi-people-fill" style="font-size: 80px; color: var(--accent-color);"></i>
-            </div>
-          </div>
-          <h4>Club Subscription</h4>
-          <h3 style="color: var(--accent-color); margin: 1rem 0;">Join Us</h3>
-          <p>Become a member of Glen Striders! Choose individual or couple membership to access all club benefits.</p>
-          <div class="mt-3">
-            <button class="btn btn-whatsapp" onclick="openOrderForm('subscription')">
-              <i class="bi bi-whatsapp"></i> Subscribe via WhatsApp
-            </button>
-          </div>
-        </div>
-      </div>
+    <!-- Shop Items - Dynamically generated from markdown content -->
+    <div class="row g-4 mb-5 justify-content-center" id="shop-items">
+      <!-- Items will be inserted here by JavaScript -->
     </div>
 
     <!-- How to Order Section -->
@@ -93,6 +50,105 @@
 
   </div>
 </section>
+
+<script>
+// Parse shop items from markdown content
+document.addEventListener('DOMContentLoaded', function() {
+  const contentDiv = document.getElementById('page-content-source');
+  if (!contentDiv) {
+    console.error('Content source div not found');
+    return;
+  }
+  
+  const content = contentDiv.innerHTML;
+  const shopItems = [];
+  
+  // Create a temporary div to parse HTML
+  const tempDiv = document.createElement('div');
+  tempDiv.innerHTML = content;
+  
+  // Find all h4 elements (product titles)
+  const h4Elements = tempDiv.querySelectorAll('h4');
+  
+  h4Elements.forEach((h4, index) => {
+    const titleText = h4.textContent.trim();
+    const titleMatch = titleText.match(/(.+?)\s+-\s+(.+)/);
+    
+    if (titleMatch) {
+      const item = {
+        title: titleMatch[1].trim(),
+        price: titleMatch[2].trim(),
+        description: '',
+        image: '',
+        type: 'product'
+      };
+      
+      // Get following elements until next h4 or hr
+      let nextElement = h4.nextElementSibling;
+      while (nextElement) {
+        if (nextElement.tagName === 'H4' || nextElement.tagName === 'HR') {
+          break;
+        }
+        
+        if (nextElement.tagName === 'P') {
+          const text = nextElement.textContent.trim();
+          if (text.startsWith('Image:')) {
+            item.image = text.replace('Image:', '').trim();
+          } else if (text.startsWith('Type:')) {
+            item.type = text.replace('Type:', '').trim().toLowerCase();
+          } else if (!item.description) {
+            item.description = text;
+          }
+        }
+        
+        nextElement = nextElement.nextElementSibling;
+      }
+      
+      shopItems.push(item);
+    }
+  });
+  
+  // Render shop items
+  const container = document.getElementById('shop-items');
+  if (container && shopItems.length > 0) {
+    shopItems.forEach((item, index) => {
+      const delay = (index + 1) * 100;
+      const itemType = item.type === 'membership' ? 'subscription' : item.title.toLowerCase().replace(/\s+/g, '');
+      
+      let imageHtml = '';
+      if (item.image) {
+        imageHtml = `<img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/shop/${item.image}" alt="${item.title}" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">`;
+      } else if (item.type === 'membership') {
+        imageHtml = `<div style="display: flex; align-items: center; justify-content: center; height: 250px; background: color-mix(in srgb, var(--accent-color), transparent 90%); border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+          <i class="bi bi-people-fill" style="font-size: 80px; color: var(--accent-color);"></i>
+        </div>`;
+      }
+      
+      const html = `
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="${delay}">
+          <div class="feature-box text-center">
+            <div class="shop-item-image mb-4">
+              ${imageHtml}
+            </div>
+            <h4>${item.title}</h4>
+            <h3 style="color: var(--accent-color); margin: 1rem 0;">${item.price}</h3>
+            <p>${item.description}</p>
+            <div class="mt-3">
+              <button class="btn btn-whatsapp" onclick="openOrderForm('${itemType}')">
+                <i class="bi bi-whatsapp"></i> ${item.type === 'membership' ? 'Subscribe' : 'Order'} via WhatsApp
+              </button>
+            </div>
+          </div>
+        </div>
+      `;
+      
+      container.innerHTML += html;
+    });
+  } else {
+    container.innerHTML = '<div class="col-12"><p class="text-center">No products available at this time.</p></div>';
+  }
+});
+</script>
 
 <!-- Order Forms Modal -->
 <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
