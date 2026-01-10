@@ -185,129 +185,25 @@
 </style>
 
 <script>
-// Events data for 2026
-const events2026 = [
-  // January
-  { date: '2026-01-03', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-01-04', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-01-10', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-01-11', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-01-17', day: 'Saturday', race: 'Glen Striders-Run To Braai', venue: '' },
-  { date: '2026-01-18', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-01-23', day: 'Friday', race: 'Riot Comrades Marathon', venue: 'Harare' },
-  { date: '2026-01-24', day: 'Saturday', race: 'Nyaradzo Fun Run', venue: 'Old Georgians' },
-  { date: '2026-01-24', day: 'Saturday', race: 'Dr. Oliver Mutukudzi Memorial Half Marathon', venue: 'Pakare Paye Arts' },
-  
-  // February
-  { date: '2026-02-07', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-02-08', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-02-14', day: 'Saturday', race: 'Old Mutual Harare Marathon', venue: 'QGSC' },
-  { date: '2026-02-21', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-02-22', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-02-27', day: 'Friday', race: 'Old Mutual Harare Marathon', venue: '' },
-  { date: '2026-02-27', day: 'Friday', race: 'The Salvation Army Sports Fellowship', venue: 'Harare' },
-  { date: '2026-02-28', day: 'Saturday', race: 'AAC Chitungwiza Run', venue: 'Chitungwiza' },
-  { date: '2026-02-28', day: 'Saturday', race: 'HAC 21km Challenge', venue: 'OGSC' },
-  { date: '2026-02-28', day: 'Saturday', race: 'Musahvunda Half Marathon', venue: 'Harare' },
-  
-  // March
-  { date: '2026-03-07', day: 'Saturday', race: 'CBZ Peter Gradwell Marathon', venue: '' },
-  { date: '2026-03-08', day: 'Sunday', race: 'Riot Memorial Day Fundraising', venue: 'Harare' },
-  { date: '2026-03-14', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-03-15', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-03-21', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-03-22', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-03-28', day: 'Saturday', race: 'Eastview Elites Water Run', venue: 'Harare' },
-  { date: '2026-03-28', day: 'Saturday', race: 'Nyaradzo Run', venue: 'Harare' },
-  
-  // April
-  { date: '2026-04-04', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-04-05', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-04-11', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-04-12', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-04-18', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-04-19', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-04-25', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-04-26', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  
-  // May
-  { date: '2026-05-01', day: 'Friday', race: 'Nedbank Half Marathon', venue: '' },
-  { date: '2026-05-02', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-05-03', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-05-09', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-05-10', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-05-16', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-05-17', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-05-23', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-05-24', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-05-30', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  
-  // June
-  { date: '2026-06-06', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-06-07', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-06-13', day: 'Saturday', race: 'Zuva Half Marathon', venue: '' },
-  { date: '2026-06-20', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-06-21', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-06-27', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-06-28', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  
-  // July
-  { date: '2026-07-04', day: 'Saturday', race: 'Econet Victoria Falls Marathon', venue: '' },
-  { date: '2026-07-11', day: 'Saturday', race: 'HAC Chishawasha Cross Country Series 1', venue: '' },
-  { date: '2026-07-18', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-07-19', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-07-25', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-07-26', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  
-  // August
-  { date: '2026-08-01', day: 'Saturday', race: 'HAC Beatrice Gijima Cross Country Series 2', venue: '' },
-  { date: '2026-08-08', day: 'Saturday', race: 'HAC Kariba Half Marathon', venue: '' },
-  { date: '2026-08-15', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-08-16', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-08-22', day: 'Saturday', race: 'Stanbic Bank Half Marathon', venue: '' },
-  { date: '2026-08-29', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-08-30', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  
-  // September
-  { date: '2026-09-05', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-09-06', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-09-12', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-09-13', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-09-19', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-09-20', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-09-26', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-09-27', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  
-  // October
-  { date: '2026-10-03', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-10-04', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-10-10', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-10-11', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-10-17', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-10-18', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-10-24', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-10-25', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  
-  // November
-  { date: '2026-11-07', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-11-08', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-11-14', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-11-15', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-11-21', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-11-22', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-11-28', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-11-29', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  
-  // December
-  { date: '2026-12-05', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-12-06', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-12-12', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-12-13', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-12-19', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-12-20', day: 'Sunday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-12-26', day: 'Saturday', race: 'Glen Striders Event', venue: '' },
-  { date: '2026-12-27', day: 'Sunday', race: 'Glen Striders Event', venue: '' }
-];
+// Events data for 2026 - loaded from external JSON file
+let events2026 = [];
+
+// Load events data from JSON file
+fetch('{{ SITEURL }}/{{ THEME_STATIC_DIR }}/data/events-2026.json')
+  .then(response => response.json())
+  .then(data => {
+    events2026 = data;
+    // Initialize the events display after data is loaded
+    initializeEvents();
+  })
+  .catch(error => {
+    console.error('Error loading events data:', error);
+    // Display error message to user
+    const tbody = document.getElementById('events-tbody');
+    if (tbody) {
+      tbody.innerHTML = '<tr><td colspan="3" style="text-align: center; padding: 2rem; color: #dc3545;">Unable to load events. Please try again later.</td></tr>';
+    }
+  });
 
 // Function to get month name
 function getMonthName(month) {
@@ -413,14 +309,20 @@ function nextMonth() {
   displayMonthEvents(displayedMonth, displayedYear);
 }
 
-// Load events when page loads
-document.addEventListener('DOMContentLoaded', function() {
+// Initialize events display after data is loaded
+function initializeEvents() {
   // Display current month events
   displayMonthEvents(displayedMonth, displayedYear);
   
   // Add event listeners to navigation buttons
   document.getElementById('prev-month').addEventListener('click', previousMonth);
   document.getElementById('next-month').addEventListener('click', nextMonth);
+}
+
+// Load events when page loads
+document.addEventListener('DOMContentLoaded', function() {
+  // Events will be initialized after JSON data is loaded
+  // See fetch() call above
 });
 </script>
 {% endblock %}
