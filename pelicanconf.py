@@ -40,6 +40,9 @@ RELATIVE_URLS = True
 PAGE_URL = '{slug}.html'
 PAGE_SAVE_AS = '{slug}.html'
 
+# Blog/Archives URL configuration - save archives as blog.html
+ARCHIVES_SAVE_AS = 'blog.html'
+
 # MENUITEMS = [
 #     ("Home", ""),
 #     ("Services", ""),
