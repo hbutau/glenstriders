@@ -19,23 +19,28 @@
             <div class="row gy-4">
                 {% for article in dates %}
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <article class="blog-item">
-                        <div class="post-content">
-                            <h3 class="post-title">
-                                <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+                    <article class="blog-item card h-100 border-0 shadow-sm">
+                        {% if article.image %}
+                        <div class="post-img">
+                            <img src="{{ SITEURL }}/{{ article.image }}" class="card-img-top" alt="{{ article.title }}" style="height: 250px; object-fit: cover;">
+                        </div>
+                        {% endif %}
+                        <div class="card-body">
+                            <h3 class="post-title card-title">
+                                <a href="{{ SITEURL }}/{{ article.url }}" class="text-decoration-none">{{ article.title }}</a>
                             </h3>
-                            <div class="meta-info">
-                                <span class="post-date">{{ article.date.strftime('%B %d, %Y') }}</span>
+                            <div class="meta-info mb-3 text-muted small">
+                                <span class="post-date"><i class="bi bi-calendar3"></i> {{ article.date.strftime('%B %d, %Y') }}</span>
                                 {% if article.author %}
-                                <span class="post-author">by {{ article.author }}</span>
+                                <span class="post-author ms-2"><i class="bi bi-person"></i> {{ article.author }}</span>
                                 {% endif %}
                             </div>
                             {% if article.summary %}
-                            <p class="post-excerpt">
+                            <p class="post-excerpt card-text">
                                 {{ article.summary|striptags|truncate(150) }}
                             </p>
                             {% endif %}
-                            <a href="{{ SITEURL }}/{{ article.url }}" class="readmore">Read More <i class="bi bi-arrow-right"></i></a>
+                            <a href="{{ SITEURL }}/{{ article.url }}" class="btn btn-outline-primary btn-sm">Read More <i class="bi bi-arrow-right"></i></a>
                         </div>
                     </article>
                 </div>

@@ -3,6 +3,7 @@ Date: 2026-01-18 10:00
 Category: Training
 Tags: training, endurance, running-tips
 Slug: long-slow-distance-runs
+Image: lsd-runs-image.jpg
 Summary: Learn about the benefits of Long Slow Distance runs and how they can improve your running performance and endurance.
 
 Long Slow Distance (LSD) runs are a cornerstone of endurance training for runners of all levels. Whether you're training for your first 5K or your tenth marathon, incorporating LSD runs into your training routine can significantly improve your running performance.
