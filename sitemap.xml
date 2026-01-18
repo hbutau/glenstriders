@@ -6,62 +6,48 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2026-01-01T17:30:50-00:00</lastmod>
+<lastmod>2026-01-18T21:15:41-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/archives.html</loc>
-<lastmod>2026-01-01T17:30:50-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>/author/glenstriders.html</loc>
-<lastmod>2026-01-01T17:30:50-00:00</lastmod>
+<lastmod>2026-01-18T21:15:41-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/authors.html</loc>
-<lastmod>2026-01-01T17:30:50-00:00</lastmod>
+<lastmod>2026-01-18T21:15:41-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/categories.html</loc>
-<lastmod>2026-01-01T17:30:50-00:00</lastmod>
+<lastmod>2026-01-18T21:15:41-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/category/news.html</loc>
-<lastmod>2026-01-01T17:30:50-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>/pages/events.html</loc>
+<loc>/events.html</loc>
 <lastmod>2024-12-31T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/pages/membership.html</loc>
+<loc>/membership.html</loc>
 <lastmod>2024-12-16T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/pages/shop.html</loc>
+<loc>/shop.html</loc>
 <lastmod>2024-12-17T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
@@ -69,15 +55,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/tags.html</loc>
-<lastmod>2026-01-01T17:30:50-00:00</lastmod>
+<lastmod>2026-01-18T21:15:41-00:00</lastmod>
 <changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>/welcome-to-glenstriders.html</loc>
-<lastmod>2024-12-01T10:00:00+02:00</lastmod>
-<changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
