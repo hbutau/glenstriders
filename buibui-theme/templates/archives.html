@@ -30,9 +30,9 @@
                                 <a href="{{ SITEURL }}/{{ article.url }}" class="text-decoration-none">{{ article.title }}</a>
                             </h3>
                             <div class="meta-info mb-3 text-muted small">
-                                <span class="post-date"><i class="bi bi-calendar3"></i> {{ article.date.strftime('%B %d, %Y') }}</span>
+                                <span class="post-date"><i class="bi bi-calendar3" aria-hidden="true"></i> {{ article.date.strftime('%B %d, %Y') }}</span>
                                 {% if article.author %}
-                                <span class="post-author ms-2"><i class="bi bi-person"></i> {{ article.author }}</span>
+                                <span class="post-author ms-2"><i class="bi bi-person" aria-hidden="true"></i> {{ article.author }}</span>
                                 {% endif %}
                             </div>
                             {% if article.summary %}
