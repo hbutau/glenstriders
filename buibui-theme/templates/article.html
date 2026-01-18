@@ -22,37 +22,43 @@
 {% block home_sections %}{% endblock %}
 
 {% block content %}
-  <section id="content" class="body">
-    <article>
-      <header>
-        <h1 class="entry-title">
-          <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
-             title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h1>
-        {% include 'twitter.html' %}
-      </header>
+  <section id="blog-post" class="about section">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <article>
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <header class="mb-5 text-center">
+              <h1 class="section-heading mb-3">{{ article.title }}</h1>
+              <div class="meta-info mb-4 text-muted">
+                <span class="post-date"><i class="bi bi-calendar3" aria-hidden="true"></i> {{ article.date.strftime('%B %d, %Y') }}</span>
+                {% if article.author %}
+                <span class="post-author ms-3"><i class="bi bi-person" aria-hidden="true"></i> {{ article.author }}</span>
+                {% endif %}
+                {% if article.category %}
+                <span class="post-category ms-3"><i class="bi bi-folder" aria-hidden="true"></i> {{ article.category }}</span>
+                {% endif %}
+              </div>
+            </header>
 
-      <div class="entry-content">
-        {% include 'article_infos.html' %}
-        {{ article.content }}
-      </div><!-- /.entry-content -->
-      {% if DISQUS_SITENAME and SITEURL and article.status != "draft" %}
-        <div class="comments">
-          <h2>Comments !</h2>
-          <div id="disqus_thread"></div>
-          <script type="text/javascript">
-            var disqus_shortname = '{{ DISQUS_SITENAME }}';
-            var disqus_identifier = '{{ article.url }}';
-            var disqus_url = '{{ SITEURL }}/{{ article.url }}';
-            (function() {
-              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-              dsq.src = '//{{ DISQUS_SITENAME }}.disqus.com/embed.js';
-              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            })();
-          </script>
-          <noscript>Please enable JavaScript to view the comments.</noscript>
+            <div class="entry-content" style="line-height: 1.8; color: var(--default-color);">
+              {{ article.content }}
+            </div>
+
+            {% if article.tags %}
+            <div class="post-tags mt-5 pt-4" style="border-top: 1px solid #e0e0e0;">
+              <strong><i class="bi bi-tags" aria-hidden="true"></i> Tags:</strong>
+              {% for tag in article.tags %}
+              <a href="{{ SITEURL }}/{{ tag.url }}" class="badge bg-light text-dark border ms-2" style="text-decoration: none; padding: 0.5rem 0.75rem;">{{ tag }}</a>
+              {% endfor %}
+            </div>
+            {% endif %}
+
+            <div class="back-to-blog mt-5 text-center">
+              <a href="{{ SITEURL }}/blog.html" class="btn btn-primary"><i class="bi bi-arrow-left"></i> Back to Blog</a>
+            </div>
+          </div>
         </div>
-      {% endif %}
-
-    </article>
+      </article>
+    </div>
   </section>
 {% endblock %}
