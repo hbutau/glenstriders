@@ -7,7 +7,7 @@
 {% block home_sections %}{% endblock %}
 
 {% block content %}
-    <section id="blog" class="blog section">
+    <section id="blog" class="about section">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
             <div class="row justify-content-center mb-5">
                 <div class="col-lg-8 text-center" data-aos="fade-up" data-aos-delay="200">
@@ -16,18 +16,20 @@
                 </div>
             </div>
 
-            <div class="row gy-4">
+            <div class="row gy-4 justify-content-center">
                 {% for article in dates %}
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <article class="blog-item card h-100 border-0 shadow-sm">
+                    <article class="blog-item">
                         {% if article.image %}
-                        <div class="post-img">
-                            <img src="{{ SITEURL }}/{{ article.image }}" class="card-img-top" alt="{{ article.title }}" style="height: 250px; object-fit: cover;">
+                        <div class="post-img mb-3" style="overflow: hidden; border-radius: 12px;">
+                            <a href="{{ SITEURL }}/{{ article.url }}">
+                                <img src="{{ SITEURL }}/{{ article.image }}" class="img-fluid w-100" alt="{{ article.title }}" style="height: 250px; object-fit: cover; transition: transform 0.3s ease;">
+                            </a>
                         </div>
                         {% endif %}
-                        <div class="card-body">
-                            <h3 class="post-title card-title">
-                                <a href="{{ SITEURL }}/{{ article.url }}" class="text-decoration-none">{{ article.title }}</a>
+                        <div class="post-content">
+                            <h3 class="post-title mb-3" style="font-size: 1.5rem; font-weight: 600;">
+                                <a href="{{ SITEURL }}/{{ article.url }}" class="text-decoration-none" style="color: var(--heading-color);">{{ article.title }}</a>
                             </h3>
                             <div class="meta-info mb-3 text-muted small">
                                 <span class="post-date"><i class="bi bi-calendar3" aria-hidden="true"></i> {{ article.date.strftime('%B %d, %Y') }}</span>
@@ -36,11 +38,11 @@
                                 {% endif %}
                             </div>
                             {% if article.summary %}
-                            <p class="post-excerpt card-text">
+                            <p class="post-excerpt mb-3">
                                 {{ article.summary|striptags|truncate(150) }}
                             </p>
                             {% endif %}
-                            <a href="{{ SITEURL }}/{{ article.url }}" class="btn btn-outline-primary btn-sm">Read More <i class="bi bi-arrow-right"></i></a>
+                            <a href="{{ SITEURL }}/{{ article.url }}" class="btn btn-primary btn-sm">Read More <i class="bi bi-arrow-right"></i></a>
                         </div>
                     </article>
                 </div>
@@ -48,4 +50,28 @@
             </div>
         </div>
     </section>
+    
+    <style>
+    .blog-item {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        height: 100%;
+    }
+    
+    .blog-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    }
+    
+    .blog-item .post-img img:hover {
+        transform: scale(1.05);
+    }
+    
+    .blog-item .post-title a:hover {
+        color: var(--accent-color);
+    }
+    </style>
 {% endblock %}

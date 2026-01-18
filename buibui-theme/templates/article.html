@@ -22,39 +22,39 @@
 {% block home_sections %}{% endblock %}
 
 {% block content %}
-  <section id="blog-post" class="blog-post section">
+  <section id="blog-post" class="about section">
     <div class="container" data-aos="fade-up" data-aos-delay="100">
       <article>
         <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <header class="mb-5">
-              <h1 class="post-title mb-3">{{ article.title }}</h1>
-              <div class="meta-info mb-4">
-                <span class="post-date"><i class="bi bi-calendar3"></i> {{ article.date.strftime('%B %d, %Y') }}</span>
+          <div class="col-lg-10">
+            <header class="mb-5 text-center">
+              <h1 class="section-heading mb-3">{{ article.title }}</h1>
+              <div class="meta-info mb-4 text-muted">
+                <span class="post-date"><i class="bi bi-calendar3" aria-hidden="true"></i> {{ article.date.strftime('%B %d, %Y') }}</span>
                 {% if article.author %}
-                <span class="post-author ms-3"><i class="bi bi-person"></i> {{ article.author }}</span>
+                <span class="post-author ms-3"><i class="bi bi-person" aria-hidden="true"></i> {{ article.author }}</span>
                 {% endif %}
                 {% if article.category %}
-                <span class="post-category ms-3"><i class="bi bi-folder"></i> {{ article.category }}</span>
+                <span class="post-category ms-3"><i class="bi bi-folder" aria-hidden="true"></i> {{ article.category }}</span>
                 {% endif %}
               </div>
             </header>
 
-            <div class="entry-content">
+            <div class="entry-content" style="line-height: 1.8; color: var(--default-color);">
               {{ article.content }}
             </div>
 
             {% if article.tags %}
-            <div class="post-tags mt-5">
-              <i class="bi bi-tags"></i> Tags:
+            <div class="post-tags mt-5 pt-4" style="border-top: 1px solid #e0e0e0;">
+              <strong><i class="bi bi-tags" aria-hidden="true"></i> Tags:</strong>
               {% for tag in article.tags %}
-              <a href="{{ SITEURL }}/{{ tag.url }}" class="badge bg-secondary">{{ tag }}</a>
+              <a href="{{ SITEURL }}/{{ tag.url }}" class="badge bg-light text-dark border ms-2" style="text-decoration: none; padding: 0.5rem 0.75rem;">{{ tag }}</a>
               {% endfor %}
             </div>
             {% endif %}
 
-            <div class="back-to-blog mt-4">
-              <a href="{{ SITEURL }}/blog.html" class="btn btn-outline-primary"><i class="bi bi-arrow-left"></i> Back to Blog</a>
+            <div class="back-to-blog mt-5 text-center">
+              <a href="{{ SITEURL }}/blog.html" class="btn btn-primary"><i class="bi bi-arrow-left"></i> Back to Blog</a>
             </div>
           </div>
         </div>
