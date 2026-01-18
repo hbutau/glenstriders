@@ -8,6 +8,8 @@ Summary: Learn about the benefits of Long Slow Distance runs and how they can im
 
 Long Slow Distance (LSD) runs are a cornerstone of endurance training for runners of all levels. Whether you're training for your first 5K or your tenth marathon, incorporating LSD runs into your training routine can significantly improve your running performance.
 
+![Glen Striders runners on a long slow distance run]({static}/images/lsd-runs-image.jpg)
+
 ## What Are LSD Runs?
 
 LSD runs are exactly what they sound like - long runs performed at a slow, comfortable pace. The emphasis is on building endurance through time on your feet rather than speed. These runs typically last anywhere from 60 minutes to several hours, depending on your fitness level and training goals.
