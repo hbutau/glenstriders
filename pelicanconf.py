@@ -33,8 +33,12 @@ SOCIAL = (
 
 DEFAULT_PAGINATION = 10
 
-# Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True
+# Use relative URLs for portability across different hosting environments
+RELATIVE_URLS = True
+
+# Page URL configuration - serve pages on root instead of pages/ subdirectory
+PAGE_URL = '{slug}.html'
+PAGE_SAVE_AS = '{slug}.html'
 
 # MENUITEMS = [
 #     ("Home", ""),
@@ -52,7 +56,7 @@ CSS_FILE = "styles.css"
 HERO_TAG = ""
 HEROTEXT = "Welcome To Glen Striders Running Club"
 HERO_CTA_BUTTON_TEXT = "Join Us"
-HERO_CTA_LINK = "/pages/membership.html"
+HERO_CTA_LINK = "membership.html"
 HEROSUBTEXT = "Established on the principles of community spirit, Glen Striders is home to runners of all levels. Whether you're taking your first step or training for your tenth marathon, you'll find a supportive team to help you reach the finish line."
 
 # Optional hero features list
