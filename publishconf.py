@@ -9,7 +9,7 @@ from pelicanconf import *
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
 # IMPORTANT: Set this to your actual domain for proper sitemap generation (e.g., "https://www.glenstriders.com")
-SITEURL = ""
+SITEURL = "https://www.glenstriders.com"
 # Use relative URLs to ensure CSS and assets load correctly regardless of deployment path
 RELATIVE_URLS = True
 
