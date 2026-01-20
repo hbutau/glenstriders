@@ -954,6 +954,8 @@ section,
   position: relative;
   overflow: hidden;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .about .feature-box:before {
@@ -1009,6 +1011,12 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 25%);
   font-size: 0.95rem;
   line-height: 1.6;
+  flex-grow: 1;
+}
+
+.about .feature-box .mt-3,
+.about .feature-box > div:last-child {
+  margin-top: auto !important;
 }
 
 .about .about-content-box {
