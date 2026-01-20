@@ -18,23 +18,22 @@ Join Glen Striders at these upcoming events throughout the year. Check back regu
 | 2026-01-11 | Sunday | Glen Striders Event | |
 | 2026-01-17 | Saturday | Glen Striders-Run To Braai | |
 | 2026-01-18 | Sunday | Glen Striders Event | |
-| 2026-01-23 | Friday | Riot Comrades Marathon | Harare |
-| 2026-01-24 | Saturday | Nyaradzo Fun Run | Old Georgians |
-| 2026-01-24 | Saturday | Dr. Oliver Mutukudzi Memorial Half Marathon | Pakare Paye Arts |
-| 2026-02-07 | Saturday | Glen Striders Event | |
-| 2026-02-08 | Sunday | Glen Striders Event | |
-| 2026-02-14 | Saturday | Old Mutual Harare Marathon | QGSC |
+| 2026-01-24 | Saturday | Riot Comrades Marathon | Rera Bar & Grill |
+| 2026-01-25 | Sunday | Nyaradzo Fun Run | Old Georgians Sports Club |
+| 2026-01-25 | Sunday | Dr. Oliver Mutukudzi Memorial Half Marathon | Pakare Paye Arts Center |
+| 2026-01-31 | Saturday | Blasco's Birthday Run |Glen View |
+| 2026-02-08 | Sunday   | Old Mutual Harare Marathon |Old Georgians Sports Club |
+| 2026-02-14 | Saturday | Ngomakurira Hiking | Domboshava |
+| 2026-02-21 | Saturday |Riot 5th Anniversary Run | Mtangaz Hideout Ruwa |
+| 2026-02-21 | Saturday | The Salvation Army Sports Fellowship | Harare |
 | 2026-02-21 | Saturday | Glen Striders Event | |
-| 2026-02-22 | Sunday | Glen Striders Event | |
-| 2026-02-27 | Friday | Old Mutual Harare Marathon | |
-| 2026-02-27 | Friday | The Salvation Army Sports Fellowship | Harare |
-| 2026-02-28 | Saturday | AAC Chitungwiza Run | Chitungwiza |
-| 2026-02-28 | Saturday | HAC 21km Challenge | OGSC |
-| 2026-02-28 | Saturday | Musahvunda Half Marathon | Harare |
-| 2026-03-07 | Saturday | CBZ Peter Gradwell Marathon | |
-| 2026-03-08 | Sunday | Riot Memorial Day Fundraising | Harare |
+| 2026-02-22 | Sunday   | AAC Chitungwiza Run | Chitungwiza |
+| 2026-02-22 | Sunday   | HAC 21Km Challenge |Old Georgians Sports Club |
+| 2026-02-22 | Sunday   | HAC 21km Challenge | OGSC |
+| 2026-02-22 | Sunday   | Musahvunda Half Marathon | Harare |
+| 2026-03-01 | Sunday   | ZHL Wellness Stride 2026 - RIOT |Harare |
+| 2026-03-08 | Saturday | CBZ Peter Gradwell Marathon | |
 | 2026-03-14 | Saturday | Glen Striders Event | |
-| 2026-03-15 | Sunday | Glen Striders Event | |
 | 2026-03-21 | Saturday | Glen Striders Event | |
 | 2026-03-22 | Sunday | Glen Striders Event | |
 | 2026-03-28 | Saturday | Eastview Elites Water Run | Harare |
