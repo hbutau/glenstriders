@@ -1014,7 +1014,6 @@ section,
   flex-grow: 1;
 }
 
-.about .feature-box .mt-3,
 .about .feature-box > div:last-child {
   margin-top: auto !important;
 }
