@@ -235,11 +235,12 @@ function parseEventsFromHTML() {
   rows.forEach(row => {
     const cells = row.querySelectorAll('td');
     if (cells.length >= 3) {
-      const eventDate = new Date(cells[0].textContent.trim());
-      // Only include events that are today or in the future
-      if (eventDate >= today) {
+      const dateStr = cells[0].textContent.trim();
+      const eventDate = new Date(dateStr);
+      // Validate the date and only include events that are today or in the future
+      if (!isNaN(eventDate.getTime()) && eventDate >= today) {
         events2026.push({
-          date: cells[0].textContent.trim(),
+          date: dateStr,
           day: cells[1].textContent.trim(),
           race: cells[2].textContent.trim(),
           venue: cells[3] ? cells[3].textContent.trim() : ''
@@ -336,8 +337,8 @@ function updateNavigationButtons() {
   const currentMonth = currentDate.getMonth();
   const currentYear = currentDate.getFullYear();
   
-  // Disable previous button if we're at or before the current month
-  if (displayedYear < currentYear || (displayedYear === currentYear && displayedMonth <= currentMonth)) {
+  // Disable previous button if we're before the current month
+  if (displayedYear < currentYear || (displayedYear === currentYear && displayedMonth < currentMonth)) {
     prevBtn.disabled = true;
   } else {
     prevBtn.disabled = false;
