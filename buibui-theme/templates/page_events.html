@@ -226,17 +226,25 @@ function parseEventsFromHTML() {
     return;
   }
   
-  // Parse table rows
+  // Get current date for filtering
+  const today = new Date();
+  today.setHours(0, 0, 0, 0); // Reset time to start of day for accurate comparison
+  
+  // Parse table rows and filter out past events
   const rows = eventsTable.querySelectorAll('tbody tr');
   rows.forEach(row => {
     const cells = row.querySelectorAll('td');
     if (cells.length >= 3) {
-      events2026.push({
-        date: cells[0].textContent.trim(),
-        day: cells[1].textContent.trim(),
-        race: cells[2].textContent.trim(),
-        venue: cells[3] ? cells[3].textContent.trim() : ''
-      });
+      const eventDate = new Date(cells[0].textContent.trim());
+      // Only include events that are today or in the future
+      if (eventDate >= today) {
+        events2026.push({
+          date: cells[0].textContent.trim(),
+          day: cells[1].textContent.trim(),
+          race: cells[2].textContent.trim(),
+          venue: cells[3] ? cells[3].textContent.trim() : ''
+        });
+      }
     }
   });
   
@@ -270,9 +278,10 @@ function formatDateDisplay(dateStr, day) {
   return `${day} ${dayNum} ${month}`;
 }
 
-// Current displayed month and year - start with January 2026
-let displayedMonth = 0; // January (0-11)
-let displayedYear = 2026;
+// Current displayed month and year - start with current month
+const currentDate = new Date();
+let displayedMonth = currentDate.getMonth(); // Current month (0-11)
+let displayedYear = currentDate.getFullYear();
 
 // Function to display events for a specific month
 function displayMonthEvents(month, year) {
@@ -322,8 +331,13 @@ function updateNavigationButtons() {
   const prevBtn = document.getElementById('prev-month');
   const nextBtn = document.getElementById('next-month');
   
-  // Disable previous button if we're at January 2026
-  if (displayedMonth === 0 && displayedYear === 2026) {
+  // Get current date for comparison
+  const currentDate = new Date();
+  const currentMonth = currentDate.getMonth();
+  const currentYear = currentDate.getFullYear();
+  
+  // Disable previous button if we're at or before the current month
+  if (displayedYear < currentYear || (displayedYear === currentYear && displayedMonth <= currentMonth)) {
     prevBtn.disabled = true;
   } else {
     prevBtn.disabled = false;
