@@ -3420,10 +3420,51 @@ section,
 
 /* Responsive Adjustments for Membership Page */
 @media (max-width: 991px) {
+  .membership-fees .feature-box,
+  .who-can-join .feature-box {
+    margin-bottom: 2rem;
+  }
+}
 
 @media (max-width: 767px) {
   .membership-fees .feature-box,
   .who-can-join .feature-box {
     margin-bottom: 2rem;
+  }
+}
+
+/*--------------------------------------------------------------
+# Coach Page Mobile Optimization
+--------------------------------------------------------------*/
+/* Optimize coach hero image for mobile devices */
+@media (max-width: 991px) {
+  #coach .coach-photo-wrapper {
+    max-height: 400px;
+    overflow: hidden;
+  }
+  
+  #coach .coach-hero-image {
+    object-fit: cover;
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 767px) {
+  #coach .coach-photo-wrapper {
+    max-height: 300px;
+  }
+  
+  #coach .coach-hero-image {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  #coach .coach-photo-wrapper {
+    max-height: 250px;
+  }
+  
+  #coach .coach-hero-image {
+    max-height: 250px;
   }
 }
