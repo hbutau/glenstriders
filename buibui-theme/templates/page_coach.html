@@ -1,15 +1,73 @@
 {% extends "base.html" %}
 {% block html_lang %}{{ page.lang }}{% endblock %}
-{% block title %}{{ page.title|striptags }}{% endblock %}
+{% block title %}Coach Itai Tembo (Coach Ittso) - Glen Striders Fitness & Conditioning Coach | Harare{% endblock %}
 
-{% block meta_description %}Meet Coach Itai Tembo (Coach Ittso) - Glen Striders' Fitness and Conditioning Coach. Over 25 years of sports development experience serving runners in Harare, Zimbabwe.{% endblock %}
-{% block meta_keywords %}running coach Harare, fitness coach Glen-View, conditioning coach Zimbabwe, running training Harare, sports coach Budiriro, athletics coach Glen Norah{% endblock %}
+{% block meta_description %}Meet Coach Itai Tembo (Coach Ittso), Glen Striders Running Club's certified Fitness and Conditioning Coach in Harare, Zimbabwe. 25+ years experience in athletic training, sports development, performance optimization, injury prevention, and cross-training for runners of all levels. Expert in running coaching, strength & conditioning, marathon training, 5K preparation, and endurance coaching serving Glen-View, Budiriro, Glen Norah communities.{% endblock %}
+{% block meta_keywords %}Itai Tembo coach, Coach Ittso, Glen Striders coach, running coach Harare, fitness coach Zimbabwe, conditioning coach Harare, personal running coach, marathon coach Harare, athletic coach Zimbabwe, sports development coach, running training Harare, fitness trainer Glen-View, endurance coach, strength and conditioning coach, cross-training coach, injury prevention coach, performance coach Zimbabwe, athletics coach Glen Norah, sports coach Budiriro, certified fitness coach, professional running coach, Glen Striders Running Club, running club Harare, Harare athletics, Zimbabwe running coach, 5K coach, 10K coach, half marathon training, marathon preparation Zimbabwe{% endblock %}
 
 {% block extra_head %}
   {% import 'translations.html' as translations with context %}
   {% if translations.entry_hreflang(page) %}
     {{ translations.entry_hreflang(page) }}
   {% endif %}
+  
+  <!-- Open Graph / Facebook Meta Tags for Social Media -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Coach Itai Tembo (Coach Ittso) - Glen Striders Fitness & Conditioning Coach">
+  <meta property="og:description" content="Meet Coach Itai Tembo, Glen Striders Running Club's certified Fitness and Conditioning Coach with 25+ years experience in Harare, Zimbabwe. Expert in running training, performance optimization, and athletic development.">
+  <meta property="og:url" content="{{ SITEURL }}/coach.html">
+  <meta property="og:image" content="{{ SITEURL }}/images/coach/itso-profile.webp">
+  <meta property="profile:first_name" content="Itai">
+  <meta property="profile:last_name" content="Tembo">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Coach Itai Tembo (Coach Ittso) - Glen Striders Fitness & Conditioning Coach">
+  <meta name="twitter:description" content="Meet Coach Itai Tembo, Glen Striders Running Club's certified Fitness and Conditioning Coach with 25+ years experience in Harare, Zimbabwe.">
+  <meta name="twitter:image" content="{{ SITEURL }}/images/coach/itso-profile.webp">
+  
+  <!-- Additional SEO Meta Tags -->
+  <meta name="author" content="Itai Tembo">
+  <meta name="geo.region" content="ZW-HA">
+  <meta name="geo.placename" content="Harare">
+  <meta name="geo.position" content="-17.8292;31.0522">
+  <meta name="ICBM" content="-17.8292, 31.0522">
+  
+  <!-- Schema.org Structured Data for Rich Snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Itai Tembo",
+    "alternateName": "Coach Ittso",
+    "jobTitle": "Fitness and Conditioning Coach",
+    "description": "Certified Fitness and Conditioning Coach with over 25 years of experience in sports development, athletic conditioning, training methodology, and performance optimization.",
+    "memberOf": {
+      "@type": "SportsOrganization",
+      "name": "Glen Striders Running Club",
+      "url": "{{ SITEURL }}",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Harare",
+        "addressCountry": "Zimbabwe"
+      }
+    },
+    "knowsAbout": [
+      "Running Training",
+      "Fitness Coaching",
+      "Conditioning",
+      "Athletic Development",
+      "Performance Optimization",
+      "Injury Prevention",
+      "Cross-Training",
+      "Strength and Conditioning",
+      "Marathon Training",
+      "Endurance Training"
+    ],
+    "image": "{{ SITEURL }}/images/coach/itso-profile.webp",
+    "url": "{{ SITEURL }}/coach.html"
+  }
+  </script>
 {% endblock %}
 
 {% block hero %}{% endblock %}
