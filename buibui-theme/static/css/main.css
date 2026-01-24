@@ -3436,35 +3436,47 @@ section,
 /*--------------------------------------------------------------
 # Coach Page Mobile Optimization
 --------------------------------------------------------------*/
-/* Optimize coach hero image for mobile devices */
+/* Optimize coach hero image for mobile devices - bi-fold layout */
+/* Image should be visible at top with heading text visible below without scrolling */
 @media (max-width: 991px) {
   #coach .coach-photo-wrapper {
-    max-height: 400px;
+    max-height: 350px;
     overflow: hidden;
   }
   
   #coach .coach-hero-image {
     object-fit: cover;
-    max-height: 400px;
+    max-height: 350px;
   }
 }
 
 @media (max-width: 767px) {
   #coach .coach-photo-wrapper {
-    max-height: 300px;
+    max-height: 280px;
   }
   
   #coach .coach-hero-image {
-    max-height: 300px;
+    max-height: 280px;
   }
 }
 
 @media (max-width: 480px) {
   #coach .coach-photo-wrapper {
-    max-height: 250px;
+    max-height: 220px;
   }
   
   #coach .coach-hero-image {
-    max-height: 250px;
+    max-height: 220px;
+  }
+}
+
+/* Additional optimization for very small screens */
+@media (max-width: 375px) {
+  #coach .coach-photo-wrapper {
+    max-height: 200px;
+  }
+  
+  #coach .coach-hero-image {
+    max-height: 200px;
   }
 }
