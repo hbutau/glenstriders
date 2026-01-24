@@ -3446,6 +3446,7 @@ section,
   
   #coach .coach-hero-image {
     object-fit: cover;
+    object-position: center top;
     max-height: 350px;
   }
 }
@@ -3457,6 +3458,7 @@ section,
   
   #coach .coach-hero-image {
     max-height: 280px;
+    object-position: center top;
   }
 }
 
@@ -3467,6 +3469,7 @@ section,
   
   #coach .coach-hero-image {
     max-height: 220px;
+    object-position: center top;
   }
 }
 
@@ -3478,5 +3481,6 @@ section,
   
   #coach .coach-hero-image {
     max-height: 200px;
+    object-position: center top;
   }
 }
