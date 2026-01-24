@@ -1,7 +1,7 @@
-Title: Training
+Title: Coach
 Date: 2026-01-24
-Slug: training
-Template: page_training
+Slug: coach
+Template: page_coach
 Status: published
 
 ## Meet Coach Itai Tembo (Coach Ittso)
