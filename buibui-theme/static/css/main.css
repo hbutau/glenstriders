@@ -3440,35 +3440,35 @@ section,
 /* Image should be visible at top with heading text visible below without scrolling */
 @media (max-width: 991px) {
   #coach .coach-photo-wrapper {
-    max-height: 350px;
+    max-height: 400px;
     overflow: hidden;
   }
   
   #coach .coach-hero-image {
     object-fit: cover;
     object-position: center top;
-    max-height: 350px;
+    max-height: 400px;
   }
 }
 
 @media (max-width: 767px) {
   #coach .coach-photo-wrapper {
-    max-height: 280px;
+    max-height: 320px;
   }
   
   #coach .coach-hero-image {
-    max-height: 280px;
+    max-height: 320px;
     object-position: center top;
   }
 }
 
 @media (max-width: 480px) {
   #coach .coach-photo-wrapper {
-    max-height: 220px;
+    max-height: 260px;
   }
   
   #coach .coach-hero-image {
-    max-height: 220px;
+    max-height: 260px;
     object-position: center top;
   }
 }
@@ -3476,11 +3476,11 @@ section,
 /* Additional optimization for very small screens */
 @media (max-width: 375px) {
   #coach .coach-photo-wrapper {
-    max-height: 200px;
+    max-height: 240px;
   }
   
   #coach .coach-hero-image {
-    max-height: 200px;
+    max-height: 240px;
     object-position: center top;
   }
 }
