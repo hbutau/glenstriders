@@ -1,0 +1,180 @@
+{% extends "base.html" %}
+{% block html_lang %}{{ page.lang }}{% endblock %}
+{% block title %}{{ page.title|striptags }}{% endblock %}
+
+{% block meta_description %}Meet Coach Itai Tembo (Coach Ittso) - Glen Striders' Fitness and Conditioning Coach. Over 25 years of sports development experience serving runners in Harare, Zimbabwe.{% endblock %}
+{% block meta_keywords %}running coach Harare, fitness coach Glen-View, conditioning coach Zimbabwe, running training Harare, sports coach Budiriro, athletics coach Glen Norah{% endblock %}
+
+{% block extra_head %}
+  {% import 'translations.html' as translations with context %}
+  {% if translations.entry_hreflang(page) %}
+    {{ translations.entry_hreflang(page) }}
+  {% endif %}
+{% endblock %}
+
+{% block hero %}{% endblock %}
+{% block home_sections %}{% endblock %}
+
+{% block content %}
+<!-- Coach Page -->
+<section id="coach" class="about section">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <!-- Coach Introduction with Photo -->
+    <div class="row align-items-center mb-5">
+      <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+        <div class="coach-photo-wrapper" style="position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+          <img src="{{ SITEURL }}/images/coach/itso-profile.webp" alt="Coach Itai Tembo (Coach Ittso)" class="img-fluid" style="width: 100%; height: auto; display: block;">
+        </div>
+      </div>
+      <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+        <h1 class="section-heading">Meet Coach Itai Tembo (Coach Ittso)</h1>
+        <p class="lead">Glen Striders is proud to welcome Coach Itai Tembo, affectionately known as <strong>Coach Ittso</strong>, as our Fitness and Conditioning Coach for 2026.</p>
+        <p>With over 25 years of experience in sports development, Coach Ittso brings a wealth of knowledge in athletic conditioning, training methodology, and performance optimization. His passion lies in nurturing athletes of all ages and abilities, helping them reach their full potential through structured, progressive training.</p>
+      </div>
+    </div>
+
+    <!-- Background & Expertise -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+        <h2 class="section-heading text-center mb-4">Background & Expertise</h2>
+        <div style="padding: 2rem; background: var(--surface-color); border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
+          <p>Coach Ittso's diverse sporting background spans multiple disciplines including <strong>soccer, netball, baseball, softball, tennis, athletics, and aerobics</strong>. This multi-sport experience gives him unique insights into cross-training principles, injury prevention, and building well-rounded athletic fitness—all essential elements for distance runners looking to improve their performance and longevity in the sport.</p>
+          <p class="mb-0">As a certified fitness and conditioning coach and sports official, he understands not just how to train athletes, but how to develop complete, resilient sportspeople who can perform consistently.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certification Photo -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8" data-aos="zoom-in" data-aos-delay="200">
+        <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+          <img src="{{ SITEURL }}/images/coach/certification.webp" alt="Coach Ittso's Fitness and Conditioning Certification" class="img-fluid" style="width: 100%; height: auto; display: block;">
+        </div>
+      </div>
+    </div>
+
+    <!-- Action Photo -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-10" data-aos="zoom-in" data-aos-delay="200">
+        <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+          <img src="{{ SITEURL }}/images/coach/baseball.webp" alt="Coach Ittso officiating at an international baseball tournament" class="img-fluid" style="width: 100%; height: auto; display: block;">
+        </div>
+      </div>
+    </div>
+
+    <!-- International Experience -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+        <h2 class="section-heading text-center mb-4">International Experience</h2>
+        <div style="padding: 2rem; background: color-mix(in srgb, var(--accent-color), transparent 95%); border-radius: 12px; border-left: 4px solid var(--accent-color);">
+          <p class="mb-3">Coach Ittso has represented Zimbabwe as an international baseball umpire at prestigious tournaments across Southern Africa, including:</p>
+          <div class="row">
+            <div class="col-md-6">
+              <ul class="list-unstyled">
+                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> U18 and Senior Ladies Baseball Championships (South Africa, 2024)</li>
+                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> U18 Baseball World Cup Qualifiers (South Africa, 2025)</li>
+                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Senior Southern Africa Baseball5 Qualifiers (Lesotho)</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-unstyled">
+                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> U23 Men's Baseball World Cup Qualifiers (South Africa, 2025)</li>
+                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Senior African Championships (Zambia)</li>
+                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Ladies African Championships (Harare, 2025)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- What This Means for Glen Striders -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-10 text-center mb-4" data-aos="fade-up">
+        <h2 class="section-heading">What This Means for Glen Striders</h2>
+        <p class="lead">As your conditioning coach, Coach Ittso will focus on:</p>
+      </div>
+    </div>
+
+    <div class="row g-4 mb-5">
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="feature-box" style="height: 100%;">
+          <div class="icon-container">
+            <i class="bi bi-award"></i>
+          </div>
+          <h4>Strength & Conditioning</h4>
+          <p>Tailored specifically for runners to build power and endurance</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="feature-box" style="height: 100%;">
+          <div class="icon-container">
+            <i class="bi bi-shield-check"></i>
+          </div>
+          <h4>Injury Prevention</h4>
+          <p>Through proper movement mechanics and core stability</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="feature-box" style="height: 100%;">
+          <div class="icon-container">
+            <i class="bi bi-activity"></i>
+          </div>
+          <h4>Cross-Training Programs</h4>
+          <p>To build overall athletic fitness and prevent burnout</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="feature-box" style="height: 100%;">
+          <div class="icon-container">
+            <i class="bi bi-arrows-move"></i>
+          </div>
+          <h4>Flexibility & Mobility</h4>
+          <p>Work to improve running efficiency and range of motion</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="feature-box" style="height: 100%;">
+          <div class="icon-container">
+            <i class="bi bi-graph-up-arrow"></i>
+          </div>
+          <h4>Progressive Training Plans</h4>
+          <p>Suitable for runners at all levels, from beginners to advanced</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="feature-box" style="height: 100%;">
+          <div class="icon-container">
+            <i class="bi bi-people"></i>
+          </div>
+          <h4>Holistic Approach</h4>
+          <p>Developing complete, well-rounded, resilient athletes</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="row justify-content-center mt-5">
+      <div class="col-lg-10 text-center" data-aos="fade-up">
+        <div style="padding: 2.5rem; background: linear-gradient(135deg, color-mix(in srgb, var(--accent-color), transparent 90%) 0%, color-mix(in srgb, var(--accent-color), transparent 95%) 100%); border-radius: 16px; border: 2px solid color-mix(in srgb, var(--accent-color), transparent 80%);">
+          <h3 style="color: var(--heading-color); margin-bottom: 1.5rem;">Ready to Take Your Running to the Next Level?</h3>
+          <p class="lead mb-4">Whether you're training for your first 5K or chasing a marathon personal best, Coach Ittso's holistic approach to fitness will help you become a stronger, faster, and more resilient runner.</p>
+          <a href="{{ SITEURL }}/membership.html" class="btn btn-primary btn-lg me-2 mb-2">
+            <i class="bi bi-person-plus"></i> Join Glen Striders
+          </a>
+          <a href="#contact" class="btn btn-outline-primary btn-lg mb-2">
+            <i class="bi bi-envelope"></i> Contact Us
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+{% endblock %}
