@@ -20,11 +20,11 @@
   <meta property="og:site_name" content="{{ SITENAME|striptags }}">
 
   <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="{% block twitter_url %}{{ SITEURL }}/{{ output_file }}{% endblock %}">
-  <meta property="twitter:title" content="{% block twitter_title %}{{ self.title() }}{% endblock %}">
-  <meta property="twitter:description" content="{% block twitter_description %}{{ self.meta_description() }}{% endblock %}">
-  <meta property="twitter:image" content="{% block twitter_image %}{{ SITEURL }}/{{ THEME_STATIC_DIR }}/assets/img/cover.png{% endblock %}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="{% block twitter_url %}{{ SITEURL }}/{{ output_file }}{% endblock %}">
+  <meta name="twitter:title" content="{% block twitter_title %}{{ self.title() }}{% endblock %}">
+  <meta name="twitter:description" content="{% block twitter_description %}{{ self.meta_description() }}{% endblock %}">
+  <meta name="twitter:image" content="{% block twitter_image %}{{ SITEURL }}/{{ THEME_STATIC_DIR }}/assets/img/cover.png{% endblock %}">
 
   <!-- Favicons -->
   <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/favicon.png" rel="icon">
