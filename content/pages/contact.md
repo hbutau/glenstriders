@@ -3,6 +3,7 @@ Date: 2025-01-25
 Slug: contact
 Template: page_contact
 Status: published
+Image: assets/img/hero-new.webp
 
 ## Get in Touch
 

@@ -14,7 +14,13 @@
   <meta property="og:url" content="{% block og_url %}{{ SITEURL }}/{{ output_file }}{% endblock %}">
   <meta property="og:title" content="{% block og_title %}{{ self.title() }}{% endblock %}">
   <meta property="og:description" content="{% block og_description %}{{ self.meta_description() }}{% endblock %}">
-  <meta property="og:image" content="{% block og_image %}{{ SITEURL }}/{{ THEME_STATIC_DIR }}/assets/img/cover.png{% endblock %}">
+  {% if page and page.image %}
+  <meta property="og:image" content="{% block og_image %}{{ SITEURL }}/{{ THEME_STATIC_DIR }}/{{ page.image }}{% endblock %}">
+  {% elif article and article.image %}
+  <meta property="og:image" content="{% block og_image_article %}{{ SITEURL }}/{{ THEME_STATIC_DIR }}/{{ article.image }}{% endblock %}">
+  {% else %}
+  <meta property="og:image" content="{% block og_image_default %}{{ SITEURL }}/{{ THEME_STATIC_DIR }}/assets/img/cover.png{% endblock %}">
+  {% endif %}
   <meta property="og:image:width" content="1536">
   <meta property="og:image:height" content="1024">
   <meta property="og:site_name" content="{{ SITENAME|striptags }}">
@@ -24,7 +30,13 @@
   <meta name="twitter:url" content="{% block twitter_url %}{{ SITEURL }}/{{ output_file }}{% endblock %}">
   <meta name="twitter:title" content="{% block twitter_title %}{{ self.title() }}{% endblock %}">
   <meta name="twitter:description" content="{% block twitter_description %}{{ self.meta_description() }}{% endblock %}">
-  <meta name="twitter:image" content="{% block twitter_image %}{{ SITEURL }}/{{ THEME_STATIC_DIR }}/assets/img/cover.png{% endblock %}">
+  {% if page and page.image %}
+  <meta name="twitter:image" content="{% block twitter_image %}{{ SITEURL }}/{{ THEME_STATIC_DIR }}/{{ page.image }}{% endblock %}">
+  {% elif article and article.image %}
+  <meta name="twitter:image" content="{% block twitter_image_article %}{{ SITEURL }}/{{ THEME_STATIC_DIR }}/{{ article.image }}{% endblock %}">
+  {% else %}
+  <meta name="twitter:image" content="{% block twitter_image_default %}{{ SITEURL }}/{{ THEME_STATIC_DIR }}/assets/img/cover.png{% endblock %}">
+  {% endif %}
 
   <!-- Favicons -->
   <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/favicon.png" rel="icon">
