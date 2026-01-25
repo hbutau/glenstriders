@@ -2,7 +2,7 @@
 {% block html_lang %}{{ page.lang }}{% endblock %}
 {% block title %}{{ page.title|striptags }}{% endblock %}
 
-{% block meta_description %}Contact Glen Striders Running Club - Get in touch via email, phone or WhatsApp. Join our community in Glen-View, Budiriro, Glen Norah, and High Glen areas of Harare, Zimbabwe.{% endblock %}
+{% block meta_description %}{% if page.description %}{{ page.description }}{% else %}Contact Glen Striders Running Club - Get in touch via email, phone or WhatsApp. Join our community in Glen-View, Budiriro, Glen Norah, and High Glen areas of Harare, Zimbabwe.{% endif %}{% endblock %}
 {% block meta_keywords %}contact Glen Striders, running club contact Harare, fitness inquiries Glen-View, Glen Striders email, Glen Striders phone, WhatsApp running club{% endblock %}
 
 {% block extra_head %}
