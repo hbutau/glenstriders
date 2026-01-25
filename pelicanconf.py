@@ -29,6 +29,7 @@ SOCIAL = (
     ("youtube", "https://www.youtube.com/@glenstriders"),
     ("tiktok", "https://www.tiktok.com/@glenstriders"),
     ("twitter-x", "https://x.com/glenstriders"),
+    ("strava", "https://www.strava.com/clubs/1275990"),
 )
 
 DEFAULT_PAGINATION = 10
