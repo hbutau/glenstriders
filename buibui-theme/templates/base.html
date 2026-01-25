@@ -9,6 +9,23 @@
   <meta name="description" content="{% block meta_description %}{{ SITENAME|striptags }}{% endblock %}">
   <meta name="keywords" content="{% block meta_keywords %}running club Harare, fitness Glen-View, running club Zimbabwe, jogging group Budiriro, fitness training Glen Norah, running High Glen, Glen Striders{% endblock %}">
 
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="{% block og_type %}website{% endblock %}">
+  <meta property="og:url" content="{% block og_url %}{{ SITEURL }}/{{ output_file }}{% endblock %}">
+  <meta property="og:title" content="{% block og_title %}{{ self.title() }}{% endblock %}">
+  <meta property="og:description" content="{% block og_description %}{{ self.meta_description() }}{% endblock %}">
+  <meta property="og:image" content="{% block og_image %}{{ SITEURL }}/{{ THEME_STATIC_DIR }}/assets/img/cover.png{% endblock %}">
+  <meta property="og:image:width" content="1536">
+  <meta property="og:image:height" content="1024">
+  <meta property="og:site_name" content="{{ SITENAME|striptags }}">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="{% block twitter_url %}{{ SITEURL }}/{{ output_file }}{% endblock %}">
+  <meta property="twitter:title" content="{% block twitter_title %}{{ self.title() }}{% endblock %}">
+  <meta property="twitter:description" content="{% block twitter_description %}{{ self.meta_description() }}{% endblock %}">
+  <meta property="twitter:image" content="{% block twitter_image %}{{ SITEURL }}/{{ THEME_STATIC_DIR }}/assets/img/cover.png{% endblock %}">
+
   <!-- Favicons -->
   <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/favicon.png" rel="icon">
   <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/apple-touch-icon.png" rel="apple-touch-icon">
