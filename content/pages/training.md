@@ -3,6 +3,7 @@ Date: 2026-01-24
 Slug: coach
 Template: page_coach
 Status: published
+Image: assets/img/hero-new.webp
 
 ## Meet Coach Itai Tembo (Coach Ittso)
 
