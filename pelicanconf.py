@@ -1,6 +1,6 @@
 AUTHOR = 'GlenStriders'
 SITENAME = 'GlenStriders | GlenStriders Running Club '
-SITEURL = ""
+SITEURL = "https://glenstriders.co.zw"
 
 PATH = "content"
 
@@ -35,7 +35,7 @@ SOCIAL = (
 DEFAULT_PAGINATION = 10
 
 # Use relative URLs for portability across different hosting environments
-RELATIVE_URLS = True
+RELATIVE_URLS = False
 
 # Page URL configuration - serve pages on root instead of pages/ subdirectory
 PAGE_URL = '{slug}.html'
