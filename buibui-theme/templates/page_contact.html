@@ -1,0 +1,267 @@
+{% extends "base.html" %}
+{% block html_lang %}{{ page.lang }}{% endblock %}
+{% block title %}{{ page.title|striptags }}{% endblock %}
+
+{% block meta_description %}Contact Glen Striders Running Club - Get in touch via email, phone or WhatsApp. Join our community in Glen-View, Budiriro, Glen Norah, and High Glen areas of Harare, Zimbabwe.{% endblock %}
+{% block meta_keywords %}contact Glen Striders, running club contact Harare, fitness inquiries Glen-View, Glen Striders email, Glen Striders phone, WhatsApp running club{% endblock %}
+
+{% block extra_head %}
+  {% import 'translations.html' as translations with context %}
+  {% if translations.entry_hreflang(page) %}
+    {{ translations.entry_hreflang(page) }}
+  {% endif %}
+{% endblock %}
+
+{% block hero %}{% endblock %}
+{% block home_sections %}{% endblock %}
+
+{% block content %}
+<!-- Contact Page -->
+<section id="contact" class="about section">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <!-- Page Header -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8 text-center mb-4">
+        <h2 class="section-heading">Contact Us</h2>
+        <p class="lead">We'd love to hear from you! Whether you have questions about membership, training sessions, or upcoming events, feel free to reach out.</p>
+      </div>
+    </div>
+
+    <!-- Contact Information Cards -->
+    <div class="row g-4 mb-5 justify-content-center">
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="feature-box text-center">
+          <div class="icon-container">
+            <i class="bi bi-envelope"></i>
+          </div>
+          <h4>Email Us</h4>
+          <p><a href="mailto:info@glenstriders.co.zw">info@glenstriders.co.zw</a></p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="feature-box text-center">
+          <div class="icon-container">
+            <i class="bi bi-phone"></i>
+          </div>
+          <h4>Call Us</h4>
+          <p><a href="tel:+263778459367">+263 778 459 367</a></p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="feature-box text-center">
+          <div class="icon-container">
+            <i class="bi bi-whatsapp"></i>
+          </div>
+          <h4>WhatsApp</h4>
+          <p><a href="https://wa.me/263778459367" target="_blank">Chat on WhatsApp</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Strava Club Link -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8 text-center" data-aos="fade-up">
+        <div style="padding: 2rem; background: color-mix(in srgb, var(--accent-color), transparent 90%); border-radius: 12px;">
+          <h3 style="color: var(--accent-color);">Join Our Strava Club</h3>
+          <p class="lead mb-4">Connect with us on Strava to track activities, participate in challenges, and stay connected with the running community!</p>
+          <a href="https://www.strava.com/clubs/1275990" target="_blank" class="btn btn-primary btn-lg">
+            <i class="bi bi-strava"></i> Join on Strava
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="contact-form-wrapper" data-aos="fade-up" data-aos-delay="400">
+          <h3 class="text-center mb-4">Send Us a Message</h3>
+          <form id="contactForm">
+            <!-- Name input-->
+            <div class="form-floating mb-3">
+              <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." required />
+              <label for="name">Full Name</label>
+              <div class="invalid-feedback">A name is required.</div>
+            </div>
+
+            <!-- Email address input-->
+            <div class="form-floating mb-3">
+              <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" required />
+              <label for="email">Email Address</label>
+              <div class="invalid-feedback">A valid email is required.</div>
+            </div>
+
+            <!-- Phone number input-->
+            <div class="form-floating mb-3">
+              <input class="form-control" id="phone" name="phone" type="tel" placeholder="+263 XXX XXX XXX" required />
+              <label for="phone">Phone Number</label>
+              <div class="invalid-feedback">A phone number is required.</div>
+            </div>
+
+            <!-- Message input-->
+            <div class="form-floating mb-3">
+              <textarea class="form-control" id="message" name="message" placeholder="Enter your message here..." style="height: 10rem" required></textarea>
+              <label for="message">Message</label>
+              <div class="invalid-feedback">A message is required.</div>
+            </div>
+
+            <!-- Submit success message-->
+            <div class="d-none" id="submitSuccessMessage">
+              <div class="alert alert-success text-center mb-3">
+                <div class="fw-bolder">Form submission successful!</div>
+                Thank you for contacting us. We'll get back to you soon!
+              </div>
+            </div>
+
+            <!-- Submit error message-->
+            <div class="d-none" id="submitErrorMessage">
+              <div class="alert alert-danger text-center mb-3">Error sending message! Please try again or contact us directly via email or phone.</div>
+            </div>
+
+            <!-- Submit Button-->
+            <div class="d-grid">
+              <button class="btn btn-primary btn-lg" id="submitButton" type="submit">
+                <span id="submitButtonText">Send Message</span>
+                <span class="spinner-border spinner-border-sm d-none" id="submitSpinner" role="status" aria-hidden="true"></span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+(function() {
+  'use strict';
+
+  // Get form elements
+  const form = document.getElementById('contactForm');
+  const submitButton = document.getElementById('submitButton');
+  const submitButtonText = document.getElementById('submitButtonText');
+  const submitSpinner = document.getElementById('submitSpinner');
+  const successMessage = document.getElementById('submitSuccessMessage');
+  const errorMessage = document.getElementById('submitErrorMessage');
+
+  if (!form) return;
+
+  // Form validation
+  function validateForm() {
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    // Reset validation states
+    form.querySelectorAll('.is-invalid').forEach(el => el.classList.remove('is-invalid'));
+    form.querySelectorAll('.is-valid').forEach(el => el.classList.remove('is-valid'));
+
+    let isValid = true;
+
+    // Validate name
+    if (name === '') {
+      document.getElementById('name').classList.add('is-invalid');
+      isValid = false;
+    } else {
+      document.getElementById('name').classList.add('is-valid');
+    }
+
+    // Validate email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (email === '' || !emailRegex.test(email)) {
+      document.getElementById('email').classList.add('is-invalid');
+      isValid = false;
+    } else {
+      document.getElementById('email').classList.add('is-valid');
+    }
+
+    // Validate phone
+    if (phone === '') {
+      document.getElementById('phone').classList.add('is-invalid');
+      isValid = false;
+    } else {
+      document.getElementById('phone').classList.add('is-valid');
+    }
+
+    // Validate message
+    if (message === '') {
+      document.getElementById('message').classList.add('is-invalid');
+      isValid = false;
+    } else {
+      document.getElementById('message').classList.add('is-valid');
+    }
+
+    return isValid;
+  }
+
+  // Handle form submission
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Hide previous messages
+    successMessage.classList.add('d-none');
+    errorMessage.classList.add('d-none');
+
+    // Validate form
+    if (!validateForm()) {
+      return;
+    }
+
+    // Show loading state
+    submitButton.disabled = true;
+    submitButtonText.textContent = 'Sending...';
+    submitSpinner.classList.remove('d-none');
+
+    // Get form data
+    const formData = {
+      name: document.getElementById('name').value.trim(),
+      email: document.getElementById('email').value.trim(),
+      phone: document.getElementById('phone').value.trim(),
+      message: document.getElementById('message').value.trim()
+    };
+
+    // Simulate form submission (in a real scenario, this would send data to a backend)
+    setTimeout(function() {
+      // For now, we'll show success message
+      // In production, you would integrate with a backend service or email API
+      
+      // Reset button state
+      submitButton.disabled = false;
+      submitButtonText.textContent = 'Send Message';
+      submitSpinner.classList.add('d-none');
+
+      // Show success message
+      successMessage.classList.remove('d-none');
+      
+      // Reset form
+      form.reset();
+      form.querySelectorAll('.is-valid').forEach(el => el.classList.remove('is-valid'));
+      
+      // Scroll to success message
+      successMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+      // Log form data to console (for development/testing)
+      console.log('Contact form submitted:', formData);
+      
+    }, 1500);
+  });
+
+  // Real-time validation on input
+  form.querySelectorAll('input, textarea').forEach(input => {
+    input.addEventListener('blur', function() {
+      if (this.value.trim() !== '') {
+        validateForm();
+      }
+    });
+  });
+
+})();
+</script>
+{% endblock %}
