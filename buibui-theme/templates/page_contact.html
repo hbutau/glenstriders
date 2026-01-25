@@ -282,11 +282,22 @@
       const phone = document.getElementById('phone').value.trim();
       const message = document.getElementById('message').value.trim();
 
-      // Format message for WhatsApp
-      const whatsappMessage = `*New Contact Form Submission*%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Email:* ${encodeURIComponent(email)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Message:* ${encodeURIComponent(message)}`;
+      // Format message for WhatsApp with proper encoding
+      const messageParts = [
+        '*New Contact Form Submission*',
+        '',
+        '*Name:* ' + name,
+        '*Email:* ' + email,
+        '*Phone:* ' + phone,
+        '*Message:* ' + message
+      ];
+      const whatsappMessage = encodeURIComponent(messageParts.join('\n'));
+      
+      // WhatsApp contact number
+      const whatsappNumber = '263778459367';
 
       // Open WhatsApp with pre-filled message
-      window.open(`https://wa.me/263778459367?text=${whatsappMessage}`, '_blank');
+      window.open(`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`, '_blank');
     });
   }
 
