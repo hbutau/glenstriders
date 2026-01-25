@@ -2,7 +2,7 @@
 {% block html_lang %}{{ page.lang }}{% endblock %}
 {% block title %}{{ page.title|striptags }}{% endblock %}
 
-{% block meta_description %}Glen Striders Running Events Calendar - Join us for marathons, fun runs, and running events in Harare, Zimbabwe{% endblock %}
+{% block meta_description %}{% if page.description %}{{ page.description }}{% else %}Glen Striders Running Events Calendar - Join us for marathons, fun runs, and running events in Harare, Zimbabwe{% endif %}{% endblock %}
 {% block meta_keywords %}running events Harare, marathon Zimbabwe, fun run Glen-View, running calendar Harare, race events Zimbabwe, Glen Striders events{% endblock %}
 
 {% block extra_head %}

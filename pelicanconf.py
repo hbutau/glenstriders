@@ -1,6 +1,6 @@
 AUTHOR = 'GlenStriders'
 SITENAME = 'GlenStriders | GlenStriders Running Club '
-SITEURL = ""
+SITEURL = "https://glenstriders.co.zw"
 
 PATH = "content"
 
@@ -29,12 +29,14 @@ SOCIAL = (
     ("youtube", "https://www.youtube.com/@glenstriders"),
     ("tiktok", "https://www.tiktok.com/@glenstriders"),
     ("twitter-x", "https://x.com/glenstriders"),
+    ("strava", "https://www.strava.com/clubs/1275990"),
 )
 
 DEFAULT_PAGINATION = 10
 
-# Use relative URLs for portability across different hosting environments
-RELATIVE_URLS = True
+# Use absolute URLs for proper Open Graph and Twitter Card meta tags
+# Social media platforms require absolute URLs to display images correctly
+RELATIVE_URLS = False
 
 # Page URL configuration - serve pages on root instead of pages/ subdirectory
 PAGE_URL = '{slug}.html'

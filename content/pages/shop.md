@@ -3,6 +3,7 @@ Date: 2024-12-17
 Slug: shop
 Template: page_shop
 Status: published
+Image: assets/img/hero-new.webp
 
 ## Glen Striders Club Shop
 
