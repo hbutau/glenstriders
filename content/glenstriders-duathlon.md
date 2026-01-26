@@ -1,0 +1,48 @@
+Title: Introducing the Glen Striders Duathlon Series: Running, Community, and Good Times! 
+Date: 2026-01-20 10:00
+Category: Social
+Tags: training, social
+Slug: glenstriders-duathlon
+Image: ./images/gsrc-duathlon.jpg
+Summary: At Glen Striders, we believe running isn't just about the kilometers – it's about the connections, the shared journey, and the incredible community we build together.
+Author: Humphrey
+
+At Glen Striders, we believe running isn't just about the kilometers and pounding the pavements – it's about the connections, the shared journey, and the incredible community we build together. That's why we're thrilled to announce a brand-new initiative designed to inject even more fun into our club activities: The Glen Striders Duathlon Series!
+
+
+<div class="text-center my-4">
+  <img src="{static}/images/gsrc-duathlon.jpg" alt="Glen Striders runners on a long slow distance run" class="img-fluid rounded">
+</div>
+
+### What is a Glen Striders Duathlon?
+
+Forget the traditional swim-bike-run! Our Duathlon is all about celebrating the joy of running, then seamlessly transitioning into a fun, low-cost social activity. It's our way of extending the camaraderie beyond the final stride, creating memorable experiences and stronger bonds within our running family. Each event will have a unique "Run To..." theme!
+
+We know that after a good run, there's nothing better than unwinding with friends, sharing stories, and making new connections. Our aim is to offer these moments without anyone feeling a pinch in their pocket. From post-run braais to scenic coffee mornings, we'll be exploring a variety of exciting options.
+
+### Kicking Off with "Run To Braai": Our Sizzle & Sprint Event!
+
+We're incredibly excited to launch our series with a true South African favorite: the "Run To Braai"! Imagine finishing a fantastic run, the endorphins flowing, and then settling down to the delicious aroma of a braai with your fellow Striders.
+
+    Date: [Insert Date Here, e.g., Saturday, [Date]]
+
+    Time: [Insert Start Time, e.g., 7:00 AM]
+
+    Run Route & Start: [Briefly describe the run, e.g., "A scenic 10km loop starting and finishing at [Location]."]
+
+    Post-Run Braai: We'll be heading to [Location of Braai] for some well-deserved recovery and social time.
+
+### Participation Details (Potluck Style!):
+To keep this event accessible and fun for everyone, we're making it a potluck braai!
+
+    What to bring: Please bring one item to share for the braai – perhaps your favourite braai meat, a pack of rolls, a tasty salad, or some cool drinks.
+
+    What the Club provides: We'll supply the charcoal and the braai stand, so all you need to bring is your appetite and good cheer!
+
+This is the perfect opportunity to meet new members, catch up with old friends, and create lasting memories. Whether you're a seasoned ultra-runner or just starting your running journey, all Glen Striders are welcome!
+
+How to Join Us: We kindly ask you to RSVP by [RSVP Date] so we can get a good headcount. Please reply to this email or sign up via [Link to Google Form/WhatsApp Group/Club Event Page] and let us know what delicious item you're planning to bring!
+
+Keep an eye on our website and social media for announcements about future "Run To..." Duathlon events, including "Run To Coffee," "Run To Plunge," and more!
+
+Let's make our runs even more rewarding. See you on the road and around the braai!
