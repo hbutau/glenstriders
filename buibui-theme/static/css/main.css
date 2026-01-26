@@ -3407,6 +3407,11 @@ section,
   border-radius: 4px;
 }
 
+.strava-icon-large {
+  font-size: 4rem;
+  color: #FC4C02;
+}
+
 @media (max-width: 768px) {
   .strava-widget-container {
     padding: 15px;
