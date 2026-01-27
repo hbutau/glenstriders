@@ -18,11 +18,27 @@ Glen Striders utilizes two primary training routes, each designed to develop dif
 
 The Amalinda-Fidelity Route is our flagship long-distance training route, perfect for marathon preparation and building aerobic endurance.
 
+| **Metric** | **Value** |
+|------------|-----------|
+| Distance | 13.28 km |
+| Elevation Gain | 104 meters |
+| Average Time | 1:36:20 |
+| Difficulty | Easy |
+| Best For | Long runs, endurance building, half-marathon & marathon preparation |
+
 This route takes runners through the scenic areas of Glen View and Glen Norah, with rolling hills that challenge without overwhelming. The moderate 104-meter elevation gain is distributed across the distance, making it ideal for maintaining steady aerobic effort. The route passes through South View Park, offering pleasant scenery and varied terrain that keeps the run engaging from start to finish.
 
 ### Route 2: Glen Striders Trabablas 10K
 
 The Trabablas 10K is our dynamic speed-work route, featuring varied terrain and strategic segments that build both speed and strength.
+
+| **Metric** | **Value** |
+|------------|-----------|
+| Distance | 10.01 km |
+| Elevation Gain | 86 meters |
+| Average Time | 1:16:52 |
+| Difficulty | Easy |
+| Best For | Speed work, tempo runs, 10K race pace training |
 
 **Key Segments:**
 
@@ -31,6 +47,16 @@ The Trabablas 10K is our dynamic speed-work route, featuring varied terrain and 
 - **Trabablas Wafa Wafa:** 1.16 km with 19m climb – strength-building hill work at 1.6% grade
 - **BOKA-Amalinda Bridge Down Run:** 1.60 km with 23m descent – longest segment for sustained effort
 - **Highglen House School Climb:** 0.71 km with 13m climb – challenging 1.8% grade finish
+
+### Side-by-Side Comparison
+
+| **Feature** | **Amalinda-Fidelity** | **Trabablas 10K** |
+|-------------|-----------------------|-------------------|
+| Best For | Long runs, endurance | Speed work, 10K training |
+| Total Climbing | 104m | 86m |
+| Terrain Variety | Moderate, rolling | High, distinct climbs/descents |
+| Training Focus | Volume, aerobic base | Intensity, race pace |
+| Ideal Race Prep | Half-marathon, marathon | 5K, 10K races |
 
 ## Training Recommendations
 
