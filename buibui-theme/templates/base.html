@@ -6,8 +6,8 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>{% block title %}{{ SITENAME|striptags }}{% endblock %}</title>
-  <meta name="description" content="{% block meta_description %}{{ SITENAME|striptags }}{% endblock %}">
-  <meta name="keywords" content="{% block meta_keywords %}running club Harare, fitness Glen-View, running club Zimbabwe, jogging group Budiriro, fitness training Glen Norah, running High Glen, Glen Striders{% endblock %}">
+  <meta name="description" content="{% block meta_description %}Glen Striders Running Club - Join Harare's premier running community serving Glen View, Glen Norah, NBS, Fidelity, South View Park, Waterfalls & South Lea Park.{% endblock %}">
+  <meta name="keywords" content="{% block meta_keywords %}running club Harare, fitness Glen View, running Zimbabwe, Glen Norah, NBS, Fidelity, South View Park, marathon training{% endblock %}">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="{% block og_type %}website{% endblock %}">
@@ -45,6 +45,80 @@
   <!-- Favicons -->
   <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/favicon.png" rel="icon">
   <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Schema.org Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsOrganization",
+    "name": "Glen Striders Running Club",
+    "alternateName": "Glen Striders",
+    "url": "{{ SITEURL }}",
+    "logo": "{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/glen-striders-text-logo.webp",
+    "description": "Premier running and fitness community in Harare, Zimbabwe serving Glen View, Glen Norah, NBS, Fidelity, South View Park, Waterfalls, and South Lea Park. Weekly training sessions for runners of all levels.",
+    "foundingDate": "2020-01-01",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Harare",
+      "addressRegion": "Harare",
+      "addressCountry": "ZW"
+    },
+    "areaServed": [
+      {
+        "@type": "Place",
+        "name": "Glen View"
+      },
+      {
+        "@type": "Place",
+        "name": "Glen Norah"
+      },
+      {
+        "@type": "Place",
+        "name": "NBS"
+      },
+      {
+        "@type": "Place",
+        "name": "Fidelity"
+      },
+      {
+        "@type": "Place",
+        "name": "South View Park"
+      },
+      {
+        "@type": "Place",
+        "name": "Waterfalls"
+      },
+      {
+        "@type": "Place",
+        "name": "South Lea Park"
+      },
+      {
+        "@type": "Place",
+        "name": "Harare"
+      }
+    ],
+    "sport": "Running",
+    "memberOf": {
+      "@type": "Organization",
+      "name": "Zimbabwe Athletics"
+    },
+    "sameAs": [
+      "https://www.facebook.com/glenstriders",
+      "https://www.youtube.com/@glenstriders",
+      "https://www.tiktok.com/@glenstriders",
+      "https://x.com/glenstriders",
+      "https://www.strava.com/clubs/1275990"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+263-778-459-367",
+      "contactType": "customer service",
+      "email": "info@glenstriders.co.zw",
+      "areaServed": "ZW",
+      "availableLanguage": ["en"]
+    }
+  }
+  </script>
 
   <!-- Preload hero image for better performance -->
   <link rel="preload" as="image" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/assets/img/hero-image.webp">
