@@ -1,0 +1,246 @@
+{% extends "base.html" %}
+{% block html_lang %}{{ page.lang }}{% endblock %}
+{% block title %}{{ page.title|striptags }} - Sponsorship Opportunities{% endblock %}
+
+{% block meta_description %}{% if page.description %}{{ page.description }}{% else %}Support Glen Striders Running Club through our sponsorship program. Sponsorship packages from $150/year. Reach active, health-conscious runners in Harare, Zimbabwe. Contact us at info@glenstriders.co.zw{% endif %}{% endblock %}
+{% block meta_keywords %}Glen Striders sponsors, running club sponsorship Harare, sports sponsorship Zimbabwe, fitness sponsorship Glen-View, running event sponsorship, community sponsorship Harare, brand visibility Zimbabwe, sports marketing Harare{% endblock %}
+
+<!-- Enhanced Open Graph tags for social sharing -->
+{% block og_type %}website{% endblock %}
+{% block og_title %}Sponsor Glen Striders Running Club - Community Partnership Opportunities{% endblock %}
+{% block og_description %}Support Harare's premier running club. Sponsorship packages from Starting Line donations to Gold Title Sponsor ($500/year). Reach active runners across Glen-View, Budiriro, Glen Norah, and High Glen.{% endblock %}
+
+<!-- Enhanced Twitter Card tags -->
+{% block twitter_title %}Sponsor Glen Striders - Running Club Partnership Opportunities in Harare{% endblock %}
+{% block twitter_description %}Support a vibrant running community in Zimbabwe. Multiple sponsorship levels available. Connect with health-conscious runners across Harare.{% endblock %}
+
+{% block extra_head %}
+  {% import 'translations.html' as translations with context %}
+  {% if translations.entry_hreflang(page) %}
+    {{ translations.entry_hreflang(page) }}
+  {% endif %}
+  
+  <!-- Additional SEO meta tags -->
+  <meta name="author" content="Glen Striders Running Club">
+  <meta name="geo.region" content="ZW-HA">
+  <meta name="geo.placename" content="Harare">
+  <meta name="geo.position" content="-17.8252;31.0335">
+  <meta name="ICBM" content="-17.8252, 31.0335">
+  
+  <!-- Schema.org structured data for local business and sponsorship -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsOrganization",
+    "name": "Glen Striders Running Club",
+    "url": "{{ SITEURL }}/sponsors.html",
+    "logo": "{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/glen-striders-text-logo.webp",
+    "description": "Non-profit running club serving Harare, Zimbabwe. Offering sponsorship opportunities to support local running community.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Harare",
+      "addressCountry": "ZW"
+    },
+    "sameAs": [
+      "https://www.facebook.com/glenstriders",
+      "https://www.instagram.com/glenstriders",
+      "https://www.strava.com/clubs/1275990"
+    ]
+  }
+  </script>
+{% endblock %}
+
+{% block hero %}{% endblock %}
+{% block home_sections %}{% endblock %}
+
+{% block content %}
+<!-- Sponsors Page -->
+<section id="sponsors" class="about section">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <!-- Page Header -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8 text-center mb-4">
+        <h1 class="section-heading">Sponsorship Program</h1>
+        <p class="lead">The Glen Striders Running Club is a non-profit, all-volunteer organization. We count on the efforts of our members and community support to fulfill our mission to support runners in our area.</p>
+      </div>
+    </div>
+
+    <!-- Introduction -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8 text-center mb-4">
+        <p>There are exciting new changes to the club with a redesigned website and social media, new board, and new sponsorship program. Glen Striders serves the running community in Glen-View, Budiriro, Glen Norah, High Glen, and surrounding areas of Harare, Zimbabwe.</p>
+        <p>By sponsoring Glen Striders, you'll be supporting a vibrant running community while gaining visibility among health-conscious, active individuals in Harare.</p>
+      </div>
+    </div>
+
+    <!-- Sponsorship Levels -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8 text-center mb-4">
+        <h2 class="section-heading">Sponsorship Levels</h2>
+        <p class="lead">Choose a sponsorship level that works for your business</p>
+      </div>
+    </div>
+    
+    <div class="row g-4 mb-5 justify-content-center">
+      <!-- Starting Line Tier -->
+      <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="feature-box">
+          <div class="icon-container">
+            <i class="bi bi-gift"></i>
+          </div>
+          <h4>Starting Line</h4>
+          <p class="text-muted">In Kind Donations, Gear, and Discounts</p>
+          <p>Help your business or brand reach new runners in our community and drive traffic to your business through:</p>
+          <ul class="text-start">
+            <li>Coupons and discount codes for club members</li>
+            <li>Product samples and freebies</li>
+            <li>Services or merchandise offered to club members</li>
+            <li>Gear donations for club events and giveaways</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bronze Tier -->
+      <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="feature-box">
+          <div class="icon-container">
+            <i class="bi bi-globe"></i>
+          </div>
+          <h4>Bronze – Web Sponsor</h4>
+          <h3 style="color: var(--accent-color); margin: 1rem 0;">$150</h3>
+          <p class="text-muted">per year</p>
+          <p>Reach running enthusiasts across Harare with digital presence:</p>
+          <ul class="text-start">
+            <li>Logo placement on Glen Striders website</li>
+            <li>Direct link to your business website</li>
+            <li>Featured posts on Facebook</li>
+            <li>Mentions on Strava club page</li>
+            <li>Recognition on Instagram</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Silver Tier -->
+      <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="feature-box">
+          <div class="icon-container">
+            <i class="bi bi-calendar-event"></i>
+          </div>
+          <h4>Silver – Event Sponsor</h4>
+          <h3 style="color: var(--accent-color); margin: 1rem 0;">$250</h3>
+          <p class="text-muted">per year</p>
+          <p>Be the official sponsor of a Glen Striders event and create memorable brand associations:</p>
+          <ul class="text-start">
+            <li>Glen Striders Pizza Night</li>
+            <li>Saturday Group Run</li>
+            <li>Tuesday Pub Run</li>
+            <li>Glen Striders Races</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Gold Tier -->
+      <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="feature-box">
+          <div class="icon-container">
+            <i class="bi bi-trophy"></i>
+          </div>
+          <h4>Gold – Title Sponsor</h4>
+          <h3 style="color: var(--accent-color); margin: 1rem 0;">$500+</h3>
+          <p class="text-muted">per year or more</p>
+          <p>Become a presenting sponsor of all Glen Striders races and events:</p>
+          <ul class="text-start">
+            <li>Title sponsor recognition on all publications</li>
+            <li>Prominent placement on website homepage</li>
+            <li>Featured in all social media posts</li>
+            <li>Logo on club communications and materials</li>
+            <li>VIP access to club events</li>
+            <li>All Bronze and Silver tier benefits</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Why Sponsor Section -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8 text-center mb-4">
+        <h2 class="section-heading">Why Sponsor Glen Striders?</h2>
+        <p class="lead">Join us as we expand running culture in Harare, Zimbabwe</p>
+      </div>
+    </div>
+
+    <div class="row g-4 mb-5">
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="feature-box">
+          <div class="icon-container">
+            <i class="bi bi-graph-up-arrow"></i>
+          </div>
+          <h4>Growing Community</h4>
+          <p>Expanding running culture in Harare</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="feature-box">
+          <div class="icon-container">
+            <i class="bi bi-people-fill"></i>
+          </div>
+          <h4>Engaged Audience</h4>
+          <p>Active, health-conscious individuals</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="feature-box">
+          <div class="icon-container">
+            <i class="bi bi-heart-pulse"></i>
+          </div>
+          <h4>Social Impact</h4>
+          <p>Support health and fitness in local communities</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="feature-box">
+          <div class="icon-container">
+            <i class="bi bi-geo-alt"></i>
+          </div>
+          <h4>Local Presence</h4>
+          <p>Connect with customers across Harare</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Custom Partnership CTA -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8 text-center" data-aos="fade-up">
+        <h2 class="section-heading">Want to Team Up for Something Else?</h2>
+        <p class="lead mb-4">We're open to custom sponsorship arrangements and creative partnerships. Whether you have products, services, or ideas that could benefit our running community, we'd love to hear from you.</p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+          <a href="mailto:info@glenstriders.co.zw" class="btn btn-primary">
+            <i class="bi bi-envelope"></i> Email Us
+          </a>
+          <a href="https://www.facebook.com/glenstriders" class="btn btn-outline-primary">
+            <i class="bi bi-facebook"></i> Message on Facebook
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Final CTA -->
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center" data-aos="fade-up">
+        <div style="padding: 2rem; background: color-mix(in srgb, var(--accent-color), transparent 90%); border-radius: 12px;">
+          <h3 style="color: var(--accent-color);">Ready to Sponsor the Club?</h3>
+          <p class="lead mb-4">Together, we can build a stronger, healthier running community in Zimbabwe!</p>
+          <a href="mailto:info@glenstriders.co.zw" class="btn btn-primary btn-lg">
+            <i class="bi bi-envelope"></i> Contact Us: info@glenstriders.co.zw
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+{% endblock %}
