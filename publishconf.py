@@ -10,8 +10,7 @@ from pelicanconf import *
 # If your site is available via HTTPS, make sure SITEURL begins with https://
 # IMPORTANT: Set this to your actual domain for proper sitemap generation (e.g., "https://www.glenstriders.com")
 SITEURL = "https://glenstriders.co.zw"
-# Use relative URLs to ensure CSS and assets load correctly regardless of deployment path
-RELATIVE_URLS = True
+# RELATIVE_URLS is already set to False in pelicanconf.py for proper Open Graph/Twitter Card meta tags
 
 FEED_ALL_ATOM = "feeds/all.atom.xml"
 CATEGORY_FEED_ATOM = "feeds/{slug}.atom.xml"

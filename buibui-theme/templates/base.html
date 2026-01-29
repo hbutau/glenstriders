@@ -9,6 +9,39 @@
   <meta name="description" content="{% block meta_description %}{{ SITENAME|striptags }}{% endblock %}">
   <meta name="keywords" content="{% block meta_keywords %}running club Harare, fitness Glen-View, running club Zimbabwe, jogging group Budiriro, fitness training Glen Norah, running High Glen, Glen Striders{% endblock %}">
 
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="{% block og_type %}website{% endblock %}">
+  <meta property="og:url" content="{% block og_url %}{{ SITEURL }}/{{ output_file }}{% endblock %}">
+  <meta property="og:title" content="{% block og_title %}{{ self.title() }}{% endblock %}">
+  <meta property="og:description" content="{% block og_description %}{{ self.meta_description() }}{% endblock %}">
+  {% block og_image %}
+  {% if page and page.image %}
+  <meta property="og:image" content="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/{{ page.image }}">
+  {% elif article and article.image %}
+  <meta property="og:image" content="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/{{ article.image }}">
+  {% else %}
+  <meta property="og:image" content="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/assets/img/cover.png">
+  {% endif %}
+  {% endblock %}
+  <meta property="og:image:width" content="1536">
+  <meta property="og:image:height" content="1024">
+  <meta property="og:site_name" content="{{ SITENAME|striptags }}">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="{% block twitter_url %}{{ SITEURL }}/{{ output_file }}{% endblock %}">
+  <meta name="twitter:title" content="{% block twitter_title %}{{ self.title() }}{% endblock %}">
+  <meta name="twitter:description" content="{% block twitter_description %}{{ self.meta_description() }}{% endblock %}">
+  {% block twitter_image %}
+  {% if page and page.image %}
+  <meta name="twitter:image" content="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/{{ page.image }}">
+  {% elif article and article.image %}
+  <meta name="twitter:image" content="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/{{ article.image }}">
+  {% else %}
+  <meta name="twitter:image" content="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/assets/img/cover.png">
+  {% endif %}
+  {% endblock %}
+
   <!-- Favicons -->
   <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/favicon.png" rel="icon">
   <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -60,7 +93,7 @@
           <li><a href="{{ SITEURL }}/blog.html">Blog</a></li>
           <li><a href="{{ SITEURL }}/shop.html">Shop</a></li>
           <li><a href="{{ SITEURL }}/membership.html">Membership</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="{{ SITEURL }}/contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>

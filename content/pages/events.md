@@ -3,6 +3,7 @@ Date: 2024-12-31
 Slug: events
 Template: page_events
 Status: published
+Image: assets/img/hero-new.webp
 
 ## 2026 Running Events Calendar
 
