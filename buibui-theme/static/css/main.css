@@ -3420,6 +3420,8 @@ section,
 
 /* Responsive Adjustments for Membership Page */
 @media (max-width: 991px) {
+  /* Add styles here if needed */
+}
 
 @media (max-width: 767px) {
   .membership-fees .feature-box,
@@ -3525,5 +3527,4 @@ section,
 
 .entry-content table.table-striped tbody tr:hover {
   background-color: color-mix(in srgb, var(--accent-color), transparent 93%);
-}
 }
