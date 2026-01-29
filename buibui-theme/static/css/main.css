@@ -3418,11 +3418,6 @@ section,
   }
 }
 
-/* Responsive Adjustments for Membership Page */
-@media (max-width: 991px) {
-  /* Add styles here if needed */
-}
-
 @media (max-width: 767px) {
   .membership-fees .feature-box,
   .who-can-join .feature-box {
@@ -3470,7 +3465,7 @@ section,
 
 .entry-content table tbody tr:hover {
   background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
-  transform: scale(1.01);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
 
 .entry-content table tbody td {
@@ -3487,25 +3482,11 @@ section,
   min-width: 150px;
 }
 
-.entry-content table tbody td:last-child {
-  color: var(--default-color);
-}
-
-/* Three-column comparison tables */
-.entry-content table thead th:first-child {
-  border-top-left-radius: 8px;
-}
-
-.entry-content table thead th:last-child {
-  border-top-right-radius: 8px;
-}
-
 /* Responsive table design */
 @media (max-width: 768px) {
   .entry-content table {
     display: block;
     overflow-x: auto;
-    white-space: nowrap;
     -webkit-overflow-scrolling: touch;
   }
   
