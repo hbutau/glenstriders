@@ -9,7 +9,6 @@ Author: Humphrey
 
 At Glen Striders, we believe running isn't just about the kilometers and pounding the pavements – it's about the connections, the shared journey, and the incredible community we build together. That's why we're thrilled to announce a brand-new initiative designed to inject even more fun into our club activities: The Glen Striders Duathlon Series!
 
-
 <div class="text-center my-4">
   <img src="{static}/images/gsrc-duathlon.jpg" alt="Glen Striders runners on a long slow distance run" class="img-fluid rounded">
 </div>
@@ -41,7 +40,7 @@ To keep this event accessible and fun for everyone, we're making it a potluck br
 
 This is the perfect opportunity to meet new members, catch up with old friends, and create lasting memories. Whether you're a seasoned ultra-runner or just starting your running journey, all Glen Striders are welcome!
 
-How to Join Us: We kindly ask you to RSVP by [RSVP Date] so we can get a good headcount. Please reply to this email or sign up via [Link to Google Form/WhatsApp Group/Club Event Page] and let us know what delicious item you're planning to bring!
+How to Join Us: We kindly ask you to RSVP by [RSVP Date] so we can get a good headcount. Please contact the club or sign up via [Link to Google Form/WhatsApp Group/Club Event Page] and let us know what delicious item you're planning to bring!
 
 Keep an eye on our website and social media for announcements about future "Run To..." Duathlon events, including "Run To Coffee," "Run To Plunge," and more!
 
