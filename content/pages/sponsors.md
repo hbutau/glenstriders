@@ -4,7 +4,7 @@ Slug: sponsors
 Template: page_sponsors
 Status: published
 Image: assets/img/hero-new.webp
-Description: Support Glen Striders Running Club through our sponsorship program. Help us grow running culture in Glen View, Glen Norah, NBS, Fidelity, South View Park, Waterfalls, and South Lea Park areas of Harare, Zimbabwe with sponsorship packages from Starting Line to Gold Title Sponsor.
+Description: Sponsor Glen Striders - Support running in Glen View, Glen Norah, NBS, Fidelity, South View Park, Waterfalls & South Lea Park. Packages from $150/year.
 
 ## Sponsorship Program
 
