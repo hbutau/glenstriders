@@ -4,13 +4,13 @@ Slug: sponsors
 Template: page_sponsors
 Status: published
 Image: assets/img/hero-new.webp
-Description: Support Glen Striders Running Club through our sponsorship program. Help us grow running culture in Harare, Zimbabwe with sponsorship packages from Starting Line to Gold Title Sponsor.
+Description: Support Glen Striders Running Club through our sponsorship program. Help us grow running culture in Glen View, Glen Norah, NBS, Fidelity, South View Park, Waterfalls, and South Lea Park areas of Harare, Zimbabwe with sponsorship packages from Starting Line to Gold Title Sponsor.
 
 ## Sponsorship Program
 
 The Glen Striders Running Club is a non-profit, all-volunteer organization. We count on the efforts of our members and community support to fulfill our mission to support runners in our area. There are exciting new changes to the club with a redesigned website and social media, new board, and new sponsorship program.
 
-Glen Striders serves the running community in Glen-View, Budiriro, Glen Norah, High Glen, and surrounding areas of Harare, Zimbabwe. We organize weekly training sessions, social runs, and community events that promote health, fitness, and camaraderie among runners of all levels.
+Glen Striders serves the running community in Glen View, Glen Norah, NBS, Fidelity, South View Park, Waterfalls, South Lea Park, and surrounding areas of Harare, Zimbabwe. We organize weekly training sessions, social runs, and community events that promote health, fitness, and camaraderie among runners of all levels.
 
 ### Ready to Sponsor the Club?
 
@@ -73,7 +73,7 @@ Become a presenting sponsor of all Glen Striders races and events:
 - **Engaged Audience**: Our members are active, health-conscious individuals
 - **Social Impact**: Support health and fitness in local communities
 - **Brand Alignment**: Associate with positive values of determination, health, and community
-- **Local Presence**: Connect with customers in Glen-View, Budiriro, Glen Norah, High Glen, and broader Harare area
+- **Local Presence**: Connect with customers in Glen View, Glen Norah, NBS, Fidelity, South View Park, Waterfalls, South Lea Park, and broader Harare area
 
 ### Want to Team Up for Something Else?
 

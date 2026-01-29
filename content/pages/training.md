@@ -4,7 +4,7 @@ Slug: coach
 Template: page_coach
 Status: published
 Image: assets/img/hero-new.webp
-Description: Meet Coach Itai Tembo (Coach Ittso), Glen Striders' expert Fitness and Conditioning Coach with 25+ years of sports development experience. Professional coaching for runners of all levels in Harare, Zimbabwe.
+Description: Meet Coach Itai Tembo (Coach Ittso), Glen Striders' expert Fitness and Conditioning Coach with 25+ years of sports development experience. Professional coaching for runners of all levels in Glen View, Glen Norah, NBS, Fidelity, South View Park, Waterfalls, South Lea Park, and greater Harare, Zimbabwe.
 
 ## Meet Coach Itai Tembo (Coach Ittso)
 
