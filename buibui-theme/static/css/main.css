@@ -3427,3 +3427,103 @@ section,
     margin-bottom: 2rem;
   }
 }
+
+/*--------------------------------------------------------------
+# Beautiful Table Styles for Blog Posts
+--------------------------------------------------------------*/
+.entry-content table {
+  width: 100%;
+  margin: 2rem 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  background-color: var(--surface-color);
+}
+
+.entry-content table thead {
+  background: linear-gradient(135deg, var(--accent-color) 0%, color-mix(in srgb, var(--accent-color), #000 15%) 100%);
+}
+
+.entry-content table thead th {
+  color: var(--contrast-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 0.5px;
+  padding: 1rem 1.25rem;
+  border: none;
+  text-align: left;
+}
+
+.entry-content table tbody tr {
+  transition: all 0.3s ease;
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.entry-content table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.entry-content table tbody tr:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+  transform: scale(1.01);
+}
+
+.entry-content table tbody td {
+  padding: 1rem 1.25rem;
+  color: var(--default-color);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  border: none;
+}
+
+.entry-content table tbody td:first-child {
+  font-weight: 600;
+  color: var(--heading-color);
+  min-width: 150px;
+}
+
+.entry-content table tbody td:last-child {
+  color: var(--default-color);
+}
+
+/* Three-column comparison tables */
+.entry-content table thead th:first-child {
+  border-top-left-radius: 8px;
+}
+
+.entry-content table thead th:last-child {
+  border-top-right-radius: 8px;
+}
+
+/* Responsive table design */
+@media (max-width: 768px) {
+  .entry-content table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .entry-content table thead th,
+  .entry-content table tbody td {
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+  }
+  
+  .entry-content table tbody td:first-child {
+    min-width: 120px;
+  }
+}
+
+/* Alternative: Striped style for variety */
+.entry-content table.table-striped tbody tr:nth-child(even) {
+  background-color: color-mix(in srgb, var(--default-color), transparent 97%);
+}
+
+.entry-content table.table-striped tbody tr:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 93%);
+}
+}
