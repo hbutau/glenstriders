@@ -760,6 +760,12 @@ section,
   z-index: 0;
 }
 
+@media (max-width: 768px) {
+  .hero .hero-background {
+    background-position: center top;
+  }
+}
+
 .hero .hero-overlay {
   position: absolute;
   top: 0;
@@ -788,7 +794,8 @@ section,
 .hero .hero-tag {
   display: inline-flex;
   align-items: center;
-  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  background-color: color-mix(in srgb, var(--accent-color), transparent 80%);
+  backdrop-filter: blur(4px);
   padding: 0.5rem 1rem;
   border-radius: 50px;
   margin-bottom: 1rem;
