@@ -1,0 +1,253 @@
+{% extends "base.html" %}
+{% block html_lang %}{{ page.lang }}{% endblock %}
+{% block title %}{{ page.title|striptags }}{% endblock %}
+
+{% block meta_description %}Glen Striders Photo Gallery - Running club photos, team activities, and events from Glen-View, Budiriro, Glen Norah, and High Glen, Harare, Zimbabwe{% endblock %}
+{% block meta_keywords %}running club photos Harare, Glen Striders gallery, fitness community Glen-View, running events Zimbabwe, club activities Budiriro, team photos Glen Norah, running group High Glen{% endblock %}
+
+{% block extra_head %}
+  {% import 'translations.html' as translations with context %}
+  {% if translations.entry_hreflang(page) %}
+    {{ translations.entry_hreflang(page) }}
+  {% endif %}
+{% endblock %}
+
+{% block hero %}{% endblock %}
+{% block home_sections %}{% endblock %}
+
+{% block content %}
+<!-- Gallery Page -->
+<section id="gallery" class="about section">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    
+    <!-- Page Title -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8 text-center" data-aos="fade-up" data-aos-delay="200">
+        <h2 class="section-heading">Glen Striders Photo Gallery</h2>
+        <p class="lead">Browse through our collection of photos showcasing our running community, training sessions, events, and club activities.</p>
+      </div>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="row g-4 mb-5">
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="gallery-item">
+          <picture>
+            <source srcset="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/gallery/gallery-01.webp" type="image/webp">
+            <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/gallery/gallery-01.jpg" alt="Glen Striders Running Club Team" class="img-fluid gallery-image" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this)">
+          </picture>
+          <div class="gallery-overlay">
+            <i class="bi bi-zoom-in"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="gallery-item">
+          <picture>
+            <source srcset="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/gallery/gallery-02.webp" type="image/webp">
+            <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/gallery/gallery-02.jpg" alt="Glen Striders Community Runners" class="img-fluid gallery-image" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this)">
+          </picture>
+          <div class="gallery-overlay">
+            <i class="bi bi-zoom-in"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="gallery-item">
+          <picture>
+            <source srcset="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/gallery/gallery-03.webp" type="image/webp">
+            <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/gallery/gallery-03.jpg" alt="Glen Striders Training Session" class="img-fluid gallery-image" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this)">
+          </picture>
+          <div class="gallery-overlay">
+            <i class="bi bi-zoom-in"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="gallery-item">
+          <picture>
+            <source srcset="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/gallery/gallery-04.webp" type="image/webp">
+            <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/gallery/gallery-04.jpg" alt="Glen Striders Group Run" class="img-fluid gallery-image" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this)">
+          </picture>
+          <div class="gallery-overlay">
+            <i class="bi bi-zoom-in"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+        <div class="gallery-item">
+          <picture>
+            <source srcset="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/gallery/gallery-05.webp" type="image/webp">
+            <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/gallery/gallery-05.jpg" alt="Glen Striders Race Event" class="img-fluid gallery-image" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this)">
+          </picture>
+          <div class="gallery-overlay">
+            <i class="bi bi-zoom-in"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+        <div class="gallery-item">
+          <picture>
+            <source srcset="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/gallery/gallery-06.webp" type="image/webp">
+            <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/gallery/gallery-06.jpg" alt="Glen Striders Team Photo" class="img-fluid gallery-image" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this)">
+          </picture>
+          <div class="gallery-overlay">
+            <i class="bi bi-zoom-in"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="700">
+        <div class="gallery-item">
+          <picture>
+            <source srcset="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/gallery/gallery-07.webp" type="image/webp">
+            <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/gallery/gallery-07.jpg" alt="Glen Striders Running Duo" class="img-fluid gallery-image" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this)">
+          </picture>
+          <div class="gallery-overlay">
+            <i class="bi bi-zoom-in"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="800">
+        <div class="gallery-item">
+          <picture>
+            <source srcset="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/gallery/gallery-08.webp" type="image/webp">
+            <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/gallery/gallery-08.jpg" alt="Glen Striders Toll Gate Run" class="img-fluid gallery-image" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this)">
+          </picture>
+          <div class="gallery-overlay">
+            <i class="bi bi-zoom-in"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social Media Link -->
+    <div class="row justify-content-center mt-5">
+      <div class="col-lg-8 text-center" data-aos="fade-up">
+        <div style="padding: 2rem; background: color-mix(in srgb, var(--accent-color), transparent 90%); border-radius: 12px;">
+          <h3 style="color: var(--accent-color);">Follow Us for More</h3>
+          <p class="lead mb-4">Stay connected with Glen Striders! Follow us on social media for more photos, updates, and running inspiration.</p>
+          <div class="social-links d-flex justify-content-center gap-3">
+            <a href="https://www.facebook.com/glenstriders" class="btn btn-primary" target="_blank" rel="noopener">
+              <i class="bi bi-facebook"></i> Facebook
+            </a>
+            <a href="https://www.tiktok.com/@glenstriders" class="btn btn-primary" target="_blank" rel="noopener">
+              <i class="bi bi-tiktok"></i> TikTok
+            </a>
+            <a href="https://www.youtube.com/@glenstriders" class="btn btn-primary" target="_blank" rel="noopener">
+              <i class="bi bi-youtube"></i> YouTube
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Image Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="imageModalLabel">Gallery Image</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img id="modalImage" src="" alt="" class="img-fluid" style="max-height: 80vh;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+/* Gallery Styling */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+}
+
+.gallery-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-image {
+  transform: scale(1.1);
+}
+
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-overlay i {
+  color: white;
+  font-size: 3rem;
+}
+
+/* Modal Styling */
+#imageModal .modal-content {
+  background: transparent;
+  border: none;
+}
+
+#imageModal .modal-header {
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+}
+
+#imageModal .modal-body {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 0 0 8px 8px;
+  padding: 2rem;
+}
+
+/* Social Links */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+</style>
+
+<script>
+function showImage(img) {
+  document.getElementById('modalImage').src = img.src;
+  document.getElementById('modalImage').alt = img.alt;
+  document.getElementById('imageModalLabel').textContent = img.alt;
+}
+</script>
+{% endblock %}
