@@ -155,7 +155,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 26px;
   width: auto;
   margin-right: 8px;
   filter: brightness(0) saturate(100%) invert(16%) sepia(47%) saturate(2481%) hue-rotate(252deg) brightness(77%) contrast(102%);
@@ -191,7 +191,7 @@ h6 {
   }
 
   .header .logo img {
-    max-height: 32px;
+    max-height: 26px;
   }
 
   .header .btn-getstarted {
@@ -207,13 +207,13 @@ h6 {
 
 @media (max-width: 768px) {
   .header .logo img {
-    max-height: 28px;
+    max-height: 24px;
   }
 }
 
 @media (max-width: 480px) {
   .header .logo img {
-    max-height: 24px;
+    max-height: 20px;
   }
 }
 
@@ -743,6 +743,42 @@ section,
   display: flex;
   align-items: center;
   padding: 60px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero .hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/img/hero-image.webp');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .hero .hero-background {
+    background-position: center top;
+  }
+}
+
+.hero .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
 }
 
 .hero .hero-content {
@@ -758,23 +794,26 @@ section,
 .hero .hero-tag {
   display: inline-flex;
   align-items: center;
-  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  background-color: rgba(255, 62, 5, 0.25);
+  backdrop-filter: blur(8px);
   padding: 0.5rem 1rem;
   border-radius: 50px;
   margin-bottom: 1rem;
+  border: 1px solid rgba(255, 62, 5, 0.3);
 }
 
-
-
 .hero .hero-tag span {
-  color: var(--accent-color);
+  color: #ffffff;
   font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 .hero h1 {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9), 0 0 10px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
 }
 
 .hero h1 .highlight {
@@ -788,20 +827,26 @@ section,
 }
 
 .hero .lead {
-  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  color: #ffffff;
   margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9), 0 0 8px rgba(0, 0, 0, 0.5);
+  font-size: 1.1rem;
 }
 
 .hero .hero-features {
   list-style: none;
   padding-left: 0;
   margin-bottom: 2rem;
+  display: inline-block;
+  text-align: left;
 }
 
 .hero .hero-features li {
   margin-bottom: 0.5rem;
   display: flex;
   align-items: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+  color: #ffffff;
 }
 
 .hero .hero-features li i {
@@ -813,6 +858,7 @@ section,
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  justify-content: center;
 }
 
 .hero .hero-cta .btn-primary {
@@ -843,72 +889,6 @@ section,
 
 .hero .hero-cta .btn-link:hover {
   color: var(--accent-color);
-}
-
-.hero .hero-image-wrapper {
-  position: relative;
-  padding: 0 40px;
-}
-
-.hero .hero-image-wrapper .hero-image {
-  border-radius: 10px;
-}
-
-.hero .hero-image-wrapper .stat-card {
-  position: absolute;
-  background-color: var(--surface-color);
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  min-width: 150px;
-}
-
-.hero .hero-image-wrapper .stat-card.top-right {
-  top: 40px;
-  right: 0px;
-}
-
-.hero .hero-image-wrapper .stat-card.bottom-left {
-  bottom: 40px;
-  left: 0px;
-}
-
-.hero .hero-image-wrapper .stat-card .stat-value {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--accent-color);
-  margin-bottom: 0.25rem;
-}
-
-.hero .hero-image-wrapper .stat-card .stat-label {
-  font-size: 0.875rem;
-  color: var(--heading-color);
-  margin-bottom: 0.5rem;
-}
-
-.hero .hero-image-wrapper .stat-card .stat-icon {
-  align-self: flex-end;
-  font-size: 1.25rem;
-  color: color-mix(in srgb, var(--accent-color), transparent 50%);
-}
-
-@media (max-width: 575px) {
-  .hero .hero-image-wrapper {
-    padding: 0;
-  }
-
-  .hero .hero-image-wrapper .stat-card {
-    position: relative;
-  }
-
-  .hero .hero-image-wrapper .stat-card.top-right,
-  .hero .hero-image-wrapper .stat-card.bottom-left {
-    inset: auto;
-    margin-top: 30px;
-  }
 }
 
 /*--------------------------------------------------------------
@@ -3407,6 +3387,11 @@ section,
   border-radius: 4px;
 }
 
+.strava-icon-large {
+  font-size: 4rem;
+  color: #FC4C02;
+}
+
 @media (max-width: 768px) {
   .strava-widget-container {
     padding: 15px;
@@ -3420,10 +3405,74 @@ section,
 
 /* Responsive Adjustments for Membership Page */
 @media (max-width: 991px) {
+  .membership-fees .feature-box,
+  .who-can-join .feature-box {
+    margin-bottom: 2rem;
+  }
+}
 
 @media (max-width: 767px) {
   .membership-fees .feature-box,
   .who-can-join .feature-box {
     margin-bottom: 2rem;
+  }
+}
+
+/*--------------------------------------------------------------
+# Coach Page Mobile Optimization
+--------------------------------------------------------------*/
+/* Optimize coach hero image for mobile devices - bi-fold layout */
+/* Image should be visible at top with heading text visible below without scrolling */
+@media (max-width: 991px) {
+  #coach .coach-photo-wrapper {
+    max-height: 400px;
+    overflow: hidden;
+  }
+  
+  #coach .coach-hero-image {
+    object-fit: contain;
+    object-position: center top;
+    max-height: 400px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  #coach .coach-photo-wrapper {
+    max-height: 320px;
+  }
+  
+  #coach .coach-hero-image {
+    max-height: 320px;
+    object-fit: contain;
+    object-position: center top;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #coach .coach-photo-wrapper {
+    max-height: 260px;
+  }
+  
+  #coach .coach-hero-image {
+    max-height: 260px;
+    object-fit: contain;
+    object-position: center top;
+    width: 100%;
+  }
+}
+
+/* Additional optimization for very small screens */
+@media (max-width: 375px) {
+  #coach .coach-photo-wrapper {
+    max-height: 240px;
+  }
+  
+  #coach .coach-hero-image {
+    max-height: 240px;
+    object-fit: contain;
+    object-position: center top;
+    width: 100%;
   }
 }

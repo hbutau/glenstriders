@@ -6,12 +6,122 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>{% block title %}{{ SITENAME|striptags }}{% endblock %}</title>
-  <meta name="description" content="{% block meta_description %}{{ SITENAME|striptags }}{% endblock %}">
-  <meta name="keywords" content="{% block meta_keywords %}running club Harare, fitness Glen-View, running club Zimbabwe, jogging group Budiriro, fitness training Glen Norah, running High Glen, Glen Striders{% endblock %}">
+  <meta name="description" content="{% block meta_description %}Glen Striders Running Club - Join Harare's premier running community serving Glen View, Glen Norah, NBS, Fidelity, South View Park, Waterfalls & South Lea Park.{% endblock %}">
+  <meta name="keywords" content="{% block meta_keywords %}running club Harare, fitness Glen View, running Zimbabwe, Glen Norah, NBS, Fidelity, South View Park, marathon training{% endblock %}">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="{% block og_type %}website{% endblock %}">
+  <meta property="og:url" content="{% block og_url %}{{ SITEURL }}/{{ output_file }}{% endblock %}">
+  <meta property="og:title" content="{% block og_title %}{{ self.title() }}{% endblock %}">
+  <meta property="og:description" content="{% block og_description %}{{ self.meta_description() }}{% endblock %}">
+  {% block og_image %}
+  {% if page and page.image %}
+  <meta property="og:image" content="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/{{ page.image }}">
+  {% elif article and article.image %}
+  <meta property="og:image" content="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/{{ article.image }}">
+  {% else %}
+  <meta property="og:image" content="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/assets/img/cover.png">
+  {% endif %}
+  {% endblock %}
+  <meta property="og:image:width" content="1536">
+  <meta property="og:image:height" content="1024">
+  <meta property="og:site_name" content="{{ SITENAME|striptags }}">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="{% block twitter_url %}{{ SITEURL }}/{{ output_file }}{% endblock %}">
+  <meta name="twitter:title" content="{% block twitter_title %}{{ self.title() }}{% endblock %}">
+  <meta name="twitter:description" content="{% block twitter_description %}{{ self.meta_description() }}{% endblock %}">
+  {% block twitter_image %}
+  {% if page and page.image %}
+  <meta name="twitter:image" content="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/{{ page.image }}">
+  {% elif article and article.image %}
+  <meta name="twitter:image" content="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/{{ article.image }}">
+  {% else %}
+  <meta name="twitter:image" content="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/assets/img/cover.png">
+  {% endif %}
+  {% endblock %}
 
   <!-- Favicons -->
   <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/favicon.png" rel="icon">
   <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Schema.org Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsOrganization",
+    "name": "Glen Striders Running Club",
+    "alternateName": "Glen Striders",
+    "url": "{{ SITEURL }}",
+    "logo": "{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/glen-striders-text-logo.webp",
+    "description": "Premier running and fitness community in Harare, Zimbabwe serving Glen View, Glen Norah, NBS, Fidelity, South View Park, Waterfalls, and South Lea Park. Weekly training sessions for runners of all levels.",
+    "foundingDate": "2020-01-01",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Harare",
+      "addressRegion": "Harare",
+      "addressCountry": "ZW"
+    },
+    "areaServed": [
+      {
+        "@type": "Place",
+        "name": "Glen View"
+      },
+      {
+        "@type": "Place",
+        "name": "Glen Norah"
+      },
+      {
+        "@type": "Place",
+        "name": "NBS"
+      },
+      {
+        "@type": "Place",
+        "name": "Fidelity"
+      },
+      {
+        "@type": "Place",
+        "name": "South View Park"
+      },
+      {
+        "@type": "Place",
+        "name": "Waterfalls"
+      },
+      {
+        "@type": "Place",
+        "name": "South Lea Park"
+      },
+      {
+        "@type": "Place",
+        "name": "Harare"
+      }
+    ],
+    "sport": "Running",
+    "memberOf": {
+      "@type": "Organization",
+      "name": "Zimbabwe Athletics"
+    },
+    "sameAs": [
+      "https://www.facebook.com/glenstriders",
+      "https://www.youtube.com/@glenstriders",
+      "https://www.tiktok.com/@glenstriders",
+      "https://x.com/glenstriders",
+      "https://www.strava.com/clubs/1275990"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+263-778-459-367",
+      "contactType": "customer service",
+      "email": "info@glenstriders.co.zw",
+      "areaServed": "ZW",
+      "availableLanguage": ["en"]
+    }
+  }
+  </script>
+
+  <!-- Preload hero image for better performance -->
+  <link rel="preload" as="image" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/assets/img/hero-image.webp">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -55,6 +165,18 @@
           <li><a href="{{ SITEURL }}/pages/shop.html">Shop</a></li>
           <li><a href="{{ SITEURL }}/pages/membership.html">Membership</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li class="dropdown"><a href="#about"><span>About Us</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="{{ SITEURL }}/coach.html">Coach</a></li>
+            </ul>
+          </li>
+          <li><a href="{{ SITEURL }}/events.html">Events</a></li>
+          <li><a href="{{ SITEURL }}/blog.html">Blog</a></li>
+          <li><a href="{{ SITEURL }}/shop.html">Shop</a></li>
+          <li><a href="{{ SITEURL }}/membership.html">Membership</a></li>
+          <li><a href="{{ SITEURL }}/sponsors.html">Sponsors</a></li>
+          <li><a href="{{ SITEURL }}/contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -67,9 +189,11 @@
     {% block hero %}
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
+      <div class="hero-background" role="img" aria-label="Glen Striders running club team members"></div>
+      <div class="hero-overlay"></div>
       <div class="container" data-aos="fade-up">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
             <div class="hero-content" data-aos="fade-up" data-aos-delay="100">
               <div class="hero-tag">
                 <span>{{ HERO_TAG|default("Welcome") }}</span>
@@ -86,11 +210,6 @@
               <div class="hero-cta">
                 <a href="{% if HERO_CTA_LINK %}{{ HERO_CTA_LINK }}{% else %}#services{% endif %}" class="btn btn-primary">{{ HERO_CTA_BUTTON_TEXT|default("Get Started") }}</a>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="hero-image-wrapper" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/assets/img/hero-new.webp" alt="GlenStriders running club team members" class="img-fluid hero-image">
             </div>
           </div>
         </div>
@@ -213,8 +332,19 @@
 
         <div class="row justify-content-center">
           <div class="col-lg-10" data-aos="fade-up" data-aos-delay="300">
+            <!-- 
+              TO UPDATE THE STRAVA EMBED:
+              1. Log into Strava.com with a club admin account
+              2. Go to https://www.strava.com/clubs/1275990
+              3. Click "Manage Club" > "Promote" tab
+              4. Copy the club widget embed code
+              5. Replace the iframe below with the new embed code from Strava
+              
+              Note: Keep the exact iframe code provided by Strava, including any deprecated 
+              HTML attributes (frameborder, allowtransparency) as they ensure maximum compatibility.
+            -->
             <div class="strava-widget-container">
-              <iframe height='454' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/clubs/1251058/latest-rides/f39eb3862a3f53a67a82d0b78f413819f6ba6ee4?show_rides=10' title='Strava Club Activities' aria-label='Weekly club activities from Strava'></iframe>
+              <iframe allowtransparency='true' frameborder='0' height='454' scrolling='no' src='https://www.strava.com/clubs/1275990/latest-rides/24d9a8a3e8ae703fecf925609ecd4e1136343bc5?show_rides=true' width='300' title='Strava Club Activities' aria-label='Weekly club activities from Strava'></iframe>
             </div>
           </div>
         </div>
@@ -259,6 +389,10 @@
             <li><i class="bi bi-chevron-right"></i> <a href="#about">About us</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="{{ SITEURL }}/pages/gallery.html">Gallery</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="{{ SITEURL }}/pages/shop.html">Shop</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#about">About Us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="{{ SITEURL }}/events.html">Events</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="{{ SITEURL }}/shop.html">Shop</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="{{ SITEURL }}/sponsors.html">Sponsors</a></li>
           </ul>
         </div>
 
@@ -273,7 +407,7 @@
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">{{ SITENAME|striptags }}</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        Designed by <a href="https://buibui.co.zw">Runners at Bubui</a>
+        Designed by runners at <a href="https://buibui.co.zw">Bubui</a>
       </div>
     </div>
 

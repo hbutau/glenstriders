@@ -1,6 +1,6 @@
 AUTHOR = 'GlenStriders'
-SITENAME = 'GlenStriders | GlenStriders Running Club '
-SITEURL = ""
+SITENAME = 'GlenStriders | Premier Running Club in Harare'
+SITEURL = "https://glenstriders.co.zw"
 
 PATH = "content"
 
@@ -29,12 +29,21 @@ SOCIAL = (
     ("youtube", "https://www.youtube.com/@glenstriders"),
     ("tiktok", "https://www.tiktok.com/@glenstriders"),
     ("twitter-x", "https://x.com/glenstriders"),
+    ("strava", "https://www.strava.com/clubs/1275990"),
 )
 
 DEFAULT_PAGINATION = 10
 
-# Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True
+# Use absolute URLs for proper Open Graph and Twitter Card meta tags
+# Social media platforms require absolute URLs to display images correctly
+RELATIVE_URLS = False
+
+# Page URL configuration - serve pages on root instead of pages/ subdirectory
+PAGE_URL = '{slug}.html'
+PAGE_SAVE_AS = '{slug}.html'
+
+# Blog/Archives URL configuration - save archives as blog.html
+ARCHIVES_SAVE_AS = 'blog.html'
 
 # MENUITEMS = [
 #     ("Home", ""),
@@ -52,8 +61,8 @@ CSS_FILE = "styles.css"
 HERO_TAG = ""
 HEROTEXT = "Welcome To Glen Striders Running Club"
 HERO_CTA_BUTTON_TEXT = "Join Us"
-HERO_CTA_LINK = "/pages/membership.html"
-HEROSUBTEXT = "Established on the principles of community spirit, Glen Striders is home to runners of all levels. Whether you're taking your first step or training for your tenth marathon, you'll find a supportive team to help you reach the finish line."
+HERO_CTA_LINK = "membership.html"
+HEROSUBTEXT = "Home to runners of all levels across Glen View, Glen Norah, NBS, Fidelity, South View Park, Waterfalls, and South Lea Park. Whether you're taking your first step or training for your tenth marathon, you'll find a supportive team to help you reach the finish line."
 
 # Optional hero features list
 # HERO_FEATURES = [

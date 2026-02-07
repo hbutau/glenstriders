@@ -1,0 +1,372 @@
+{% extends "base.html" %}
+{% block html_lang %}{{ page.lang }}{% endblock %}
+{% block title %}{{ page.title|striptags }}{% endblock %}
+
+{% block meta_description %}{% if page.description %}{{ page.description }}{% else %}Glen Striders Events - Join marathons, fun runs & races in Glen View, Glen Norah, NBS, Fidelity, South View Park, Waterfalls & South Lea Park.{% endif %}{% endblock %}
+{% block meta_keywords %}running events Harare, marathon Zimbabwe, Glen View races, 5K 10K runs, race calendar{% endblock %}
+
+{% block extra_head %}
+  {% import 'translations.html' as translations with context %}
+  {% if translations.entry_hreflang(page) %}
+    {{ translations.entry_hreflang(page) }}
+  {% endif %}
+{% endblock %}
+
+{% block hero %}{% endblock %}
+{% block home_sections %}{% endblock %}
+
+{% block content %}
+<!-- Hidden content for JavaScript parsing -->
+<div id="page-content-source" style="display: none;">
+  {{ page.content }}
+</div>
+
+<!-- Events Page -->
+<section id="events" class="about section">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    
+    <!-- Page Title -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8 text-center" data-aos="fade-up" data-aos-delay="200">
+        <h2 class="section-heading">Running Events Calendar</h2>
+        <p class="lead">Join Glen Striders at these upcoming events. Check back regularly for updates and new events!</p>
+      </div>
+    </div>
+
+    <!-- Events Table -->
+    <div class="row justify-content-center">
+      <div class="col-lg-10" data-aos="fade-up" data-aos-delay="300">
+        <div class="month-navigation">
+          <button id="prev-month" class="month-nav-btn" aria-label="Previous month">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <h3 class="month-title" id="month-title">Running Events</h3>
+          <button id="next-month" class="month-nav-btn" aria-label="Next month">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+        <div class="events-table-container">
+          <table class="events-table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Race</th>
+                <th>Venue</th>
+              </tr>
+            </thead>
+            <tbody id="events-tbody">
+              <!-- Events will be dynamically inserted here -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+/* Month Navigation */
+.month-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.month-nav-btn {
+  background: var(--accent-color);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.month-nav-btn:hover {
+  background: color-mix(in srgb, var(--accent-color), black 15%);
+  transform: scale(1.1);
+}
+
+.month-nav-btn:active {
+  transform: scale(0.95);
+}
+
+.month-nav-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.month-title {
+  margin: 0;
+  flex: 1 1 auto;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--heading-color);
+  text-align: center;
+  min-width: 0;
+}
+
+/* Events Table Styling */
+.events-table-container {
+  overflow-x: auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.events-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.events-table thead {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.events-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  border: 1px solid #dee2e6;
+}
+
+.events-table td {
+  padding: 0.75rem 1rem;
+  border: 1px solid #dee2e6;
+  vertical-align: top;
+}
+
+.events-table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.events-table tbody tr:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+  transition: background-color 0.2s ease;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .month-navigation {
+    gap: 0.5rem;
+  }
+  
+  .month-nav-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+  
+  .month-title {
+    font-size: 1.1rem;
+  }
+  
+  .events-table-container {
+    padding: 1rem;
+  }
+  
+  .events-table {
+    font-size: 0.9rem;
+  }
+  
+  .events-table th,
+  .events-table td {
+    padding: 0.5rem;
+  }
+}
+</style>
+
+<script>
+// Events data for 2026 - extracted from HTML table in page content
+let events2026 = [];
+
+// Parse events from the HTML table
+function parseEventsFromHTML() {
+  // Find the hidden content div
+  const contentDiv = document.getElementById('page-content-source');
+  if (!contentDiv) {
+    console.error('Content source div not found');
+    return;
+  }
+  
+  // Find the table in the hidden content
+  const tables = contentDiv.querySelectorAll('table');
+  let eventsTable = null;
+  
+  // Find the events table (it should have Date, Day, Race, Venue columns)
+  for (let table of tables) {
+    const headers = table.querySelectorAll('thead th');
+    if (headers.length >= 3 && 
+        headers[0].textContent.trim() === 'Date' &&
+        headers[1].textContent.trim() === 'Day') {
+      eventsTable = table;
+      break;
+    }
+  }
+  
+  if (!eventsTable) {
+    console.error('Events table not found');
+    const tbody = document.getElementById('events-tbody');
+    if (tbody) {
+      tbody.innerHTML = '<tr><td colspan="3" style="text-align: center; padding: 2rem; color: #dc3545;">Unable to load events. Please check the content file.</td></tr>';
+    }
+    return;
+  }
+  
+  // Parse table rows
+  const rows = eventsTable.querySelectorAll('tbody tr');
+  rows.forEach(row => {
+    const cells = row.querySelectorAll('td');
+    if (cells.length >= 3) {
+      events2026.push({
+        date: cells[0].textContent.trim(),
+        day: cells[1].textContent.trim(),
+        race: cells[2].textContent.trim(),
+        venue: cells[3] ? cells[3].textContent.trim() : ''
+      });
+    }
+  });
+  
+  // Initialize the events display after parsing
+  if (events2026.length > 0) {
+    initializeEvents();
+  } else {
+    console.error('No events found in table');
+    const tbody = document.getElementById('events-tbody');
+    if (tbody) {
+      tbody.innerHTML = '<tr><td colspan="3" style="text-align: center; padding: 2rem; color: #dc3545;">No events available.</td></tr>';
+    }
+  }
+}
+
+// Parse events when page loads
+document.addEventListener('DOMContentLoaded', parseEventsFromHTML);
+
+// Function to get month name
+function getMonthName(month) {
+  const months = ['January', 'February', 'March', 'April', 'May', 'June', 
+                  'July', 'August', 'September', 'October', 'November', 'December'];
+  return months[month];
+}
+
+// Function to format date for display
+function formatDateDisplay(dateStr, day) {
+  const date = new Date(dateStr);
+  const dayNum = date.getDate();
+  const month = date.toLocaleString('en-US', { month: 'short' });
+  return `${day} ${dayNum} ${month}`;
+}
+
+// Current displayed month and year - start with January 2026
+let displayedMonth = 0; // January (0-11)
+let displayedYear = 2026;
+
+// Function to display events for a specific month
+function displayMonthEvents(month, year) {
+  displayedMonth = month;
+  displayedYear = year;
+  
+  // Update title
+  const monthTitle = document.getElementById('month-title');
+  monthTitle.textContent = `${getMonthName(month)} ${year} Running Events`;
+  
+  // Filter events for the specified month
+  const monthEvents = events2026.filter(event => {
+    const eventDate = new Date(event.date);
+    return eventDate.getMonth() === month && eventDate.getFullYear() === year;
+  });
+  
+  // Get tbody element
+  const tbody = document.getElementById('events-tbody');
+  tbody.innerHTML = '';
+  
+  // Add events to table
+  if (monthEvents.length > 0) {
+    monthEvents.forEach(event => {
+      const row = document.createElement('tr');
+      row.innerHTML = `
+        <td>${formatDateDisplay(event.date, event.day)}</td>
+        <td>${event.race}</td>
+        <td>${event.venue}</td>
+      `;
+      tbody.appendChild(row);
+    });
+  } else {
+    // No events this month
+    const row = document.createElement('tr');
+    row.innerHTML = `
+      <td colspan="3" style="text-align: center; padding: 2rem;">No events scheduled for this month. Check back later!</td>
+    `;
+    tbody.appendChild(row);
+  }
+  
+  // Update button states
+  updateNavigationButtons();
+}
+
+// Function to update navigation button states
+function updateNavigationButtons() {
+  const prevBtn = document.getElementById('prev-month');
+  const nextBtn = document.getElementById('next-month');
+  
+  // Disable previous button if we're at January 2026
+  if (displayedMonth === 0 && displayedYear === 2026) {
+    prevBtn.disabled = true;
+  } else {
+    prevBtn.disabled = false;
+  }
+  
+  // Disable next button if we're at December 2026
+  if (displayedMonth === 11 && displayedYear === 2026) {
+    nextBtn.disabled = true;
+  } else {
+    nextBtn.disabled = false;
+  }
+}
+
+// Function to navigate to previous month
+function previousMonth() {
+  if (displayedMonth === 0) {
+    displayedMonth = 11;
+    displayedYear--;
+  } else {
+    displayedMonth--;
+  }
+  displayMonthEvents(displayedMonth, displayedYear);
+}
+
+// Function to navigate to next month
+function nextMonth() {
+  if (displayedMonth === 11) {
+    displayedMonth = 0;
+    displayedYear++;
+  } else {
+    displayedMonth++;
+  }
+  displayMonthEvents(displayedMonth, displayedYear);
+}
+
+// Initialize events display after data is loaded
+function initializeEvents() {
+  // Display current month events
+  displayMonthEvents(displayedMonth, displayedYear);
+  
+  // Add event listeners to navigation buttons
+  document.getElementById('prev-month').addEventListener('click', previousMonth);
+  document.getElementById('next-month').addEventListener('click', nextMonth);
+}
+</script>
+{% endblock %}

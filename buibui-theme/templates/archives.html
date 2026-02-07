@@ -1,20 +1,77 @@
 {% extends "base.html" %}
 
-{% block meta_description %}Archives - Running and fitness articles from Glen Striders club serving Glen-View, Budiriro, Glen Norah, High Glen, Harare{% endblock %}
-{% block meta_keywords %}running club archives Harare, fitness articles Glen-View, jogging news Budiriro, running Glen Norah, fitness High Glen{% endblock %}
+{% block meta_description %}Blog - Running and fitness articles from Glen Striders club serving Glen-View, Budiriro, Glen Norah, High Glen, Harare{% endblock %}
+{% block meta_keywords %}running club blog Harare, fitness articles Glen-View, jogging tips Budiriro, running Glen Norah, fitness High Glen, training tips{% endblock %}
 
 {% block hero %}{% endblock %}
 {% block home_sections %}{% endblock %}
 
 {% block content %}
-    <section id="content" class="body">
-        <h1>Archives for {{ SITENAME }}</h1>
+    <section id="blog" class="about section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center" data-aos="fade-up" data-aos-delay="200">
+                    <h2 class="section-heading">Blog</h2>
+                    <p class="lead">Read our latest articles on running, training tips, and community updates.</p>
+                </div>
+            </div>
 
-        <dl>
-            {% for article in dates %}
-                <dt>{{ article.locale_date }}</dt>
-                <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
-            {% endfor %}
-        </dl>
+            <div class="row gy-4 justify-content-center">
+                {% for article in dates %}
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <article class="blog-item">
+                        {% if article.image %}
+                        <div class="post-img mb-3" style="overflow: hidden; border-radius: 12px;">
+                            <a href="{{ SITEURL }}/{{ article.url }}">
+                                <img src="{{ SITEURL }}/{{ article.image }}" class="img-fluid w-100" alt="{{ article.title }}" style="height: 250px; object-fit: cover; transition: transform 0.3s ease;">
+                            </a>
+                        </div>
+                        {% endif %}
+                        <div class="post-content">
+                            <h3 class="post-title mb-3" style="font-size: 1.5rem; font-weight: 600;">
+                                <a href="{{ SITEURL }}/{{ article.url }}" class="text-decoration-none" style="color: var(--heading-color);">{{ article.title }}</a>
+                            </h3>
+                            <div class="meta-info mb-3 text-muted small">
+                                <span class="post-date"><i class="bi bi-calendar3" aria-hidden="true"></i> {{ article.date.strftime('%B %d, %Y') }}</span>
+                                {% if article.author %}
+                                <span class="post-author ms-2"><i class="bi bi-person" aria-hidden="true"></i> {{ article.author }}</span>
+                                {% endif %}
+                            </div>
+                            {% if article.summary %}
+                            <p class="post-excerpt mb-3">
+                                {{ article.summary|striptags|truncate(150) }}
+                            </p>
+                            {% endif %}
+                            <a href="{{ SITEURL }}/{{ article.url }}" class="btn btn-primary btn-sm">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
     </section>
+    
+    <style>
+    .blog-item {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        height: 100%;
+    }
+    
+    .blog-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    }
+    
+    .blog-item .post-img img:hover {
+        transform: scale(1.05);
+    }
+    
+    .blog-item .post-title a:hover {
+        color: var(--accent-color);
+    }
+    </style>
 {% endblock %}
