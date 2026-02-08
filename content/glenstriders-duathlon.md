@@ -17,11 +17,11 @@ At Glen Striders, we believe running isn't just about the kilometers and poundin
 
 Forget the traditional swim-bike-run! Our Duathlon is all about celebrating the joy of running, then seamlessly transitioning into a fun, low-cost social activity. It's our way of extending the camaraderie beyond the final stride, creating memorable experiences and stronger bonds within our running family. Each event will have a unique "Run To..." theme!
 
-We know that after a good run, there's nothing better than unwinding with friends, sharing stories, and making new connections. Our aim is to offer these moments without anyone feeling a pinch in their pocket. From post-run braais to scenic coffee mornings, we'll be exploring a variety of exciting options.
+We know that after a good run, there's nothing better than unwinding with friends, making new connections, and enjoying great food together. Our aim is to offer these moments without anyone feeling a pinch in their pocket. From post-run pizza gatherings to scenic coffee mornings, we'll be exploring a variety of exciting options.
 
-### Kicking Off with "Run To Braai": Our Sizzle & Sprint Event!
+### Kicking Off with "Run To Pizza": Our Slice & Sprint Event!
 
-We're incredibly excited to launch our series with a true South African favorite: the "Run To Braai"! Imagine finishing a fantastic run, the endorphins flowing, and then settling down to the delicious aroma of a braai with your fellow Striders.
+We're incredibly excited to launch our series with everyone's favorite: the "Run To Pizza"! Imagine finishing a fantastic run, the endorphins flowing, and then settling down to enjoy delicious pizza with your fellow Striders.
 
     Date: [Insert Date Here, e.g., Saturday, [Date]]
 
@@ -29,19 +29,19 @@ We're incredibly excited to launch our series with a true South African favorite
 
     Run Route & Start: [Briefly describe the run, e.g., "A scenic 10km loop starting and finishing at [Location]."]
 
-    Post-Run Braai: We'll be heading to [Location of Braai] for some well-deserved recovery and social time.
+    Post-Run Pizza: We'll be heading to [Pizza Location] for some well-deserved recovery and social time.
 
-### Participation Details (Potluck Style!):
-To keep this event accessible and fun for everyone, we're making it a potluck braai!
+### Participation Details:
+To keep this event accessible and fun for everyone, we're organizing a great pizza gathering!
 
-    What to bring: Please bring one item to share for the braai – perhaps your favourite braai meat, a pack of rolls, a tasty salad, or some cool drinks.
+    What to bring: Just bring yourself and your appetite! We'll have delicious pizza for everyone to enjoy together.
 
-    What the Club provides: We'll supply the charcoal and the braai stand, so all you need to bring is your appetite and good cheer!
+    What the Club provides: We'll organize the pizza and refreshments, so all you need to bring is your good cheer and running spirit!
 
 This is the perfect opportunity to meet new members, catch up with old friends, and create lasting memories. Whether you're a seasoned ultra-runner or just starting your running journey, all Glen Striders are welcome!
 
-How to Join Us: We kindly ask you to RSVP by [RSVP Date] so we can get a good headcount. Please contact the club or sign up via [Link to Google Form/WhatsApp Group/Club Event Page] and let us know what delicious item you're planning to bring!
+How to Join Us: We kindly ask you to RSVP by [RSVP Date] so we can get a good headcount for the pizza order. Please contact the club or sign up via [Link to Google Form/WhatsApp Group/Club Event Page]!
 
 Keep an eye on our website and social media for announcements about future "Run To..." Duathlon events, including "Run To Coffee," "Run To Plunge," and more!
 
-Let's make our runs even more rewarding. See you on the road and around the braai!
+Let's make our runs even more rewarding. See you on the road and at the pizza party!
