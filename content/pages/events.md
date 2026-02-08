@@ -17,7 +17,7 @@ Join Glen Striders at these upcoming events throughout the year. Check back regu
 | 2026-01-04 | Sunday | Glen Striders Event | |
 | 2026-01-10 | Saturday | Glen Striders Event | |
 | 2026-01-11 | Sunday | Glen Striders Event | |
-| 2026-01-17 | Saturday | Glen Striders-Run To Braai | |
+| 2026-01-17 | Saturday | Glen Striders-Run To Pizza | |
 | 2026-01-18 | Sunday | Glen Striders Event | |
 | 2026-01-24 | Saturday | Riot Comrades Marathon | Rera Bar & Grill |
 | 2026-01-25 | Sunday | Nyaradzo Fun Run | Old Georgians Sports Club |
