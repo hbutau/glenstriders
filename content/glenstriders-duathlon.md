@@ -3,14 +3,14 @@ Date: 2026-01-20 10:00
 Category: Social
 Tags: training, social
 Slug: glenstriders-duathlon
-Image: ./images/gsrc-duathlon.jpg
+Image: ./images/glen-striders-group.jpg
 Summary: At Glen Striders, we believe running isn't just about the kilometers – it's about the connections, the shared journey, and the incredible community we build together.
 Author: Humphrey
 
 At Glen Striders, we believe running isn't just about the kilometers and pounding the pavements – it's about the connections, the shared journey, and the incredible community we build together. That's why we're thrilled to announce a brand-new initiative designed to inject even more fun into our club activities: The Glen Striders Duathlon Series!
 
 <div class="text-center my-4">
-  <img src="{static}/images/gsrc-duathlon.jpg" alt="Glen Striders runners on a long slow distance run" class="img-fluid rounded">
+  <img src="{static}/images/glen-striders-group.jpg" alt="Glen Striders running group - African runners in Zimbabwe" class="img-fluid rounded">
 </div>
 
 ### What is a Glen Striders Duathlon?
