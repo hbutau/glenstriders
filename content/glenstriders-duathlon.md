@@ -23,16 +23,16 @@ We know that after a good run, there's nothing better than unwinding with friend
 
 We're incredibly excited to launch our series with everyone's favorite: the "Run To Pizza"! Here's what makes this event special – we'll actually run TO the pizza shop as our destination! Imagine the fun of running together with your fellow Striders, arriving at the pizza shop with the endorphins flowing, enjoying delicious pizza right there, and capturing the moment with great photos!
 
-    Run Route: We'll run from OK Makomva directly to Pizza Shop – the pizza shop is our destination!
+Run Route: We'll run from OK Makomva directly to Pizza Shop – the pizza shop is our destination!
 
-    At the Pizza Shop: Once we arrive, we'll enjoy pizza together, share stories, and take fun group photos to capture the memories!
+At the Pizza Shop: Once we arrive, we'll enjoy pizza together, share stories, and take fun group photos to capture the memories!
 
 ### Participation Details:
 To keep this event accessible and fun for everyone, we're organizing a great pizza gathering right at the pizza shop!
 
-    What to bring: Just bring yourself, your appetite, and maybe your phone or camera for photos! We'll have delicious pizza for everyone to enjoy together at the shop.
+What to bring: Just bring yourself, your appetite, and maybe your phone or camera for photos! We'll have delicious pizza for everyone to enjoy together at the shop.
 
-    What the Club provides: We'll organize the pizza and refreshments at the shop location, so all you need to bring is your good cheer, running spirit, and a smile for the photos!
+What the Club provides: We'll organize the pizza and refreshments at the shop location, so all you need to bring is your good cheer, running spirit, and a smile for the photos!
 
 This is the perfect opportunity to meet new members, catch up with old friends, capture fun memories with photos, and create lasting bonds. Whether you're a seasoned ultra-runner or just starting your running journey, all Glen Striders are welcome!
 
