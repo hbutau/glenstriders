@@ -5,7 +5,8 @@ Tags: training, social
 Slug: glenstriders-duathlon
 Image: ./images/run-to-pizza.webp
 Summary: At Glen Striders, we believe running isn't just about the kilometers – it's about the connections, the shared journey, and the incredible community we build together.
-Author: Humphrey
+Author: Linda
+Status: draft
 
 At Glen Striders, we believe running isn't just about the kilometers and pounding the pavements – it's about the connections, the shared journey, and the incredible community we build together. That's why we're thrilled to announce a brand-new initiative designed to inject even more fun into our club activities: The Glen Striders Duathlon Series!
 
