@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% block title %}404 - Page Not Found{% endblock %}
+
+{% block meta_description %}Page not found - Glen Striders Running Club serving Glen View, Glen Norah, NBS, Fidelity, South View Park, Waterfalls & South Lea Park, Harare{% endblock %}
+{% block meta_keywords %}running club Harare, Glen View, Glen Norah, NBS, Fidelity, South View Park, Zimbabwe{% endblock %}
+
+{% block hero %}{% endblock %}
+{% block home_sections %}{% endblock %}
+
+{% block content %}
+<!-- 404 Page -->
+<section id="not-found" class="about section">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <!-- 404 Header -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8 text-center mb-4">
+        <div style="font-size: 120px; font-weight: 700; color: var(--accent-color); line-height: 1; margin-bottom: 20px;">
+          404
+        </div>
+        <h2 class="section-heading">Page Not Found</h2>
+        <p class="lead">Sorry, we couldn't find the page you're looking for. The page may have been moved or deleted.</p>
+      </div>
+    </div>
+
+    <!-- Helpful Links -->
+    <div class="row g-4 mb-5 justify-content-center">
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="feature-box text-center">
+          <div class="icon-container">
+            <i class="bi bi-house"></i>
+          </div>
+          <h4><a href="{{ SITEURL }}/">Home</a></h4>
+          <p>Return to our homepage to explore the club</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="feature-box text-center">
+          <div class="icon-container">
+            <i class="bi bi-people"></i>
+          </div>
+          <h4><a href="{{ SITEURL }}/membership.html">Membership</a></h4>
+          <p>Join our running community today</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="feature-box text-center">
+          <div class="icon-container">
+            <i class="bi bi-calendar-event"></i>
+          </div>
+          <h4><a href="{{ SITEURL }}/events.html">Events</a></h4>
+          <p>Check out our upcoming races and activities</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="feature-box text-center">
+          <div class="icon-container">
+            <i class="bi bi-envelope"></i>
+          </div>
+          <h4><a href="{{ SITEURL }}/contact.html">Contact Us</a></h4>
+          <p>Get in touch with our team</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Additional Help -->
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <p class="lead">If you believe this is an error or need assistance, please <a href="{{ SITEURL }}/contact.html">contact us</a>.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- /404 Page -->
+{% endblock %}
