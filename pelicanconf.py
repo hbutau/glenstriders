@@ -92,3 +92,7 @@ SITEMAP = {
         'pages': 'monthly'
     }
 }
+
+# 404 Page Configuration
+# Include 404 template in direct templates for static generation
+TEMPLATE_PAGES = {'404.html': '404.html'}
