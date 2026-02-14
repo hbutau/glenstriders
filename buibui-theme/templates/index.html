@@ -13,20 +13,29 @@
           {% for article in articles_page.object_list %}
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <article class="blog-item">
+              {% if article.image %}
+              <div class="post-img mb-3" style="overflow: hidden; border-radius: 12px;">
+                <a href="{{ SITEURL }}/{{ article.url }}">
+                  <img src="{{ SITEURL }}/{{ article.image }}" class="img-fluid w-100" alt="{{ article.title }}" style="height: 250px; object-fit: cover; transition: transform 0.3s ease;">
+                </a>
+              </div>
+              {% endif %}
               <div class="post-content">
-                <h3 class="post-title">
-                  <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+                <h3 class="post-title mb-3" style="font-size: 1.5rem; font-weight: 600;">
+                  <a href="{{ SITEURL }}/{{ article.url }}" class="text-decoration-none" style="color: var(--heading-color);">{{ article.title }}</a>
                 </h3>
-                <div class="meta-info">
-                  <span class="post-date">{{ article.date.strftime('%B %d, %Y') }}</span>
+                <div class="meta-info mb-3 text-muted small">
+                  <span class="post-date"><i class="bi bi-calendar3" aria-hidden="true"></i> {{ article.date.strftime('%B %d, %Y') }}</span>
                   {% if article.author %}
-                  <span class="post-author">by {{ article.author }}</span>
+                  <span class="post-author ms-2"><i class="bi bi-person" aria-hidden="true"></i> {{ article.author }}</span>
                   {% endif %}
                 </div>
-                <p class="post-excerpt">
+                {% if article.summary %}
+                <p class="post-excerpt mb-3">
                   {{ article.summary|striptags|truncate(150) }}
                 </p>
-                <a href="{{ SITEURL }}/{{ article.url }}" class="readmore">Read More <i class="bi bi-arrow-right"></i></a>
+                {% endif %}
+                <a href="{{ SITEURL }}/{{ article.url }}" class="btn btn-primary btn-sm">Read More <i class="bi bi-arrow-right"></i></a>
               </div>
             </article>
           </div>
