@@ -16,9 +16,9 @@
   <meta property="og:description" content="{% block og_description %}{{ self.meta_description() }}{% endblock %}">
   {% block og_image %}
   {% if page and page.image %}
-  <meta property="og:image" content="{{ SITEURL }}/{{ page.image.lstrip('./') }}">
+  <meta property="og:image" content="{{ SITEURL }}/{{ page.image[2:] if page.image.startswith('./') else page.image }}">
   {% elif article and article.image %}
-  <meta property="og:image" content="{{ SITEURL }}/{{ article.image.lstrip('./') }}">
+  <meta property="og:image" content="{{ SITEURL }}/{{ article.image[2:] if article.image.startswith('./') else article.image }}">
   {% else %}
   <meta property="og:image" content="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/assets/img/cover.png">
   {% endif %}
@@ -34,9 +34,9 @@
   <meta name="twitter:description" content="{% block twitter_description %}{{ self.meta_description() }}{% endblock %}">
   {% block twitter_image %}
   {% if page and page.image %}
-  <meta name="twitter:image" content="{{ SITEURL }}/{{ page.image.lstrip('./') }}">
+  <meta name="twitter:image" content="{{ SITEURL }}/{{ page.image[2:] if page.image.startswith('./') else page.image }}">
   {% elif article and article.image %}
-  <meta name="twitter:image" content="{{ SITEURL }}/{{ article.image.lstrip('./') }}">
+  <meta name="twitter:image" content="{{ SITEURL }}/{{ article.image[2:] if article.image.startswith('./') else article.image }}">
   {% else %}
   <meta name="twitter:image" content="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/assets/img/cover.png">
   {% endif %}
