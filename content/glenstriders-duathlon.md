@@ -3,7 +3,7 @@ Date: 2026-02-08 17:00
 Category: Social
 Tags: training, social
 Slug: glenstriders-duathlon
-Image: ./images/run-to-pizza.webp
+Image: /images/run-to-pizza.webp
 Summary: At Glen Striders, we believe running isn't just about the kilometers – it's about the connections, the shared journey, and the incredible community we build together.
 Author: Linda
 Status: published
