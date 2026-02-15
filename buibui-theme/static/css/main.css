@@ -187,8 +187,9 @@ h6 {
 
 .header .btn-sponsor,
 .header .btn-sponsor:focus {
-  color: var(--contrast-color);
-  background: var(--accent-color);
+  color: var(--accent-color);
+  background: #ffffff;
+  border: 2px solid var(--accent-color);
   font-size: 14px;
   font-weight: bold;
   text-align: center;
@@ -201,7 +202,8 @@ h6 {
 .header .btn-sponsor:hover,
 .header .btn-sponsor:focus:hover {
   color: var(--contrast-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  background: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 @media (max-width: 1200px) {
