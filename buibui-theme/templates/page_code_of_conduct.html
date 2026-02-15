@@ -1,0 +1,237 @@
+{% extends "base.html" %}
+{% block html_lang %}{{ page.lang }}{% endblock %}
+{% block title %}{{ page.title|striptags }}{% endblock %}
+
+{% block meta_description %}{% if page.description %}{{ page.description }}{% else %}Glen Striders Running Club Code of Conduct - Our commitment to creating a safe, inclusive, and respectful environment for all members.{% endif %}{% endblock %}
+{% block meta_keywords %}code of conduct, running club values, Glen Striders, community guidelines, Harare{% endblock %}
+
+{% block extra_head %}
+  {% import 'translations.html' as translations with context %}
+  {% if translations.entry_hreflang(page) %}
+    {{ translations.entry_hreflang(page) }}
+  {% endif %}
+  <style>
+    .code-of-conduct-content {
+      position: relative;
+      padding: 3rem 0;
+    }
+    
+    /* DRAFT watermark styling */
+    .code-of-conduct-content::before {
+      content: 'DRAFT';
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      font-size: 8rem;
+      font-weight: bold;
+      color: rgba(255, 62, 5, 0.08);
+      z-index: 0;
+      pointer-events: none;
+      white-space: nowrap;
+      font-family: var(--heading-font);
+    }
+    
+    .code-of-conduct-content > * {
+      position: relative;
+      z-index: 1;
+    }
+    
+    .coc-section {
+      margin-bottom: 2.5rem;
+    }
+    
+    .coc-section h3 {
+      color: var(--heading-color);
+      font-size: 1.75rem;
+      margin-bottom: 1.25rem;
+      font-weight: 600;
+    }
+    
+    .coc-section h4 {
+      color: var(--accent-color);
+      font-size: 1.35rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    
+    .coc-section p {
+      margin-bottom: 1rem;
+      line-height: 1.8;
+      color: var(--default-color);
+    }
+    
+    .coc-list {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 1.5rem;
+    }
+    
+    .coc-list li {
+      margin-bottom: 0.75rem;
+      padding-left: 2rem;
+      position: relative;
+      line-height: 1.8;
+    }
+    
+    .coc-list li::before {
+      content: "•";
+      color: var(--accent-color);
+      font-weight: bold;
+      position: absolute;
+      left: 0.5rem;
+      font-size: 1.5rem;
+      line-height: 1.2;
+    }
+    
+    .coc-highlight {
+      background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--accent-color);
+      margin-bottom: 2rem;
+    }
+    
+    .section-number {
+      color: var(--accent-color);
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+  </style>
+{% endblock %}
+
+{% block hero %}{% endblock %}
+{% block home_sections %}{% endblock %}
+
+{% block content %}
+<!-- Code of Conduct Page -->
+<section id="code-of-conduct" class="about section">
+  <div class="container code-of-conduct-content" data-aos="fade-up" data-aos-delay="100">
+
+    <!-- Page Header -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-10 text-center mb-4">
+        <h1 class="section-heading" style="font-size: 2.5rem;">Glen Striders Running Club</h1>
+        <h2 class="section-heading" style="font-size: 2rem; color: var(--accent-color);">CODE OF CONDUCT</h2>
+      </div>
+    </div>
+
+    <!-- Table of Contents -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-10">
+        <div class="coc-highlight">
+          <h3>Table of Contents</h3>
+          <ul class="coc-list" style="margin-bottom: 0;">
+            <li><a href="#section-1">1. Preamble</a></li>
+            <li><a href="#section-2">2. Expected Behavior</a></li>
+            <li><a href="#section-3">3. Unacceptable Behavior</a></li>
+            <li><a href="#section-4">4. Reporting an Incident</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 1: Preamble -->
+    <div class="row justify-content-center" id="section-1">
+      <div class="col-lg-10">
+        <div class="coc-section">
+          <h3><span class="section-number">1.</span> Preamble</h3>
+          
+          <p><strong>1.1</strong> For the safety and continued enjoyment of Members, the Glen Striders Athletics Club has adopted this Code to which all Members, by agreeing to join the Glen Striders Athletics Club and continuing to be a Member of it, are obliged to comply with.</p>
+          
+          <p><strong>1.2</strong> Glen Striders Athletics Club promotes freedom of expression and open communication, however, Members are expected to abide by this Code and conduct themselves in a manner that is respectful to their fellow Members.</p>
+          
+          <p><strong>1.3</strong> The Glen Striders Running Club is dedicated to providing a safe, fun, and harassment-free environment for everyone. This applies to all club activities, including weekly runs, races, training sessions, and social gatherings.</p>
+          
+          <p><strong>1.4</strong> We value the participation of every member of our running community and want everyone to have an enjoyable and fulfilling experience. Accordingly, all members, volunteers, and participants are expected to show respect and courtesy to other runners and club members at all times.</p>
+          
+          <p><strong>1.5</strong> To make expectations clear, everyone involved in the Glen Striders community is required to conform to the following Code of Conduct. The leadership of the Glen Striders Athletics Club will enforce this code at all club events.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2: Expected Behavior -->
+    <div class="row justify-content-center" id="section-2">
+      <div class="col-lg-10">
+        <div class="coc-section">
+          <h3><span class="section-number">2.</span> Expected Behavior</h3>
+          
+          <p><strong>2.1</strong> <strong>Be considerate and respectful.</strong> We are a diverse community of people with different running paces, goals, and backgrounds. Be kind to others. Do not insult, put down, or harass other runners.</p>
+          
+          <p><strong>2.2</strong> <strong>Be welcoming and inclusive.</strong> We strive to be a community that welcomes and supports people of all backgrounds and identities. This includes, but is not limited to, members of any race, ethnicity, culture, national origin, gender identity and expression, sexual orientation, age, physical ability, or body size.</p>
+          
+          <p><strong>2.3</strong> <strong>Be patient and supportive.</strong> We all have different fitness levels. Offer encouragement, especially to new members or those struggling. Remember that a friendly "great job" or "you got this" can make a huge difference.</p>
+          
+          <p><strong>2.4</strong> <strong>Help keep everyone safe.</strong> This means being aware of your surroundings, following traffic rules, and communicating clearly during runs to prevent accidents. If you notice a safety concern, please speak up.</p>
+          
+          <p><strong>2.5</strong> <strong>Behave professionally.</strong> Remember that harassment, as well as sexist, racist, or exclusionary jokes, are not appropriate for any club activity.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 3: Unacceptable Behavior -->
+    <div class="row justify-content-center" id="section-3">
+      <div class="col-lg-10">
+        <div class="coc-section">
+          <h3><span class="section-number">3.</span> Unacceptable Behavior</h3>
+          
+          <p>The following actions are considered harassment and are unacceptable within our community:</p>
+          
+          <ul class="coc-list">
+            <li><strong>3.1</strong> Intimidating, stalking, or following anyone.</li>
+            <li><strong>3.2</strong> Offensive verbal comments related to gender, sexual orientation, disability, physical appearance, body size, race, or religion.</li>
+            <li><strong>3.4</strong> Sexual images in public spaces.</li>
+            <li><strong>3.5</strong> Deliberate intimidation, stalking, or following.</li>
+            <li><strong>3.6</strong> Harassing photography or recording.</li>
+            <li><strong>3.7</strong> Inappropriate physical contact.</li>
+            <li><strong>3.8</strong> Unwelcome sexual attention.</li>
+            <li><strong>3.9</strong> Sustained disruption of club runs, training sessions, or other events.</li>
+            <li><strong>3.10</strong> Advocating for or encouraging any of the above behaviours.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 4: Reporting an Incident -->
+    <div class="row justify-content-center" id="section-4">
+      <div class="col-lg-10">
+        <div class="coc-section">
+          <h3><span class="section-number">4.</span> Reporting an Incident</h3>
+          
+          <p><strong>4.1</strong> If you believe someone has violated the Code of Conduct, we encourage you to report it. If you are unsure whether an incident is a violation or if you're uncomfortable making a formal report, we still encourage you to share your concerns.</p>
+          
+          <h4>4.2 To report an incident, you can:</h4>
+          
+          <ul class="coc-list">
+            <li><strong>4.2.1</strong> Speak to a Glen Striders leader or volunteer at a club event.</li>
+            <li><strong>4.2.2</strong> Send an email to <a href="mailto:conduct@glenstriders.co.zw">conduct@glenstriders.co.zw</a>. This is often the best method as it provides a clear record.</li>
+          </ul>
+          
+          <h4>4.3 When you make a report, please try to include as much information as possible:</h4>
+          
+          <ul class="coc-list">
+            <li><strong>4.3.1</strong> Your contact information (so we can follow up with you).</li>
+            <li><strong>4.3.2</strong> The date, time, and location of the incident.</li>
+            <li><strong>4.3.3</strong> A description of the incident.</li>
+            <li><strong>4.3.4</strong> Any identifying information of the person involved (name, physical appearance, etc.).</li>
+            <li><strong>4.3.5</strong> Any other people who may have witnessed the incident.</li>
+          </ul>
+          
+          <p><strong>4.4</strong> All reports will be handled with discretion and confidentiality. Our goal is to ensure the safety and well-being of all our members, and we are fine with receiving reports where we decide to take no action for the sake of creating a safer space.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Closing Note -->
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="coc-highlight">
+          <p style="margin-bottom: 0; font-style: italic;">This Code of Conduct is a living document, and we welcome your feedback. Thank you for helping make the Glen Striders a welcoming, friendly, and supportive community for all runners.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+{% endblock %}
