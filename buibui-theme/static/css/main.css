@@ -190,24 +190,16 @@ h6 {
   color: #ffffff;
   background: linear-gradient(135deg, #ff3e05 0%, #ff6b35 100%);
   border: none;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
   text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  padding: 12px 30px;
+  padding: 10px 28px;
   margin: 0 0 0 30px;
-  border-radius: 25px;
+  border-radius: 50px;
   box-shadow: 0 4px 15px rgba(255, 62, 5, 0.3);
   transition: all 0.3s ease;
   position: relative;
-  overflow: hidden;
-}
-
-.header .btn-sponsor::before {
-  content: '💝';
-  margin-right: 8px;
-  font-size: 16px;
+  white-space: nowrap;
 }
 
 .header .btn-sponsor:hover,
@@ -235,7 +227,7 @@ h6 {
   .header .btn-sponsor {
     order: 2;
     margin: 0 15px 0 0;
-    padding: 10px 20px;
+    padding: 8px 20px;
     font-size: 14px;
   }
 
