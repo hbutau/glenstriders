@@ -238,13 +238,19 @@ h6 {
 
 @media (max-width: 768px) {
   .header .logo img {
-    max-height: 24px;
+    max-height: 20px;
   }
 }
 
 @media (max-width: 480px) {
   .header .logo img {
-    max-height: 20px;
+    max-height: 16px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header .logo img {
+    max-height: 14px;
   }
 }
 
