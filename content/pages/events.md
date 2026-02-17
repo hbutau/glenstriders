@@ -28,14 +28,16 @@ Join Glen Striders at these upcoming events throughout the year. Check back regu
 | 2026-02-21 | Saturday |Riot 5th Anniversary Run | Mtangaz Hideout Ruwa |
 | 2026-02-21 | Saturday | The Salvation Army Sports Fellowship | Harare |
 | 2026-02-21 | Saturday | Glen Striders Event | |
+| 2026-02-22 | Sunday   | Yvonne Farewell Run | Skyline Toll Gate |
 | 2026-02-22 | Sunday   | AAC Chitungwiza Run | Chitungwiza |
 | 2026-02-22 | Sunday   | HAC 21Km Challenge |Old Georgians Sports Club |
 | 2026-02-22 | Sunday   | HAC 21km Challenge | OGSC |
 | 2026-02-22 | Sunday   | Musahvunda Half Marathon | Harare |
+| 2026-02-28 | Saturday | Glen Striders Birthday Run | Harare |
 | 2026-03-01 | Sunday   | ZHL Wellness Stride 2026 - RIOT |Harare |
 | 2026-03-08 | Saturday | CBZ Peter Gradwell Marathon | |
 | 2026-03-14 | Saturday | Glen Striders Event | |
-| 2026-03-21 | Saturday | Glen Striders Event | |
+| 2026-03-21 | Saturday | BancAbc Club Wellness Fun Run |Mt Pleasent|
 | 2026-03-22 | Sunday | Glen Striders Event | |
 | 2026-03-28 | Saturday | Eastview Elites Water Run | Harare |
 | 2026-03-28 | Saturday | Nyaradzo Run | Harare |
