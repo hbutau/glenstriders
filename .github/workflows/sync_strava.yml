@@ -1,0 +1,45 @@
+name: Sync Strava Challenges
+
+on:
+  schedule:
+    # Run every Monday and Thursday at 06:00 UTC
+    - cron: '0 6 * * 1'
+    - cron: '0 6 * * 4'
+  workflow_dispatch: # Allow manual trigger from the GitHub Actions tab
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # needed to commit updated challenges.md
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install sync dependencies
+        run: pip install requests
+
+      - name: Run Strava sync
+        env:
+          STRAVA_CLIENT_ID: ${{ secrets.STRAVA_CLIENT_ID }}
+          STRAVA_CLIENT_SECRET: ${{ secrets.STRAVA_CLIENT_SECRET }}
+          STRAVA_REFRESH_TOKEN: ${{ secrets.STRAVA_REFRESH_TOKEN }}
+        run: python scripts/sync_strava.py
+
+      - name: Commit and push updated leaderboard
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add content/pages/challenges.md
+          if git diff --staged --quiet; then
+            echo "No leaderboard changes to commit."
+          else
+            git commit -m "chore: sync Strava challenges leaderboard [skip ci]"
+            git push
+          fi

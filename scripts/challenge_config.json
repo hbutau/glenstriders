@@ -1,0 +1,38 @@
+{
+  "_comment": "Each challenge needs: name, period_start/end (YYYY-MM-DD), goal, type, type_display, status (current|past), activity_types. For past challenges include a 'rows' array with the finalized leaderboard data so it is preserved when the sync script runs.",
+  "strava_club_id": 1275990,
+  "challenges": [
+    {
+      "name": "Glen Striders Spine Challenge",
+      "period_start": "2026-02-01",
+      "period_end": "2026-02-28",
+      "goal": "Rack up the most total elevation gain across all your activities this month",
+      "type": "elevation",
+      "type_display": "Elevation",
+      "status": "current",
+      "activity_types": ["Run", "Walk", "Hike", "TrailRun", "VirtualRun"]
+    },
+    {
+      "name": "The Glen Striders Challenge",
+      "period_start": "2026-01-01",
+      "period_end": "2026-01-31",
+      "goal": "Log the longest distance in a single activity this month",
+      "type": "single_activity_distance",
+      "type_display": "Single Activity Distance",
+      "status": "past",
+      "activity_types": ["Run", "TrailRun", "VirtualRun"],
+      "rows": [
+        ["1", "Alice M.", "42.2", "18 Jan"],
+        ["2", "Bob K.",   "38.5", "25 Jan"],
+        ["3", "Carol T.", "35.1", "11 Jan"],
+        ["4", "David N.", "30.0", "4 Jan"],
+        ["5", "Eve S.",   "28.7", "18 Jan"],
+        ["6", "Frank M.", "25.3", "25 Jan"],
+        ["7", "Grace Z.", "21.1", "11 Jan"],
+        ["8", "Henry D.", "18.4", "4 Jan"],
+        ["9", "Iris C.",  "15.0", "18 Jan"],
+        ["10", "James R.", "12.6", "25 Jan"]
+      ]
+    }
+  ]
+}
