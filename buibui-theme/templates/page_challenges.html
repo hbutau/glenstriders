@@ -1,0 +1,437 @@
+{% extends "base.html" %}
+{% block html_lang %}{{ page.lang }}{% endblock %}
+{% block title %}{{ page.title|striptags }} | {{ SITENAME|striptags }}{% endblock %}
+
+{% block meta_description %}{% if page.description %}{{ page.description }}{% else %}Glen Striders Challenges – Compete with fellow club members for distance, elevation and more. Updated weekly from Strava.{% endif %}{% endblock %}
+{% block meta_keywords %}running challenges leaderboard Harare, Glen Striders distance challenge, elevation challenge Zimbabwe, Strava running club{% endblock %}
+
+{% block extra_head %}
+  {% import 'translations.html' as translations with context %}
+  {% if translations.entry_hreflang(page) %}
+    {{ translations.entry_hreflang(page) }}
+  {% endif %}
+{% endblock %}
+
+{% block hero %}{% endblock %}
+{% block home_sections %}{% endblock %}
+
+{% block content %}
+<!-- Hidden source content for JavaScript parsing -->
+<div id="page-content-source" style="display:none;">
+  {{ page.content }}
+</div>
+
+<!-- Challenges Page -->
+<section id="challenges" class="about section">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <!-- Page Title -->
+    <div class="row justify-content-center mb-4">
+      <div class="col-lg-8 text-center" data-aos="fade-up" data-aos-delay="200">
+        <h2 class="section-heading">Glen Striders Challenges</h2>
+        <p class="lead">Compete with your fellow club members. Leaderboards are refreshed from Strava once or twice a week.</p>
+        <p class="text-muted small">Last updated: {{ page.date.strftime('%d %B %Y') }}</p>
+      </div>
+    </div>
+
+    <!-- Challenge Tabs -->
+    <div class="row justify-content-center mb-4">
+      <div class="col-lg-10">
+        <ul class="challenges-tabs" id="challenges-tabs" role="tablist">
+          <!-- Tabs injected by JavaScript -->
+        </ul>
+      </div>
+    </div>
+
+    <!-- Leaderboard Panels -->
+    <div class="row justify-content-center">
+      <div class="col-lg-10" id="challenges-panels">
+        <!-- Panels injected by JavaScript -->
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+/* ── Challenges Tabs ── */
+.challenges-tabs {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.challenges-tabs li button {
+  padding: 0.55rem 1.25rem;
+  border: 2px solid var(--accent-color);
+  background: transparent;
+  color: var(--accent-color);
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.challenges-tabs li button:hover,
+.challenges-tabs li button.active {
+  background: var(--accent-color);
+  color: #fff;
+}
+
+/* ── Challenge Panel ── */
+.challenge-panel {
+  display: none;
+}
+
+.challenge-panel.active {
+  display: block;
+}
+
+/* ── Challenge Meta (period / goal) ── */
+.challenge-meta {
+  background: color-mix(in srgb, var(--accent-color), transparent 92%);
+  border-left: 4px solid var(--accent-color);
+  border-radius: 0 8px 8px 0;
+  padding: 0.85rem 1.25rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.challenge-meta p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+/* ── Podium (top 3) ── */
+.podium {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.podium-place {
+  text-align: center;
+  flex: 1;
+  max-width: 180px;
+}
+
+.podium-place .medal {
+  font-size: 2.4rem;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.podium-place .athlete-name {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--heading-color);
+  word-break: break-word;
+  margin-bottom: 0.15rem;
+}
+
+.podium-place .athlete-value {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--accent-color);
+  margin-bottom: 0.1rem;
+}
+
+.podium-place .athlete-sub {
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
+.podium-place .podium-block {
+  border-radius: 8px 8px 0 0;
+  margin-top: 0.5rem;
+}
+
+.podium-place.first  .podium-block { background: #ffd700; height: 80px; }
+.podium-place.second .podium-block { background: #c0c0c0; height: 60px; }
+.podium-place.third  .podium-block { background: #cd7f32; height: 45px; }
+
+/* ── Full Leaderboard Table ── */
+.leaderboard-table-container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.leaderboard-table thead {
+  background: var(--accent-color);
+  color: #fff;
+}
+
+.leaderboard-table th {
+  padding: 0.9rem 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.leaderboard-table td {
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.leaderboard-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.leaderboard-table tbody tr:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 94%);
+  transition: background 0.2s ease;
+}
+
+.rank-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 0.85rem;
+  background: #e9ecef;
+  color: #495057;
+}
+
+.rank-badge.gold   { background: #ffd700; color: #7a5f00; }
+.rank-badge.silver { background: #c0c0c0; color: #4a4a4a; }
+.rank-badge.bronze { background: #cd7f32; color: #fff; }
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .podium {
+    gap: 0.5rem;
+  }
+
+  .podium-place .medal { font-size: 1.8rem; }
+  .podium-place .athlete-value { font-size: 1.2rem; }
+  .podium-place .athlete-name  { font-size: 0.85rem; }
+
+  .leaderboard-table { font-size: 0.88rem; }
+
+  .leaderboard-table th,
+  .leaderboard-table td { padding: 0.5rem 0.65rem; }
+}
+</style>
+
+<script>
+(function () {
+  'use strict';
+
+  /**
+   * Parse every H2 section in the hidden content div as one challenge.
+   * Within each section, collect:
+   *   - strong/em text as meta lines (period, goal)
+   *   - the first <table> as the leaderboard
+   */
+  function parseChallenges() {
+    var src = document.getElementById('page-content-source');
+    if (!src) return [];
+
+    var challenges = [];
+    // Clone so we can manipulate without affecting the hidden source
+    var clone = src.cloneNode(true);
+    var children = Array.from(clone.children);
+
+    var current = null;
+
+    children.forEach(function (el) {
+      if (el.tagName === 'H2') {
+        if (current) challenges.push(current);
+        current = { title: el.textContent.trim(), meta: [], table: null };
+      } else if (current) {
+        if (el.tagName === 'P') {
+          // Collect challenge-period / goal paragraphs
+          current.meta.push(el.innerHTML.trim());
+        } else if (el.tagName === 'TABLE' && !current.table) {
+          current.table = el;
+        }
+      }
+    });
+    if (current) challenges.push(current);
+
+    return challenges;
+  }
+
+  /**
+   * Build a leaderboard panel from one parsed challenge object.
+   */
+  function buildPanel(challenge, index) {
+    var panel = document.createElement('div');
+    panel.className = 'challenge-panel' + (index === 0 ? ' active' : '');
+    panel.id = 'panel-' + index;
+
+    // Meta block
+    if (challenge.meta.length) {
+      var meta = document.createElement('div');
+      meta.className = 'challenge-meta';
+      challenge.meta.forEach(function (html) {
+        var p = document.createElement('p');
+        p.innerHTML = html;
+        meta.appendChild(p);
+      });
+      panel.appendChild(meta);
+    }
+
+    // Parse table rows
+    if (!challenge.table) {
+      var noData = document.createElement('p');
+      noData.textContent = 'No leaderboard data available yet.';
+      panel.appendChild(noData);
+      return panel;
+    }
+
+    var headerCells = Array.from(challenge.table.querySelectorAll('thead th'));
+    var headers = headerCells.map(function (th) { return th.textContent.trim(); });
+    var rows = Array.from(challenge.table.querySelectorAll('tbody tr'));
+
+    var athletes = rows.map(function (row) {
+      var cells = Array.from(row.querySelectorAll('td'));
+      return cells.map(function (td) { return td.textContent.trim(); });
+    }).filter(function (r) { return r.length >= 2; });
+
+    // Podium (top 3) — only if we have rank + athlete + value columns and at least 3 entries
+    if (athletes.length >= 3 && headers.length >= 3) {
+      var podiumDiv = document.createElement('div');
+      podiumDiv.className = 'podium';
+
+      var order = [1, 0, 2]; // second, first, third for visual podium
+      var classes = ['second', 'first', 'third'];
+      var medals = ['🥈', '🥇', '🥉'];
+      // Derive the sub-label from the 4th column header (index 3) if present
+      var subHeader = headers[3] ? headers[3].toLowerCase() : '';
+
+      order.forEach(function (pos, i) {
+        if (!athletes[pos]) return;
+        var a = athletes[pos];
+        var place = document.createElement('div');
+        place.className = 'podium-place ' + classes[i];
+
+        var nameVal = a[1] || '';   // Athlete name (col 1)
+        var mainVal = a[2] || '';   // Primary metric (col 2)
+        var subVal  = (a[3] !== undefined && subHeader) ? a[3] + ' ' + subHeader : ''; // Col 3 with dynamic label
+
+        place.innerHTML =
+          '<span class="medal">' + medals[i] + '</span>' +
+          '<div class="athlete-name">' + escHtml(nameVal) + '</div>' +
+          '<div class="athlete-value">' + escHtml(mainVal) + '</div>' +
+          '<div class="athlete-sub">' + escHtml(subVal) + '</div>' +
+          '<div class="podium-block"></div>';
+
+        podiumDiv.appendChild(place);
+      });
+
+      panel.appendChild(podiumDiv);
+    }
+
+    // Full leaderboard table
+    var tableWrap = document.createElement('div');
+    tableWrap.className = 'leaderboard-table-container';
+
+    var table = document.createElement('table');
+    table.className = 'leaderboard-table';
+
+    // thead
+    var thead = document.createElement('thead');
+    var headRow = document.createElement('tr');
+    headers.forEach(function (h) {
+      var th = document.createElement('th');
+      th.textContent = h;
+      headRow.appendChild(th);
+    });
+    thead.appendChild(headRow);
+    table.appendChild(thead);
+
+    // tbody
+    var tbody = document.createElement('tbody');
+    athletes.forEach(function (a, idx) {
+      var tr = document.createElement('tr');
+      a.forEach(function (cell, ci) {
+        var td = document.createElement('td');
+        if (ci === 0) {
+          // Rank badge
+          var badge = document.createElement('span');
+          badge.className = 'rank-badge' + (idx === 0 ? ' gold' : idx === 1 ? ' silver' : idx === 2 ? ' bronze' : '');
+          badge.textContent = cell;
+          td.appendChild(badge);
+        } else {
+          td.textContent = cell;
+        }
+        tr.appendChild(td);
+      });
+      tbody.appendChild(tr);
+    });
+    table.appendChild(tbody);
+
+    tableWrap.appendChild(table);
+    panel.appendChild(tableWrap);
+
+    return panel;
+  }
+
+  function escHtml(str) {
+    var d = document.createElement('div');
+    d.textContent = str;
+    return d.innerHTML;
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var challenges = parseChallenges();
+    var tabsList  = document.getElementById('challenges-tabs');
+    var panelsCtr = document.getElementById('challenges-panels');
+
+    if (!challenges.length) {
+      panelsCtr.innerHTML = '<p class="text-center">No challenges found.</p>';
+      return;
+    }
+
+    challenges.forEach(function (ch, i) {
+      // Tab
+      var li = document.createElement('li');
+      li.setAttribute('role', 'presentation');
+      var btn = document.createElement('button');
+      btn.textContent = ch.title;
+      btn.className = i === 0 ? 'active' : '';
+      btn.setAttribute('role', 'tab');
+      btn.setAttribute('aria-selected', i === 0 ? 'true' : 'false');
+      btn.addEventListener('click', function () {
+        // Deactivate all
+        tabsList.querySelectorAll('button').forEach(function (b) {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        panelsCtr.querySelectorAll('.challenge-panel').forEach(function (p) {
+          p.classList.remove('active');
+        });
+        // Activate this
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+        document.getElementById('panel-' + i).classList.add('active');
+      });
+      li.appendChild(btn);
+      tabsList.appendChild(li);
+
+      // Panel
+      panelsCtr.appendChild(buildPanel(ch, i));
+    });
+  });
+}());
+</script>
+{% endblock %}
