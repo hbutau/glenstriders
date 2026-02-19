@@ -1,32 +1,19 @@
 Title: Challenges
-Date: 2026-02-01
+Date: 2026-02-19
 Slug: challenges
 Template: page_challenges
 Status: published
-Description: Glen Striders running challenges and leaderboards for distance, elevation and more. Compete with fellow club members.
+Description: Glen Striders monthly running challenges and leaderboards. Each month we set a unique named challenge – compete with fellow club members for glory!
 
-## Monthly Distance Challenge
-
-**Challenge Period:** February 1 – February 28, 2026
-**Goal:** Run the most kilometers this month
-
-| Rank | Athlete | Distance (km) | Activities |
-|------|---------|---------------|------------|
-| 1 | Alice M. | 145.2 | 14 |
-| 2 | Bob K. | 128.7 | 11 |
-| 3 | Carol T. | 112.4 | 10 |
-| 4 | David N. | 98.3 | 9 |
-| 5 | Eve S. | 87.6 | 8 |
-| 6 | Frank M. | 76.1 | 7 |
-| 7 | Grace Z. | 65.0 | 6 |
-| 8 | Henry D. | 54.8 | 5 |
-| 9 | Iris C. | 43.2 | 4 |
-| 10 | James R. | 32.5 | 3 |
-
-## Monthly Elevation Challenge
+## Glen Striders Spine Challenge
 
 **Challenge Period:** February 1 – February 28, 2026
-**Goal:** Gain the most elevation this month
+
+**Goal:** Rack up the most total elevation gain across all your activities this month
+
+**Type:** Elevation
+
+**Status:** Current
 
 | Rank | Athlete | Elevation (m) | Activities |
 |------|---------|---------------|------------|
@@ -41,20 +28,25 @@ Description: Glen Striders running challenges and leaderboards for distance, ele
 | 9 | James R. | 760 | 3 |
 | 10 | Iris C. | 540 | 4 |
 
-## Most Activities Challenge
+## The Glen Striders Challenge
 
-**Challenge Period:** February 1 – February 28, 2026
-**Goal:** Log the most activities this month
+**Challenge Period:** January 1 – January 31, 2026
 
-| Rank | Athlete | Activities | Distance (km) |
-|------|---------|------------|---------------|
-| 1 | Alice M. | 14 | 145.2 |
-| 2 | Bob K. | 11 | 128.7 |
-| 3 | Carol T. | 10 | 112.4 |
-| 4 | David N. | 9 | 98.3 |
-| 5 | Eve S. | 8 | 87.6 |
-| 6 | Frank M. | 7 | 76.1 |
-| 7 | Grace Z. | 6 | 65.0 |
-| 8 | Henry D. | 5 | 54.8 |
-| 9 | Iris C. | 4 | 43.2 |
-| 10 | James R. | 3 | 32.5 |
+**Goal:** Log the longest distance in a single activity this month
+
+**Type:** Single Activity Distance
+
+**Status:** Past
+
+| Rank | Athlete | Best Distance (km) | Date |
+|------|---------|-------------------|------|
+| 1 | Alice M. | 42.2 | 18 Jan |
+| 2 | Bob K. | 38.5 | 25 Jan |
+| 3 | Carol T. | 35.1 | 11 Jan |
+| 4 | David N. | 30.0 | 4 Jan |
+| 5 | Eve S. | 28.7 | 18 Jan |
+| 6 | Frank M. | 25.3 | 25 Jan |
+| 7 | Grace Z. | 21.1 | 11 Jan |
+| 8 | Henry D. | 18.4 | 4 Jan |
+| 9 | Iris C. | 15.0 | 18 Jan |
+| 10 | James R. | 12.6 | 25 Jan |
