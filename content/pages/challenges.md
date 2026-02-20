@@ -5,7 +5,7 @@ Template: page_challenges
 Status: published
 Description: Glen Striders monthly running challenges and leaderboards. Each month we set a unique named challenge – compete with fellow club members for glory!
 
-## Wafa Wafa
+## spine challenge
 
 **Challenge Period:** February 1 – February 28, 2026
 
@@ -50,3 +50,15 @@ Description: Glen Striders monthly running challenges and leaderboards. Each mon
 | 31 | Kudzie C. | 8.0 | 2 |
 | 32 | Audrey M. | 5.6 | 1 |
 | 33 | Healingtone Munashe M. | 2.3 | 1 |
+
+## Wafa Wafa
+
+**Challenge Period:** February 1 – February 28, 2026
+
+**Goal:** Rack up the most total elevation gain across all your activities this month
+
+**Type:** Distance
+
+**Status:** Passed
+
+_No leaderboard data available yet._
