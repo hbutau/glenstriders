@@ -67,9 +67,9 @@ def refresh_access_token(client_id: str, client_secret: str, refresh_token: str)
     return data["access_token"]
 
 
-# Strava Club Activities endpoint returns ClubActivity objects without start_date,
-# so there is no date-based early-exit available.  10 pages × 200 per_page = 2,000
-# activities, which comfortably covers several weeks of activity for any club.
+# Maximum pages to fetch as a safety cap.  With after/before API filtering each
+# page contains only in-period activities, so 10 × 200 = 2,000 comfortably
+# covers any single month for a typical running club.
 MAX_PAGES = 10
 
 
@@ -83,11 +83,14 @@ def fetch_club_activities(
     """
     Fetch all club activities that fall within [period_start, period_end].
 
-    Note: The Strava Club Activities endpoint returns ClubActivity objects
-    which do NOT include start_date.  Date filtering is applied only when
-    a date is present; otherwise the activity is included.  Pagination stops
-    when the API returns an empty page or when an activity with a known date
-    predates the period start, up to a maximum of MAX_PAGES pages.
+    The Strava Club Activities endpoint is queried with ``after`` / ``before``
+    epoch-timestamp parameters so the API itself restricts results to the
+    requested window.  ClubActivity objects do not include ``start_date`` in
+    the response body; the server-side date filter is therefore the primary
+    mechanism for limiting results to the challenge period.  A secondary
+    in-process date check is applied when a date field happens to be present.
+    Pagination continues until the API returns an empty page or MAX_PAGES is
+    reached.
     """
     headers = {"Authorization": f"Bearer {access_token}"}
     url = STRAVA_ACTIVITIES_URL.format(club_id=club_id)
@@ -106,7 +109,12 @@ def fetch_club_activities(
         resp = requests.get(
             url,
             headers=headers,
-            params={"page": page, "per_page": 200},
+            params={
+                "page": page,
+                "per_page": 200,
+                "after": int(start_dt.timestamp()),
+                "before": int(end_dt.timestamp()),
+            },
             timeout=30,
         )
         resp.raise_for_status()
@@ -115,30 +123,20 @@ def fetch_club_activities(
         if not page_data:
             break  # No more activities
 
-        reached_before_period = False
         for act in page_data:
+            # ClubActivity objects do not include start_date; apply a secondary
+            # date check only when the field happens to be present.
             raw_date = act.get("start_date") or act.get("start_date_local", "")
-            # ClubActivity objects returned by the Strava Club Activities endpoint
-            # do not include start_date.  When no date is present we include the
-            # activity; date filtering is applied only when a date IS available.
             if raw_date:
                 act_dt = datetime.fromisoformat(raw_date.replace("Z", "+00:00"))
-
-                if act_dt < start_dt:
-                    reached_before_period = True
-                    break  # Activities are sorted desc; everything after is older
-
-                if act_dt > end_dt:
-                    continue  # Activity after the period window
+                if act_dt < start_dt or act_dt > end_dt:
+                    continue
 
             act_type = act.get("sport_type") or act.get("type", "")
             if activity_types and act_type not in activity_types:
                 continue
 
             collected.append(act)
-
-        if reached_before_period:
-            break
 
         page += 1
 
