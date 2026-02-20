@@ -69,9 +69,9 @@ def refresh_access_token(client_id: str, client_secret: str, refresh_token: str)
 
 # Maximum pages to fetch as a safety cap.  The Strava Club Activities endpoint
 # does not support server-side date filtering, so all filtering is done on the
-# client side.  At 200 activities per page, 10 pages = 2,000 activities, which
+# client side.  At 200 activities per page, 25 pages = 5,000 activities, which
 # comfortably covers a full month for any typical running club.
-MAX_PAGES = 10
+MAX_PAGES = 25
 
 
 def fetch_club_activities(
@@ -88,18 +88,18 @@ def fetch_club_activities(
     query parameters (they cause a 400 Bad Request).  Pagination is performed
     using ``page`` / ``per_page`` only; every page is fetched until either an
     empty page is returned or ``MAX_PAGES`` is reached.  Activities are then
-    filtered to the challenge window on the client side using the
-    ``start_date`` / ``start_date_local`` fields when present.
+    filtered to the challenge window on the client side using
+    ``start_date_local`` (the athlete's local time) so that athletes in UTC+
+    timezones are not excluded for early-morning activities whose UTC timestamp
+    falls in the previous month.
     """
     headers = {"Authorization": f"Bearer {access_token}"}
     url = STRAVA_ACTIVITIES_URL.format(club_id=club_id)
 
-    start_dt = datetime.fromisoformat(period_start).replace(tzinfo=timezone.utc)
-    end_dt = (
-        datetime.fromisoformat(period_end)
-        .replace(tzinfo=timezone.utc)
-        .replace(hour=23, minute=59, second=59)
-    )
+    # Use naive (local) datetimes for period boundaries so that comparison
+    # against start_date_local works correctly for athletes in any timezone.
+    start_dt = datetime.fromisoformat(period_start)
+    end_dt = datetime.fromisoformat(period_end).replace(hour=23, minute=59, second=59)
 
     collected = []
     page = 1
@@ -121,9 +121,16 @@ def fetch_club_activities(
             break  # No more activities
 
         for act in page_data:
-            raw_date = act.get("start_date") or act.get("start_date_local", "")
+            # Prefer start_date_local (athlete's local time) for period
+            # filtering so that athletes in UTC+ timezones (e.g. Kenya UTC+3)
+            # are not excluded for early-morning activities on the first day of
+            # the month whose UTC timestamp falls in the previous month.
+            # Strava returns start_date_local with a spurious "Z" suffix even
+            # though it represents local time, so strip any timezone info and
+            # compare as a naive datetime against the naive period boundaries.
+            raw_date = act.get("start_date_local") or act.get("start_date", "")
             if raw_date:
-                act_dt = datetime.fromisoformat(raw_date.replace("Z", "+00:00"))
+                act_dt = datetime.fromisoformat(raw_date[:19])
                 if act_dt < start_dt or act_dt > end_dt:
                     continue
 
@@ -173,8 +180,8 @@ def compute_leaderboard(activities: list, challenge_type: str) -> list:
         dist_km = round((act.get("distance") or 0) / 1000, 2)
         elev_m = round(act.get("total_elevation_gain") or 0)
 
-        raw_date = act.get("start_date") or act.get("start_date_local", "")
-        act_dt = datetime.fromisoformat(raw_date.replace("Z", "+00:00")) if raw_date else None
+        raw_date = act.get("start_date_local") or act.get("start_date", "")
+        act_dt = datetime.fromisoformat(raw_date[:19]) if raw_date else None
 
         if name not in totals:
             totals[name] = {
