@@ -1,6 +1,6 @@
 AUTHOR = 'GlenStriders'
 SITENAME = 'GlenStriders | Premier Running Club in Harare'
-SITEURL = "https://glenstriders.co.zw"
+SITEURL = ""
 
 PATH = "content"
 

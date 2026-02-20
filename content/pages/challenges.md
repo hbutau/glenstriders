@@ -17,7 +17,7 @@ Description: Glen Striders monthly running challenges and leaderboards. Each mon
 
 | Rank | Athlete | Elevation (m) | Activities |
 |------|---------|---------------|------------|
-| 1 | Bob K. | 3,420 | 11 |
+| 1 | Bob K. | 5,420 | 11 |
 | 2 | Alice M. | 2,980 | 14 |
 | 3 | David N. | 2,610 | 9 |
 | 4 | Carol T. | 2,105 | 10 |
