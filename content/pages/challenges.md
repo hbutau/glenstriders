@@ -5,7 +5,7 @@ Template: page_challenges
 Status: published
 Description: Glen Striders monthly running challenges and leaderboards. Each month we set a unique named challenge – compete with fellow club members for glory!
 
-## Glen Striders Spine Challenge
+## Spine Challenge
 
 **Challenge Period:** February 1 – February 28, 2026
 
