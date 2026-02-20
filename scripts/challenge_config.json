@@ -11,6 +11,6 @@
       "type_display": "Distance",
       "status": "current",
       "activity_types": ["Run", "Walk", "Hike", "TrailRun", "VirtualRun"]
-    },
+    }
   ]
 }
