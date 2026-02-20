@@ -5,6 +5,18 @@ Template: page_challenges
 Status: published
 Description: Glen Striders monthly running challenges and leaderboards. Each month we set a unique named challenge – compete with fellow club members for glory!
 
+## Wafa Wafa
+
+**Challenge Period:** February 20 – February 27, 2026
+
+**Goal:** Rack up the most total elevation gain across all your activities this month
+
+**Type:** Distance
+
+**Status:** Current
+
+_No activities recorded yet for this challenge period. Check back soon!_
+
 ## Spine Challenge
 
 **Challenge Period:** February 20 – February 28, 2026
