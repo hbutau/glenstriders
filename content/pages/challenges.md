@@ -1,5 +1,5 @@
 Title: Challenges
-Date: 2026-02-19
+Date: 2026-02-20
 Slug: challenges
 Template: page_challenges
 Status: published
@@ -15,18 +15,7 @@ Description: Glen Striders monthly running challenges and leaderboards. Each mon
 
 **Status:** Current
 
-| Rank | Athlete | Elevation (m) | Activities |
-|------|---------|---------------|------------|
-| 1 | Bob K. | 5,420 | 11 |
-| 2 | Alice M. | 2,980 | 14 |
-| 3 | David N. | 2,610 | 9 |
-| 4 | Carol T. | 2,105 | 10 |
-| 5 | Frank M. | 1,870 | 7 |
-| 6 | Eve S. | 1,540 | 8 |
-| 7 | Henry D. | 1,320 | 5 |
-| 8 | Grace Z. | 980 | 6 |
-| 9 | James R. | 760 | 3 |
-| 10 | Iris C. | 540 | 4 |
+_No activities recorded yet for this challenge period. Check back soon!_
 
 ## The Glen Striders Challenge
 
