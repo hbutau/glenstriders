@@ -4,11 +4,11 @@
     "challenges": [
 	{
       "name": "Spine Challenge",
-      "period_start": "2026-02-01",
+      "period_start": "2026-02-20",
       "period_end": "2026-02-28",
       "goal": "Rack up the most total elevation gain across all your activities this month",
-      "type": "elevation",
-      "type_display": "Elevation",
+      "type": "distance",
+      "type_display": "Distance",
       "status": "current",
       "activity_types": ["Run", "Walk", "Hike", "TrailRun", "VirtualRun"]
     },
