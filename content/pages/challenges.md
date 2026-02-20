@@ -7,11 +7,11 @@ Description: Glen Striders monthly running challenges and leaderboards. Each mon
 
 ## Spine Challenge
 
-**Challenge Period:** February 1 – February 28, 2026
+**Challenge Period:** February 20 – February 28, 2026
 
 **Goal:** Rack up the most total elevation gain across all your activities this month
 
-**Type:** Elevation
+**Type:** Distance
 
 **Status:** Current
 
