@@ -4,7 +4,7 @@
     "challenges": [
 	{
       "name": "Wafa Wafa",
-      "period_start": "2026-02-1",
+      "period_start": "2026-02-01",
       "period_end": "2026-02-28",
       "goal": "Rack up the most total elevation gain across all your activities this month",
       "type": "distance",
