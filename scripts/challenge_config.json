@@ -12,6 +12,6 @@
       "status": "current",
       "activity_types": ["Run", "Walk", "Hike", "TrailRun", "VirtualRun"]
 	},
-	"rows": []
+	"rows": [],
   ]
 }
