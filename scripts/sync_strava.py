@@ -67,9 +67,10 @@ def refresh_access_token(client_id: str, client_secret: str, refresh_token: str)
     return data["access_token"]
 
 
-# Maximum pages to fetch as a safety cap.  With after/before API filtering each
-# page contains only in-period activities, so 10 × 200 = 2,000 comfortably
-# covers any single month for a typical running club.
+# Maximum pages to fetch as a safety cap.  The Strava Club Activities endpoint
+# does not support server-side date filtering, so all filtering is done on the
+# client side.  At 200 activities per page, 10 pages = 2,000 activities, which
+# comfortably covers a full month for any typical running club.
 MAX_PAGES = 10
 
 
@@ -85,12 +86,10 @@ def fetch_club_activities(
 
     The Strava Club Activities endpoint does not support ``after`` / ``before``
     query parameters (they cause a 400 Bad Request).  Pagination is performed
-    using ``page`` / ``per_page`` only, and activities are filtered to the
-    challenge window entirely on the client side using the ``start_date`` /
-    ``start_date_local`` fields when present.  Because the API returns results
-    in reverse-chronological order, pagination stops as soon as a dated
-    activity is found that precedes ``period_start``.  Pagination also stops
-    when the API returns an empty page or MAX_PAGES is reached.
+    using ``page`` / ``per_page`` only; every page is fetched until either an
+    empty page is returned or ``MAX_PAGES`` is reached.  Activities are then
+    filtered to the challenge window on the client side using the
+    ``start_date`` / ``start_date_local`` fields when present.
     """
     headers = {"Authorization": f"Bearer {access_token}"}
     url = STRAVA_ACTIVITIES_URL.format(club_id=club_id)
@@ -121,17 +120,11 @@ def fetch_club_activities(
         if not page_data:
             break  # No more activities
 
-        past_window = False
         for act in page_data:
             raw_date = act.get("start_date") or act.get("start_date_local", "")
             if raw_date:
                 act_dt = datetime.fromisoformat(raw_date.replace("Z", "+00:00"))
-                if act_dt < start_dt:
-                    # Results are reverse-chronological; no earlier activities
-                    # will fall in the window on subsequent pages.
-                    past_window = True
-                    continue
-                if act_dt > end_dt:
+                if act_dt < start_dt or act_dt > end_dt:
                     continue
 
             act_type = act.get("sport_type") or act.get("type", "")
@@ -139,9 +132,6 @@ def fetch_club_activities(
                 continue
 
             collected.append(act)
-
-        if past_window:
-            break
 
         page += 1
 
