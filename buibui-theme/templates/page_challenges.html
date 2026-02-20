@@ -50,6 +50,19 @@
       </div>
     </div>
 
+    <!-- Strava Attribution (required by Strava API Terms) -->
+    <div class="row justify-content-center mt-4">
+      <div class="col-lg-10 text-center">
+        <a href="https://www.strava.com" target="_blank" rel="noopener noreferrer" class="strava-attribution" aria-label="Powered by Strava">
+          <svg class="strava-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+            <path fill="#FC4C02" d="M41.03 47.846l-5.572-10.976h-8.172L41.03 64l13.74-27.13h-8.16z"/>
+            <path fill="#FC4C02" d="M27.898 20.126l7.564 14.944h11.062L27.898 0 9.23 35.07h11.048z"/>
+          </svg>
+          <span>Powered by Strava</span>
+        </a>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -275,6 +288,37 @@
 .rank-badge.gold   { background: #ffd700; color: #7a5f00; }
 .rank-badge.silver { background: #c0c0c0; color: #4a4a4a; }
 .rank-badge.bronze { background: #cd7f32; color: #fff; }
+
+/* ── Strava Attribution ── */
+.strava-attribution {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #FC4C02;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.9rem;
+  border: 2px solid #FC4C02;
+  border-radius: 50px;
+  transition: all 0.2s ease;
+}
+
+.strava-attribution:hover {
+  background: #FC4C02;
+  color: #fff;
+}
+
+.strava-attribution:hover .strava-logo path {
+  fill: #fff;
+}
+
+.strava-logo {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  transition: fill 0.2s ease;
+}
 
 /* ── Responsive ── */
 @media (max-width: 768px) {

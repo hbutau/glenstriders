@@ -4,6 +4,45 @@ This guide explains how to connect the Glen Striders website to the Strava API s
 
 ---
 
+## Does Strava Allow This?
+
+**Yes.** Strava provides a public API and explicitly supports club-management tools of this kind. Here is a clear summary of what is and is not permitted.
+
+### ✅ What Strava's API allows
+
+| What we do | Why it is permitted |
+|---|---|
+| Fetch club activity data via `GET /clubs/{id}/activities` | Strava provides this endpoint specifically for club applications. The authenticated user must be a club member. |
+| Display first name + last initial (e.g. "Alice M.") and activity metrics | The club activities endpoint intentionally returns only this limited, non-sensitive data by design. |
+| Compute and display leaderboards on the club website | This is a core intended use case for the endpoint. |
+| Cache the results in a Markdown file and rebuild the site twice a week | Short-term display caching for a non-commercial club site is permitted. |
+
+### ⚠️ Requirements you must follow
+
+| Requirement | How we meet it |
+|---|---|
+| **"Powered by Strava" attribution** (required) | A "Powered by Strava" badge with the official Strava logo and a link to strava.com is displayed on the challenges page. |
+| **Rate limits** (100 req / 15 min; 1,000 req / day) | The sync script makes fewer than 20 API requests per run and runs at most twice a week. Nowhere near the limit. |
+| **Respect user privacy settings** | The API only returns activities the member has set to *public* or *followers-only*. Private activities are never exposed — this is enforced server-side by Strava. |
+| **Non-commercial use** | The Glen Striders website is a non-profit community club site. No data is sold or used for advertising. |
+
+### ❌ What you must NOT do
+
+- Display detailed GPS routes, heart-rate data, or split times — the club endpoint does not return these, so this is automatically prevented.
+- Store individual athlete data in a database or share it with third parties.
+- Use the data for commercial gain (selling it, using it for advertising, etc.).
+- Exceed Strava's rate limits or attempt to scrape data outside the API.
+- Remove or hide the "Powered by Strava" attribution.
+
+### 📋 Applicable Strava policies
+
+- [Strava API Agreement](https://www.strava.com/legal/api)
+- [Strava Brand Guidelines](https://developers.strava.com/guidelines/)
+
+> **In short:** Using the official Strava API to power a club leaderboard on a non-commercial club website is exactly what the API was designed for. The key obligations are displaying the "Powered by Strava" attribution (already implemented on the page) and respecting rate limits (easily met by our twice-a-week schedule).
+
+---
+
 ## How It Works
 
 1. A GitHub Actions workflow runs on **Monday and Thursday at 06:00 UTC** (and can be triggered manually at any time).
@@ -141,5 +180,5 @@ python scripts/sync_strava.py
 | `401 Unauthorized` from Strava | Your refresh token has expired or been revoked. Repeat Step 2 to get a new one and update the secret. |
 | `403 Forbidden` from club endpoint | The authenticated user must be a **member** of the Glen Striders Strava club. |
 | Activities appear in Strava but not in the leaderboard | Check the `activity_types` filter in `challenge_config.json`. The activity sport type must be in the list. |
-| Workflow runs but `challenges.md` doesn't change | The Strava club activities endpoint returns data for activities members have set as **public** or **followers-only**. Private activities are excluded. |
+| Workflow runs but `challenges.md` doesn't change | The Strava club activities endpoint only returns activities members have set as **public** or **followers-only**. Private activities are excluded. |
 | "New refresh token" notice in logs | Update `STRAVA_REFRESH_TOKEN` secret with the value printed in the logs. |
