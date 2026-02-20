@@ -3,13 +3,25 @@
   "strava_club_id": 1275990,
     "challenges": [
 	{
-      "name": "Wafa Wafa",
+      "name": "spine challenge",
       "period_start": "2026-02-01",
       "period_end": "2026-02-28",
       "goal": "Rack up the most total elevation gain across all your activities this month",
       "type": "distance",
       "type_display": "Distance",
       "status": "current",
+      "activity_types": ["Run", "Walk", "Hike", "TrailRun", "VirtualRun"],
+      "rows": []
+	},
+
+	{
+      "name": "Wafa Wafa",
+      "period_start": "2026-02-01",
+      "period_end": "2026-02-28",
+      "goal": "Rack up the most total elevation gain across all your activities this month",
+      "type": "distance",
+      "type_display": "Distance",
+      "status": "passed",
       "activity_types": ["Run", "Walk", "Hike", "TrailRun", "VirtualRun"],
       "rows": []
 	}
