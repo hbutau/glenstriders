@@ -67,6 +67,12 @@ def refresh_access_token(client_id: str, client_secret: str, refresh_token: str)
     return data["access_token"]
 
 
+# Strava Club Activities endpoint returns ClubActivity objects without start_date,
+# so there is no date-based early-exit available.  10 pages × 200 per_page = 2,000
+# activities, which comfortably covers several weeks of activity for any club.
+MAX_PAGES = 10
+
+
 def fetch_club_activities(
     access_token: str,
     club_id: int,
@@ -77,8 +83,11 @@ def fetch_club_activities(
     """
     Fetch all club activities that fall within [period_start, period_end].
 
-    Strava returns activities newest-first, so we stop fetching as soon as
-    we see an activity that predates the period start.
+    Note: The Strava Club Activities endpoint returns ClubActivity objects
+    which do NOT include start_date.  Date filtering is applied only when
+    a date is present; otherwise the activity is included.  Pagination stops
+    when the API returns an empty page or when an activity with a known date
+    predates the period start, up to a maximum of MAX_PAGES pages.
     """
     headers = {"Authorization": f"Bearer {access_token}"}
     url = STRAVA_ACTIVITIES_URL.format(club_id=club_id)
@@ -93,7 +102,7 @@ def fetch_club_activities(
     collected = []
     page = 1
 
-    while True:
+    while page <= MAX_PAGES:
         resp = requests.get(
             url,
             headers=headers,
@@ -109,16 +118,18 @@ def fetch_club_activities(
         reached_before_period = False
         for act in page_data:
             raw_date = act.get("start_date") or act.get("start_date_local", "")
-            if not raw_date:
-                continue
-            act_dt = datetime.fromisoformat(raw_date.replace("Z", "+00:00"))
+            # ClubActivity objects returned by the Strava Club Activities endpoint
+            # do not include start_date.  When no date is present we include the
+            # activity; date filtering is applied only when a date IS available.
+            if raw_date:
+                act_dt = datetime.fromisoformat(raw_date.replace("Z", "+00:00"))
 
-            if act_dt < start_dt:
-                reached_before_period = True
-                break  # Activities are sorted desc; everything after is older
+                if act_dt < start_dt:
+                    reached_before_period = True
+                    break  # Activities are sorted desc; everything after is older
 
-            if act_dt > end_dt:
-                continue  # Activity after the period window
+                if act_dt > end_dt:
+                    continue  # Activity after the period window
 
             act_type = act.get("sport_type") or act.get("type", "")
             if activity_types and act_type not in activity_types:
