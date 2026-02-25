@@ -79,4 +79,4 @@ And to anyone standing where she stood a year ago — unsure, tired, wondering i
 
 Thank you, Tracey, for sharing your story with the Glen Striders community. Your courage and honesty remind us all why we run — and why we run together.
 
-*Interested in joining Glen Striders? [Reach out to us](/pages/contact.html) and take your first step.
+Interested in joining Glen Striders? [Reach out to us](/pages/contact.html) and take your first step.
