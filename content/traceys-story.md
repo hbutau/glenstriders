@@ -3,7 +3,7 @@ Date: 2026-02-25 09:00
 Category: Athlete Stories
 Tags: athlete-stories, women-running, fitness-transformation, running-for-women, body-confidence, weight-loss, running-club-harare, motivation, community, her-miles-harare
 Slug: traceys-story
-Image: ./images/traceys-story-hero.jpg
+Image: ./images/traceys-story-hero.jpeg
 Summary: Women's fitness transformation story: how Tracey went from tired and unconfident to strong and energised by running with Glen Striders club in Harare, Zimbabwe.
 Keywords: women running transformation, women fitness journey, running for weight loss women, women's running club Harare, female runners Zimbabwe, women body confidence running, running club for women Harare, fitness motivation women, women starting running, Glen Striders women runners, women running group Zimbabwe, female fitness transformation story, how running changed my life, running for health women, running for confidence women, Glen Striders running club, Her Miles Harare, Her Miles Zimbabwe, women's running event Harare, Her Miles race Harare
 Author: Glen Striders
@@ -22,7 +22,7 @@ Last October, Tracey made a decision. She changed her eating habits, laced up he
 And prove it she has.
 
 <div class="text-center my-4">
-  <img src="{static}/images/traceys-story-hero.jpg" alt="Tracey Mushapaidze running with Glen Striders" class="img-fluid rounded" style="max-width: 800px; width: 100%; height: auto;">
+  <img src="{static}/images/traceys-story-hero.jpeg" alt="Tracey Mushapaidze running with Glen Striders" class="img-fluid rounded" style="max-width: 800px; width: 100%; height: auto;">
 </div>
 
 ## Small Signs, Big Shifts
@@ -33,6 +33,15 @@ The first clue that things were really changing came quietly — clothes started
 
 Her relationship with food shifted too. Where she once saw food as something to fight against, she now sees it as fuel for her runs, for her health, for her life. "I stopped seeing food as the enemy," she says. "I learned that I am more disciplined and stronger than I ever believed."
 
+<div class="row my-4 justify-content-center g-3">
+  <div class="col-md-6 text-center">
+    <img src="{static}/images/traceys-story-before-image2.jpeg" alt="Tracey before her transformation journey" class="img-fluid rounded" style="width: 100%; height: auto;">
+  </div>
+  <div class="col-md-6 text-center">
+    <img src="{static}/images/traceys-story-before3.jpeg" alt="Tracey at the start of her fitness journey" class="img-fluid rounded" style="width: 100%; height: auto;">
+  </div>
+</div>
+
 ## The Power of Running Together
 
 One of the biggest game-changers in Tracey's journey has been running with Glen Striders.
@@ -40,7 +49,7 @@ One of the biggest game-changers in Tracey's journey has been running with Glen 
 "What helped me the most was running with a group," she says. "Running with others kept me motivated, pushed me on the hard days, and reminded me that I'm not doing this alone."
 
 <div class="text-center my-4">
-  <img src="{static}/images/traceys-story-group.jpg" alt="Tracey running with the Glen Striders group" class="img-fluid rounded" style="max-width: 800px; width: 100%; height: auto;">
+  <img src="{static}/images/traceys-strory-glen-striders.jpg" alt="Tracey running with the Glen Striders group" class="img-fluid rounded" style="max-width: 800px; width: 100%; height: auto;">
 </div>
 
 That sense of community became her anchor on the days when giving up felt easier than carrying on. She held onto her *why* — the memory of how she used to feel — and let the small wins carry her forward. The encouraging words from people around her who noticed the changes. The runs she finished that she once thought were beyond her.
@@ -53,8 +62,13 @@ Tracey is clear that she hasn't reached some final destination. She's still work
 
 "My why changed as I progressed," she reflects. "At first it was about losing weight and feeling better physically. But it became about overall health, confidence, and self-discipline. It wasn't just about the scale anymore. It became about feeling strong and proud of myself."
 
-<div class="text-center my-4">
-  <img src="{static}/images/traceys-story-finish.jpg" alt="Tracey at the finish line, celebrating her achievement" class="img-fluid rounded" style="max-width: 800px; width: 100%; height: auto;">
+<div class="row my-4 justify-content-center g-3">
+  <div class="col-md-6 text-center">
+    <img src="{static}/images/traceys-story-finish.jpeg" alt="Tracey at the finish line, celebrating her achievement" class="img-fluid rounded" style="width: 100%; height: auto;">
+  </div>
+  <div class="col-md-6 text-center">
+    <img src="{static}/images/traceys-story-finish1.jpeg" alt="Tracey celebrating completing a run with Glen Striders" class="img-fluid rounded" style="width: 100%; height: auto;">
+  </div>
 </div>
 
 And to anyone standing where she stood a year ago — unsure, tired, wondering if it's even worth trying again — Tracey has one thing to say:
