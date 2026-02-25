@@ -79,4 +79,4 @@ And to anyone standing where she stood a year ago — unsure, tired, wondering i
 
 Thank you, Tracey, for sharing your story with the Glen Striders community. Your courage and honesty remind us all why we run — and why we run together.
 
-*Interested in joining Glen Striders? [Reach out to us](/pages/contact.html) and take your first step. And if you're looking for your next challenge, keep an eye on [Her Miles](https://hermiles.co.zw) — a women's running event right here in Harare that celebrates exactly the kind of journey Tracey has been on.*
+*Interested in joining Glen Striders? [Reach out to us](/pages/contact.html) and take your first step.
