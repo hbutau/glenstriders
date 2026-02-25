@@ -1,10 +1,11 @@
 Title: From Tired to Transformed: Tracey's Story
 Date: 2026-02-25 09:00
 Category: Athlete Stories
-Tags: athlete-stories, community, motivation, transformation
+Tags: athlete-stories, women-running, fitness-transformation, running-for-women, body-confidence, weight-loss, running-club-harare, motivation, community
 Slug: traceys-story
 Image: ./images/traceys-story-hero.jpg
-Summary: How one Glen Striders member went from feeling tired and unconfident to stronger, healthier, and proud — one run at a time.
+Summary: Women's fitness transformation story: how Tracey went from tired and unconfident to strong and energised by running with Glen Striders club in Harare, Zimbabwe.
+Keywords: women running transformation, women fitness journey, running for weight loss women, women's running club Harare, female runners Zimbabwe, women body confidence running, running club for women Harare, fitness motivation women, women starting running, Glen Striders women runners, women running group Zimbabwe, female fitness transformation story, how running changed my life, running for health women, running for confidence women, Glen Striders running club
 Author: Glen Striders
 Status: published
 
