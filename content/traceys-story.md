@@ -1,11 +1,11 @@
 Title: From Tired to Transformed: Tracey's Story
 Date: 2026-02-25 09:00
 Category: Athlete Stories
-Tags: athlete-stories, women-running, fitness-transformation, running-for-women, body-confidence, weight-loss, running-club-harare, motivation, community
+Tags: athlete-stories, women-running, fitness-transformation, running-for-women, body-confidence, weight-loss, running-club-harare, motivation, community, her-miles-harare
 Slug: traceys-story
 Image: ./images/traceys-story-hero.jpg
 Summary: Women's fitness transformation story: how Tracey went from tired and unconfident to strong and energised by running with Glen Striders club in Harare, Zimbabwe.
-Keywords: women running transformation, women fitness journey, running for weight loss women, women's running club Harare, female runners Zimbabwe, women body confidence running, running club for women Harare, fitness motivation women, women starting running, Glen Striders women runners, women running group Zimbabwe, female fitness transformation story, how running changed my life, running for health women, running for confidence women, Glen Striders running club
+Keywords: women running transformation, women fitness journey, running for weight loss women, women's running club Harare, female runners Zimbabwe, women body confidence running, running club for women Harare, fitness motivation women, women starting running, Glen Striders women runners, women running group Zimbabwe, female fitness transformation story, how running changed my life, running for health women, running for confidence women, Glen Striders running club, Her Miles Harare, Her Miles Zimbabwe, women's running event Harare, Her Miles race Harare
 Author: Glen Striders
 Status: published
 
@@ -65,4 +65,4 @@ And to anyone standing where she stood a year ago — unsure, tired, wondering i
 
 Thank you, Tracey, for sharing your story with the Glen Striders community. Your courage and honesty remind us all why we run — and why we run together.
 
-*Interested in joining Glen Striders? [Reach out to us](/pages/contact.html) and take your first step.*
+*Interested in joining Glen Striders? [Reach out to us](/pages/contact.html) and take your first step. And if you're looking for your next challenge, keep an eye on [Her Miles](https://hermiles.co.zw) — a women's running event right here in Harare that celebrates exactly the kind of journey Tracey has been on.*
