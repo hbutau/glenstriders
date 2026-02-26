@@ -27,8 +27,8 @@ Description: Glen Striders monthly running challenges and leaderboards. Each mon
 | 8 | Tawanda T. | 91.4 | 7 |
 | 9 | Tendai C. | 89.4 | 7 |
 | 10 | Trust M. | 81.0 | 9 |
-| 11 | Tinei M. | 77.0 | 6 |
-| 12 | Max S. | 76.2 | 8 |
+| 11 | Max S. | 79.0 | 8 |
+| 12 | Tinei M. | 77.0 | 6 |
 | 13 | Barnabas S. | 70.6 | 5 |
 | 14 | Nyatie.08 .. | 69.9 | 4 |
 | 15 | Tracy M. | 68.1 | 7 |
@@ -71,8 +71,8 @@ Description: Glen Striders monthly running challenges and leaderboards. Each mon
 | 8 | Tawanda T. | 91.4 | 7 |
 | 9 | Tendai C. | 89.4 | 7 |
 | 10 | Trust M. | 81.0 | 9 |
-| 11 | Tinei M. | 77.0 | 6 |
-| 12 | Max S. | 76.2 | 8 |
+| 11 | Max S. | 79.0 | 8 |
+| 12 | Tinei M. | 77.0 | 6 |
 | 13 | Barnabas S. | 70.6 | 5 |
 | 14 | Nyatie.08 .. | 69.9 | 4 |
 | 15 | Tracy M. | 68.1 | 7 |
