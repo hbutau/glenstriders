@@ -1,5 +1,5 @@
 Title: Challenges
-Date: 2026-02-23
+Date: 2026-02-26
 Slug: challenges
 Template: page_challenges
 Status: published
@@ -17,36 +17,37 @@ Description: Glen Striders monthly running challenges and leaderboards. Each mon
 
 | Rank | Athlete | Distance (km) | Activities |
 |------|---------|---------------|------------|
-| 1 | Yvonne D. | 181.1 | 14 |
-| 2 | Lazarus M. | 149.7 | 15 |
-| 3 | Linda M. | 148.7 | 15 |
-| 4 | Mabwe T. | 123.2 | 7 |
-| 5 | Humphrey B. | 109.0 | 16 |
-| 6 | Stive C. | 102.7 | 11 |
-| 7 | Tendai C. | 102.5 | 8 |
-| 8 | Joel J. | 97.8 | 8 |
-| 9 | Nyatie.08 .. | 94.6 | 6 |
-| 10 | Max S. | 84.2 | 8 |
-| 11 | Yonna K. | 82.9 | 6 |
-| 12 | Tawanda T. | 80.2 | 8 |
-| 13 | Barnabas S. | 74.7 | 6 |
-| 14 | Tracy M. | 69.7 | 7 |
-| 15 | Trust M. | 69.6 | 8 |
-| 16 | Tonderai J. | 63.4 | 5 |
-| 17 | Ruth M. | 57.4 | 7 |
-| 18 | Tinei M. | 56.4 | 4 |
-| 19 | Moreblessings M. | 52.3 | 6 |
-| 20 | Isaac M. | 45.2 | 5 |
-| 21 | Simbarashe S. | 41.1 | 3 |
-| 22 | Pfungwa B. | 39.8 | 2 |
-| 23 | jonathan T. | 22.5 | 2 |
-| 24 | Ashley T. | 18.5 | 2 |
-| 25 | Prince M. | 14.5 | 3 |
-| 26 | Kudzie C. | 11.3 | 3 |
-| 27 | Racheal Fadzai M. | 9.9 | 2 |
-| 28 | Healingtone Munashe M. | 8.3 | 3 |
-| 29 | Audrey M. | 5.6 | 1 |
-| 30 | Christabel M. | 4.7 | 1 |
+| 1 | Yvonne D. | 167.6 | 13 |
+| 2 | Lazarus M. | 157.2 | 15 |
+| 3 | Linda M. | 127.6 | 14 |
+| 4 | Mabwe T. | 119.9 | 7 |
+| 5 | Humphrey B. | 109.9 | 17 |
+| 6 | Joel J. | 103.7 | 9 |
+| 7 | Stive C. | 96.6 | 9 |
+| 8 | Tawanda T. | 91.4 | 7 |
+| 9 | Tendai C. | 89.4 | 7 |
+| 10 | Trust M. | 81.0 | 9 |
+| 11 | Tinei M. | 77.0 | 6 |
+| 12 | Max S. | 76.2 | 8 |
+| 13 | Barnabas S. | 70.6 | 5 |
+| 14 | Nyatie.08 .. | 69.9 | 4 |
+| 15 | Tracy M. | 68.1 | 7 |
+| 16 | Yonna K. | 67.5 | 5 |
+| 17 | Tonderai J. | 57.8 | 4 |
+| 18 | Moreblessings M. | 56.7 | 6 |
+| 19 | Isaac M. | 52.2 | 6 |
+| 20 | Simbarashe S. | 41.2 | 4 |
+| 21 | Pfungwa B. | 39.8 | 2 |
+| 22 | Ruth M. | 26.9 | 3 |
+| 23 | Prince M. | 22.2 | 4 |
+| 24 | Racheal Fadzai M. | 22.2 | 7 |
+| 25 | Ashley T. | 18.5 | 2 |
+| 26 | Audrey M. | 17.0 | 3 |
+| 27 | Elton C. | 10.1 | 1 |
+| 28 | jonathan T. | 9.3 | 1 |
+| 29 | Healingtone Munashe M. | 8.3 | 3 |
+| 30 | Kudzie C. | 7.4 | 2 |
+| 31 | Christabel M. | 4.7 | 1 |
 
 ## spine challenge
 
@@ -60,36 +61,37 @@ Description: Glen Striders monthly running challenges and leaderboards. Each mon
 
 | Rank | Athlete | Distance (km) | Activities |
 |------|---------|---------------|------------|
-| 1 | Yvonne D. | 181.1 | 14 |
-| 2 | Lazarus M. | 149.7 | 15 |
-| 3 | Linda M. | 148.7 | 15 |
-| 4 | Mabwe T. | 123.2 | 7 |
-| 5 | Humphrey B. | 109.0 | 16 |
-| 6 | Stive C. | 102.7 | 11 |
-| 7 | Tendai C. | 102.5 | 8 |
-| 8 | Joel J. | 97.8 | 8 |
-| 9 | Nyatie.08 .. | 94.6 | 6 |
-| 10 | Max S. | 84.2 | 8 |
-| 11 | Yonna K. | 82.9 | 6 |
-| 12 | Tawanda T. | 80.2 | 8 |
-| 13 | Barnabas S. | 74.7 | 6 |
-| 14 | Tracy M. | 69.7 | 7 |
-| 15 | Trust M. | 69.6 | 8 |
-| 16 | Tonderai J. | 63.4 | 5 |
-| 17 | Ruth M. | 57.4 | 7 |
-| 18 | Tinei M. | 56.4 | 4 |
-| 19 | Moreblessings M. | 52.3 | 6 |
-| 20 | Isaac M. | 45.2 | 5 |
-| 21 | Simbarashe S. | 41.1 | 3 |
-| 22 | Pfungwa B. | 39.8 | 2 |
-| 23 | jonathan T. | 22.5 | 2 |
-| 24 | Ashley T. | 18.5 | 2 |
-| 25 | Prince M. | 14.5 | 3 |
-| 26 | Kudzie C. | 11.3 | 3 |
-| 27 | Racheal Fadzai M. | 9.9 | 2 |
-| 28 | Healingtone Munashe M. | 8.3 | 3 |
-| 29 | Audrey M. | 5.6 | 1 |
-| 30 | Christabel M. | 4.7 | 1 |
+| 1 | Yvonne D. | 167.6 | 13 |
+| 2 | Lazarus M. | 157.2 | 15 |
+| 3 | Linda M. | 127.6 | 14 |
+| 4 | Mabwe T. | 119.9 | 7 |
+| 5 | Humphrey B. | 109.9 | 17 |
+| 6 | Joel J. | 103.7 | 9 |
+| 7 | Stive C. | 96.6 | 9 |
+| 8 | Tawanda T. | 91.4 | 7 |
+| 9 | Tendai C. | 89.4 | 7 |
+| 10 | Trust M. | 81.0 | 9 |
+| 11 | Tinei M. | 77.0 | 6 |
+| 12 | Max S. | 76.2 | 8 |
+| 13 | Barnabas S. | 70.6 | 5 |
+| 14 | Nyatie.08 .. | 69.9 | 4 |
+| 15 | Tracy M. | 68.1 | 7 |
+| 16 | Yonna K. | 67.5 | 5 |
+| 17 | Tonderai J. | 57.8 | 4 |
+| 18 | Moreblessings M. | 56.7 | 6 |
+| 19 | Isaac M. | 52.2 | 6 |
+| 20 | Simbarashe S. | 41.2 | 4 |
+| 21 | Pfungwa B. | 39.8 | 2 |
+| 22 | Ruth M. | 26.9 | 3 |
+| 23 | Prince M. | 22.2 | 4 |
+| 24 | Racheal Fadzai M. | 22.2 | 7 |
+| 25 | Ashley T. | 18.5 | 2 |
+| 26 | Audrey M. | 17.0 | 3 |
+| 27 | Elton C. | 10.1 | 1 |
+| 28 | jonathan T. | 9.3 | 1 |
+| 29 | Healingtone Munashe M. | 8.3 | 3 |
+| 30 | Kudzie C. | 7.4 | 2 |
+| 31 | Christabel M. | 4.7 | 1 |
 
 ## Wafa Wafa
 
