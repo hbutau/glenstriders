@@ -11,11 +11,11 @@ Status: published
 
 *Glen Striders | Athlete Stories*
 
-There's a moment that many of us know well — standing in front of a mirror, pulling on clothes that don't quite feel right, dragging yourself through the day on empty. For Tracey Mushapaidze, that moment became the turning point that changed everything.
+There's a moment that many of us know well, standing in front of a mirror, pulling on clothes that don't quite feel right, dragging yourself through the day on empty. For Tracey Mushapaidze, that moment became the turning point that changed everything.
 
 "I wasn't really happy with my body or my energy levels," Tracey shares. "I felt tired most of the time and I wasn't confident. That's when I realized I needed to do something for myself."
 
-Last October, Tracey made a decision. She changed her eating habits, laced up her shoes, and started moving. It wasn't her first attempt at getting fit — she'd tried dieting and exercising before — but this time felt different.
+Last October, Tracey made a decision. She changed her eating habits, laced up her shoes, and started moving. It wasn't her first attempt at getting fit, she'd tried dieting and exercising before, but this time felt different.
 
 "Before, I wasn't consistent and it frustrated me. It made me feel like I was failing," she admits. "But this time my reason went deeper than just losing weight. I wanted to feel healthy, confident, and comfortable in my own body again. I was tired of feeling low about myself, hiding in clothes, and having no energy. I also wanted to prove to myself that I could stay disciplined."
 
@@ -27,7 +27,7 @@ And prove it she has.
 
 ## Small Signs, Big Shifts
 
-The first clue that things were really changing came quietly — clothes started fitting differently, and she noticed she had more energy getting through the day. But the transformation wasn't just happening in the mirror.
+The first clue that things were really changing came quietly, clothes started fitting differently, and she noticed she had more energy getting through the day. But the transformation wasn't just happening in the mirror.
 
 "Physically I feel lighter, more energetic, and stronger than before," Tracey says. "Emotionally I feel more confident and proud of myself, even though some days are still hard."
 
@@ -52,13 +52,13 @@ One of the biggest game-changers in Tracey's journey has been running with Glen 
   <img src="{static}/images/traceys-strory-glen-striders.jpg" alt="Tracey running with the Glen Striders group" class="img-fluid rounded" style="max-width: 800px; width: 100%; height: auto;">
 </div>
 
-That sense of community became her anchor on the days when giving up felt easier than carrying on. She held onto her *why* — the memory of how she used to feel — and let the small wins carry her forward. The encouraging words from people around her who noticed the changes. The runs she finished that she once thought were beyond her.
+That sense of community became her anchor on the days when giving up felt easier than carrying on. She held onto her *why*  the memory of how she used to feel and let the small wins carry her forward. The encouraging words from people around her who noticed the changes. The runs she finished that she once thought were beyond her.
 
-"That's when I understood how strong I had become — not just physically, but mentally too. I first felt truly proud of myself when I realized I could finish runs I never thought I would be able to do."
+"That's when I understood how strong I had become not just physically, but mentally too. I first felt truly proud of myself when I realized I could finish runs I never thought I would be able to do."
 
 ## A Journey That's Still Going
 
-Tracey is clear that she hasn't reached some final destination. She's still working on staying consistent. Some days are still hard. But she carries herself differently now — lighter, more confident, more positive.
+Tracey is clear that she hasn't reached some final destination. She's still working on staying consistent. Some days are still hard. But she carries herself differently now lighter, more confident, more positive.
 
 "My why changed as I progressed," she reflects. "At first it was about losing weight and feeling better physically. But it became about overall health, confidence, and self-discipline. It wasn't just about the scale anymore. It became about feeling strong and proud of myself."
 
@@ -71,7 +71,7 @@ Tracey is clear that she hasn't reached some final destination. She's still work
   </div>
 </div>
 
-And to anyone standing where she stood a year ago — unsure, tired, wondering if it's even worth trying again — Tracey has one thing to say:
+And to anyone standing where she stood a year ago, unsure, tired, wondering if it's even worth trying again  Tracey has one thing to say:
 
 > "Start small. Be patient with yourself. And find a supportive group if you can. It really makes the journey easier."
 
