@@ -22,8 +22,8 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Install sync dependencies
-        run: pip install requests
+      - name: Install dependencies
+        run: pip install requests pelican[markdown] ghp-import pelican-sitemap
 
       - name: Run Strava sync
         env:
@@ -43,3 +43,11 @@ jobs:
             git commit -m "chore: sync Strava challenges leaderboard [skip ci]"
             git push
           fi
+
+      - name: Build site
+        run: pelican content -o output -s publishconf.py
+
+      - name: Deploy to GitHub Pages
+        run: |
+          ghp-import -m "Generate Pelican site" -b gh-pages output --no-jekyll
+          git push origin gh-pages
