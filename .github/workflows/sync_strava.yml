@@ -50,4 +50,4 @@ jobs:
       - name: Deploy to GitHub Pages
         run: |
           ghp-import -m "Generate Pelican site" -b gh-pages output --no-jekyll
-          git push origin gh-pages
+          git push --force origin gh-pages
