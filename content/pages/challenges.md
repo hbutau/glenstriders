@@ -1,5 +1,5 @@
 Title: Challenges
-Date: 2026-02-26
+Date: 2026-02-27
 Slug: challenges
 Template: page_challenges
 Status: published
@@ -17,34 +17,34 @@ Description: Glen Striders monthly running challenges and leaderboards. Each mon
 
 | Rank | Athlete | Distance (km) | Activities |
 |------|---------|---------------|------------|
-| 1 | Yvonne D. | 167.6 | 13 |
-| 2 | Lazarus M. | 157.2 | 15 |
-| 3 | Linda M. | 127.6 | 14 |
-| 4 | Mabwe T. | 119.9 | 7 |
-| 5 | Humphrey B. | 109.9 | 17 |
-| 6 | Joel J. | 103.7 | 9 |
-| 7 | Stive C. | 96.6 | 9 |
+| 1 | Yvonne D. | 177.8 | 15 |
+| 2 | Lazarus M. | 152.9 | 15 |
+| 3 | Mabwe T. | 127.2 | 8 |
+| 4 | Linda M. | 120.6 | 13 |
+| 5 | Stive C. | 103.6 | 10 |
+| 6 | Humphrey B. | 99.5 | 14 |
+| 7 | Tinei M. | 93.7 | 7 |
 | 8 | Tawanda T. | 91.4 | 7 |
-| 9 | Tendai C. | 89.4 | 7 |
-| 10 | Trust M. | 81.0 | 9 |
-| 11 | Max S. | 79.0 | 8 |
-| 12 | Tinei M. | 77.0 | 6 |
-| 13 | Barnabas S. | 70.6 | 5 |
-| 14 | Nyatie.08 .. | 69.9 | 4 |
-| 15 | Tracy M. | 68.1 | 7 |
-| 16 | Yonna K. | 67.5 | 5 |
-| 17 | Tonderai J. | 57.8 | 4 |
-| 18 | Moreblessings M. | 56.7 | 6 |
-| 19 | Isaac M. | 52.2 | 6 |
+| 9 | Tendai C. | 91.1 | 7 |
+| 10 | Joel J. | 88.7 | 8 |
+| 11 | Barnabas S. | 84.7 | 6 |
+| 12 | Tonderai J. | 83.5 | 6 |
+| 13 | Max S. | 78.0 | 8 |
+| 14 | Trust M. | 72.9 | 8 |
+| 15 | Tracy M. | 65.6 | 7 |
+| 16 | Moreblessings M. | 62.8 | 7 |
+| 17 | Yonna K. | 57.8 | 4 |
+| 18 | Nyatie.08 .. | 50.8 | 3 |
+| 19 | Isaac M. | 45.3 | 6 |
 | 20 | Simbarashe S. | 41.2 | 4 |
 | 21 | Pfungwa B. | 39.8 | 2 |
 | 22 | Ruth M. | 26.9 | 3 |
 | 23 | Prince M. | 22.2 | 4 |
-| 24 | Racheal Fadzai M. | 22.2 | 7 |
-| 25 | Ashley T. | 18.5 | 2 |
-| 26 | Audrey M. | 17.0 | 3 |
-| 27 | Elton C. | 10.1 | 1 |
-| 28 | jonathan T. | 9.3 | 1 |
-| 29 | Healingtone Munashe M. | 8.3 | 3 |
-| 30 | Kudzie C. | 7.4 | 2 |
-| 31 | Christabel M. | 4.7 | 1 |
+| 24 | Racheal Fadzai M. | 12.2 | 5 |
+| 25 | Ashley T. | 12.0 | 1 |
+| 26 | Audrey M. | 11.4 | 2 |
+| 27 | Healingtone Munashe M. | 10.4 | 6 |
+| 28 | Elton C. | 10.1 | 1 |
+| 29 | Christabel M. | 9.4 | 2 |
+| 30 | jonathan T. | 9.3 | 1 |
+| 31 | Kudzie C. | 7.4 | 2 |
