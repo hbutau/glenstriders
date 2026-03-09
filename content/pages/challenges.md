@@ -1,5 +1,5 @@
 Title: Challenges
-Date: 2026-03-05
+Date: 2026-03-09
 Slug: challenges
 Template: page_challenges
 Status: published
@@ -17,36 +17,34 @@ Description: Glen Striders monthly running challenges and leaderboards. Each mon
 
 | Rank | Athlete | Distance (km) | Activities |
 |------|---------|---------------|------------|
-| 1 | Lazarus M. | 154.1 | 15 |
-| 2 | Tinei M. | 121.6 | 9 |
-| 3 | Yvonne D. | 120.6 | 11 |
-| 4 | Linda M. | 114.5 | 14 |
-| 5 | Mabwe T. | 104.2 | 7 |
-| 6 | Max S. | 103.5 | 10 |
-| 7 | Stive C. | 102.0 | 10 |
-| 8 | Tonderai J. | 101.6 | 7 |
-| 9 | Humphrey B. | 95.0 | 10 |
-| 10 | Tracy M. | 91.0 | 9 |
-| 11 | Trust M. | 89.6 | 8 |
-| 12 | Barnabas S. | 86.6 | 5 |
-| 13 | Tawanda T. | 80.9 | 6 |
-| 14 | Tendai C. | 79.3 | 6 |
-| 15 | Moreblessings M. | 73.8 | 9 |
-| 16 | Prince M. | 58.6 | 8 |
-| 17 | Isaac M. | 55.7 | 7 |
-| 18 | Simbarashe S. | 48.2 | 4 |
-| 19 | Pfungwa B. | 45.0 | 2 |
-| 20 | Joel J. | 44.5 | 4 |
-| 21 | Nyatie.08 .. | 32.0 | 4 |
-| 22 | Yonna K. | 31.0 | 2 |
-| 23 | Ruth M. | 20.7 | 2 |
-| 24 | Healingtone Munashe M. | 15.3 | 12 |
-| 25 | audrey R. | 13.8 | 1 |
-| 26 | Racheal Fadzai M. | 12.2 | 5 |
-| 27 | Jojo H. | 12.0 | 1 |
-| 28 | Audrey M. | 11.4 | 2 |
-| 29 | Elton C. | 10.1 | 1 |
-| 30 | Christabel M. | 9.4 | 2 |
-| 31 | veronica M. | 5.0 | 1 |
-| 32 | Patience Z. | 4.5 | 2 |
-| 33 | Kudzie C. | 4.2 | 1 |
+| 1 | Lazarus M. | 159.8 | 15 |
+| 2 | Linda M. | 113.1 | 14 |
+| 3 | Tonderai J. | 101.6 | 7 |
+| 4 | Mabwe T. | 99.9 | 7 |
+| 5 | Humphrey B. | 89.7 | 9 |
+| 6 | Max S. | 85.3 | 9 |
+| 7 | Moreblessings M. | 83.9 | 10 |
+| 8 | Tracy M. | 81.7 | 8 |
+| 9 | Isaac M. | 80.1 | 9 |
+| 10 | Tawanda T. | 79.1 | 6 |
+| 11 | Tinei M. | 79.0 | 6 |
+| 12 | Stive C. | 78.2 | 10 |
+| 13 | Yvonne D. | 75.8 | 9 |
+| 14 | Trust M. | 73.1 | 7 |
+| 15 | Prince M. | 65.1 | 7 |
+| 16 | Barnabas S. | 65.0 | 4 |
+| 17 | Pfungwa B. | 49.5 | 2 |
+| 18 | Tendai C. | 48.8 | 4 |
+| 19 | Joel J. | 33.1 | 14 |
+| 20 | Simbarashe S. | 33.1 | 4 |
+| 21 | Jojo H. | 27.5 | 2 |
+| 22 | Nyatie.08 .. | 26.7 | 4 |
+| 23 | audrey R. | 19.1 | 3 |
+| 24 | Healingtone Munashe M. | 17.5 | 14 |
+| 25 | Audrey M. | 13.6 | 3 |
+| 26 | Racheal Fadzai M. | 10.9 | 4 |
+| 27 | Elton C. | 10.1 | 1 |
+| 28 | Yonna K. | 8.0 | 1 |
+| 29 | veronica M. | 5.0 | 1 |
+| 30 | Christabel M. | 4.8 | 1 |
+| 31 | Patience Z. | 4.5 | 2 |
