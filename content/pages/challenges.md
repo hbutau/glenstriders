@@ -1,5 +1,5 @@
 Title: Challenges
-Date: 2026-03-09
+Date: 2026-03-12
 Slug: challenges
 Template: page_challenges
 Status: published
@@ -17,34 +17,34 @@ Description: Glen Striders monthly running challenges and leaderboards. Each mon
 
 | Rank | Athlete | Distance (km) | Activities |
 |------|---------|---------------|------------|
-| 1 | Lazarus M. | 159.8 | 15 |
-| 2 | Linda M. | 113.1 | 14 |
-| 3 | Tonderai J. | 101.6 | 7 |
-| 4 | Mabwe T. | 99.9 | 7 |
-| 5 | Humphrey B. | 89.7 | 9 |
-| 6 | Max S. | 85.3 | 9 |
-| 7 | Moreblessings M. | 83.9 | 10 |
-| 8 | Tracy M. | 81.7 | 8 |
-| 9 | Isaac M. | 80.1 | 9 |
-| 10 | Tawanda T. | 79.1 | 6 |
-| 11 | Tinei M. | 79.0 | 6 |
-| 12 | Stive C. | 78.2 | 10 |
-| 13 | Yvonne D. | 75.8 | 9 |
-| 14 | Trust M. | 73.1 | 7 |
-| 15 | Prince M. | 65.1 | 7 |
-| 16 | Barnabas S. | 65.0 | 4 |
+| 1 | Janet D. | 205.3 | 15 |
+| 2 | Lazarus M. | 107.5 | 11 |
+| 3 | Humphrey B. | 106.8 | 11 |
+| 4 | Tinei M. | 95.7 | 6 |
+| 5 | Tawanda T. | 95.3 | 7 |
+| 6 | Linda M. | 91.3 | 13 |
+| 7 | Mabwe T. | 91.2 | 6 |
+| 8 | Dominic C. | 84.7 | 5 |
+| 9 | Tonderai J. | 80.2 | 5 |
+| 10 | Trust M. | 73.4 | 7 |
+| 11 | Stive C. | 72.0 | 10 |
+| 12 | Isaac M. | 68.7 | 8 |
+| 13 | Prince M. | 67.0 | 7 |
+| 14 | Max S. | 60.2 | 6 |
+| 15 | Moreblessings M. | 59.3 | 7 |
+| 16 | Yvonne D. | 58.2 | 7 |
 | 17 | Pfungwa B. | 49.5 | 2 |
-| 18 | Tendai C. | 48.8 | 4 |
-| 19 | Joel J. | 33.1 | 14 |
-| 20 | Simbarashe S. | 33.1 | 4 |
+| 18 | Tracy M. | 47.7 | 5 |
+| 19 | Nyatie.08 .. | 36.7 | 5 |
+| 20 | Racheal Fadzai M. | 28.6 | 8 |
 | 21 | Jojo H. | 27.5 | 2 |
-| 22 | Nyatie.08 .. | 26.7 | 4 |
-| 23 | audrey R. | 19.1 | 3 |
-| 24 | Healingtone Munashe M. | 17.5 | 14 |
-| 25 | Audrey M. | 13.6 | 3 |
-| 26 | Racheal Fadzai M. | 10.9 | 4 |
-| 27 | Elton C. | 10.1 | 1 |
-| 28 | Yonna K. | 8.0 | 1 |
-| 29 | veronica M. | 5.0 | 1 |
-| 30 | Christabel M. | 4.8 | 1 |
-| 31 | Patience Z. | 4.5 | 2 |
+| 22 | audrey R. | 24.8 | 4 |
+| 23 | Yonna K. | 24.2 | 2 |
+| 24 | Tendai C. | 22.3 | 2 |
+| 25 | Joel J. | 21.8 | 13 |
+| 26 | Barnabas S. | 19.3 | 1 |
+| 27 | Simbarashe S. | 16.0 | 2 |
+| 28 | Healingtone Munashe M. | 15.3 | 11 |
+| 29 | Audrey M. | 5.4 | 3 |
+| 30 | Patience Z. | 4.5 | 2 |
+| 31 | Denise Zvipozvashe M. | 4.4 | 1 |
