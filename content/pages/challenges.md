@@ -1,5 +1,5 @@
 Title: Challenges
-Date: 2026-03-26
+Date: 2026-03-30
 Slug: challenges
 Template: page_challenges
 Status: published
@@ -17,39 +17,42 @@ Description: Glen Striders monthly running challenges and leaderboards. Each mon
 
 | Rank | Athlete | Distance (km) | Activities |
 |------|---------|---------------|------------|
-| 1 | Janet D. | 124.4 | 12 |
-| 2 | Yvonne D. | 112.0 | 9 |
-| 3 | Linda M. | 92.4 | 11 |
-| 4 | Lazarus M. | 90.0 | 11 |
-| 5 | Tawanda T. | 81.9 | 6 |
-| 6 | Max S. | 79.6 | 9 |
-| 7 | Tinei M. | 74.9 | 8 |
-| 8 | Mabwe T. | 74.5 | 6 |
-| 9 | Tracy M. | 74.2 | 8 |
-| 10 | Prince M. | 72.6 | 6 |
-| 11 | Macdonald C. | 67.8 | 5 |
-| 12 | Tendai C. | 67.5 | 6 |
-| 13 | Strive C. | 66.7 | 10 |
-| 14 | Humphrey B. | 62.1 | 12 |
-| 15 | Isaac M. | 53.3 | 9 |
-| 16 | Trust M. | 42.4 | 5 |
-| 17 | Yonna K. | 42.2 | 3 |
-| 18 | Dominic C. | 40.5 | 8 |
-| 19 | Joel J. | 39.8 | 5 |
-| 20 | Nyatie.08 .. | 38.9 | 5 |
-| 21 | Ruth M. | 36.0 | 3 |
-| 22 | Tonderai J. | 31.7 | 4 |
-| 23 | Rumbidzai G. | 26.6 | 4 |
-| 24 | Moreblessings M. | 24.6 | 3 |
-| 25 | Audrey M. | 23.7 | 3 |
-| 26 | Ethildah Kudzai C. | 23.3 | 4 |
-| 27 | Nyasha junior K. | 21.7 | 4 |
-| 28 | Simbarashe S. | 20.0 | 3 |
-| 29 | Tanatswa M. | 17.6 | 3 |
-| 30 | Pfungwa B. | 17.5 | 1 |
-| 31 | Barnabas S. | 11.8 | 1 |
-| 32 | Racheal Fadzai M. | 9.6 | 2 |
-| 33 | Denise Zvipozvashe M. | 7.2 | 2 |
-| 34 | Louis B. | 5.7 | 1 |
-| 35 | Chipo D. | 5.0 | 1 |
-| 36 | veronica M. | 4.0 | 1 |
+| 1 | Janet D. | 136.3 | 12 |
+| 2 | Prince M. | 103.1 | 5 |
+| 3 | Macdonald C. | 102.0 | 7 |
+| 4 | Lazarus M. | 91.9 | 11 |
+| 5 | Max S. | 88.1 | 8 |
+| 6 | Tawanda T. | 84.5 | 5 |
+| 7 | Strive C. | 82.2 | 11 |
+| 8 | Tracy M. | 74.3 | 8 |
+| 9 | Linda M. | 73.0 | 8 |
+| 10 | Yvonne D. | 72.6 | 5 |
+| 11 | Mabwe T. | 72.5 | 5 |
+| 12 | Tendai C. | 70.5 | 6 |
+| 13 | Tinei M. | 69.5 | 9 |
+| 14 | Isaac M. | 66.4 | 9 |
+| 15 | Dominic C. | 66.4 | 6 |
+| 16 | Trust M. | 64.4 | 7 |
+| 17 | Nyatie.08 .. | 63.8 | 6 |
+| 18 | Tonderai J. | 56.8 | 5 |
+| 19 | Joel J. | 51.6 | 6 |
+| 20 | Ruth M. | 46.1 | 4 |
+| 21 | Simbarashe S. | 35.0 | 2 |
+| 22 | Pfungwa B. | 32.2 | 2 |
+| 23 | Humphrey B. | 30.9 | 7 |
+| 24 | Nyasha junior K. | 29.4 | 5 |
+| 25 | Yonna K. | 29.3 | 2 |
+| 26 | Racheal Fadzai M. | 26.6 | 6 |
+| 27 | Rumbidzai G. | 24.9 | 3 |
+| 28 | Tanatswa M. | 24.1 | 4 |
+| 29 | Ethildah Kudzai C. | 23.3 | 4 |
+| 30 | Moreblessings M. | 19.6 | 2 |
+| 31 | Audrey M. | 18.4 | 2 |
+| 32 | Barnabas S. | 11.8 | 1 |
+| 33 | Jojo H. | 10.1 | 1 |
+| 34 | veronica M. | 9.1 | 2 |
+| 35 | Denise Zvipozvashe M. | 7.2 | 2 |
+| 36 | Louis B. | 7.0 | 2 |
+| 37 | Ashley T. | 5.2 | 1 |
+| 38 | Chipo D. | 5.0 | 1 |
+| 39 | Healingtone Munashe M. | 0.8 | 2 |
