@@ -73,8 +73,8 @@ HEROSUBTEXT = "Home to runners of all levels across Glen View, Glen Norah, NBS, 
 
 # Footer configuration
 FOOTER_ADDRESS = ""
-FOOTER_PHONE = ""
-FOOTER_EMAIL = ""
+FOOTER_PHONE = "0778459367"
+FOOTER_EMAIL = "info@glenstriders.co.zw"
 
 # Sitemap Configuration
 PLUGINS = ['pelican.plugins.sitemap']
