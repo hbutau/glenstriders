@@ -26,7 +26,7 @@
                                 {% if article.image %}
                                 <div class="post-img mb-3" style="overflow: hidden; border-radius: 12px;">
                                     <a href="{{ SITEURL }}/{{ article.url }}">
-                                        <img src="{{ SITEURL }}/{{ article.image }}" class="img-fluid w-100" alt="{{ article.title }}" style="height: 220px; object-fit: cover; transition: transform 0.3s ease;">
+                                    <img src="{{ SITEURL }}/{{ article.image }}" class="img-fluid w-100" alt="Featured image for {{ article.title }}" style="height: 220px; object-fit: cover; transition: transform 0.3s ease;">
                                     </a>
                                 </div>
                                 {% endif %}
@@ -63,7 +63,7 @@
                             <div class="recent-post-item">
                                 {% if article.image %}
                                 <a href="{{ SITEURL }}/{{ article.url }}">
-                                    <img src="{{ SITEURL }}/{{ article.image }}" alt="{{ article.title }}">
+                                    <img src="{{ SITEURL }}/{{ article.image }}" alt="Featured image for {{ article.title }}">
                                 </a>
                                 {% endif %}
                                 <div class="post-info">

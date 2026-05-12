@@ -94,16 +94,16 @@
             <!-- Recent Posts Widget -->
             <div class="sidebar-widget">
               <h4><i class="bi bi-clock-history me-2"></i>Recent Posts</h4>
-              {% for a in articles[:5] %}
+              {% for recent_article in articles[:5] %}
               <div class="recent-post-item">
-                {% if a.image %}
-                <a href="{{ SITEURL }}/{{ a.url }}">
-                  <img src="{{ SITEURL }}/{{ a.image }}" alt="{{ a.title }}">
+                {% if recent_article.image %}
+                <a href="{{ SITEURL }}/{{ recent_article.url }}">
+                  <img src="{{ SITEURL }}/{{ recent_article.image }}" alt="Featured image for {{ recent_article.title }}">
                 </a>
                 {% endif %}
                 <div class="post-info">
-                  <a href="{{ SITEURL }}/{{ a.url }}">{{ a.title }}</a>
-                  <span><i class="bi bi-calendar3 me-1"></i>{{ a.date.strftime('%b %d, %Y') }}</span>
+                  <a href="{{ SITEURL }}/{{ recent_article.url }}">{{ recent_article.title }}</a>
+                  <span><i class="bi bi-calendar3 me-1"></i>{{ recent_article.date.strftime('%b %d, %Y') }}</span>
                 </div>
               </div>
               {% endfor %}
