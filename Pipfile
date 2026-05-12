@@ -9,6 +9,7 @@ rich = "*"
 typing-extensions = "*"
 markdown = "*"
 pelican = "*"
+ghp-import = "*"
 
 [dev-packages]
 

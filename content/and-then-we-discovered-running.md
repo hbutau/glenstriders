@@ -194,7 +194,7 @@ It was Humphrey who eventually said: *"You will only stop falling when you do co
 strength training."* We started doing core work before our runs. The falling stopped.
 
 The more serious injury was shin splints. We had been running every single day —
-10km, 12, sometimes 15 — without rest days, without enough recovery. My shins paid
+10km, 12, sometimes 15 without rest days, without enough recovery. My shins paid
 the price. It took over a year to fully heal. I learned the hard way that rest is
 not weakness. It is part of training.
 
@@ -208,7 +208,7 @@ could be fixed.
 The run I am most proud of happened when we were celebrating Humphrey's 44th birthday.
 
 We decided to run 44 kilometres for his 44 years. I was running alongside him, and
-when we reached the 44th kilometre I paused my run — I felt I had done my part.
+when we reached the 44th kilometre I paused my run I felt I had done my part.
 But the coach running with us from Fitness 22 was having none of it.
 
 *"You are not stopping,"* he said.
