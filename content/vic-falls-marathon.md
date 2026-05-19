@@ -55,19 +55,96 @@ The most important thing is showing up. Even on the hard mornings — especially
 
 Our programme runs from **Monday 19 May to Sunday 5 July 2026**. It follows the Glen Striders weekly structure — run Monday, run Tuesday, rest Wednesday, run Thursday, rest Friday, and come together for the big group run on Saturday. Simple, consistent, effective.
 
-**Pace guide:** Easy — conversational pace | Steady — slightly harder than easy | Tempo — comfortably hard | Intervals — fast efforts + recovery jogs | ★ — key session of the week
+<div class="mb-3 d-flex flex-wrap gap-2">
+  <span class="badge rounded-pill" style="background:#31221c;color:#fff;padding:0.45rem 0.9rem;">Easy — conversational pace</span>
+  <span class="badge rounded-pill" style="background:#52413a;color:#fff;padding:0.45rem 0.9rem;">Steady — slightly harder than easy</span>
+  <span class="badge rounded-pill" style="background:#ff3e05;color:#fff;padding:0.45rem 0.9rem;">Tempo — comfortably hard</span>
+  <span class="badge rounded-pill" style="background:#b02e00;color:#fff;padding:0.45rem 0.9rem;">Intervals — fast efforts + recovery</span>
+  <span class="badge rounded-pill" style="background:#1a6e2e;color:#fff;padding:0.45rem 0.9rem;">★ — key session of the week</span>
+</div>
 
-| Week | Monday | Tuesday | Wed | Thursday | Fri | Saturday — Group Run |
-|------|--------|---------|-----|----------|-----|----------------------|
-| W1 (19 May) | 8K Easy — Flat 10K, Glen View–Budiriro | 10K Easy — Trabablas 10K, Glen Norah loop | REST | 10K Steady — Trabablas 10K, Glen Norah loop | REST | 16K Easy — 10 Miler Fidelity, Glen View–Fidelity |
-| W2 (26 May) | ★ 21.95K Special — Blasco 21K, Glen View–Fidelity loop | 10K Easy — Flat 10K, Glen View–Budiriro | REST | 12K Steady — 10 Miler Fidelity, 12 km portion | REST | 16.43K Moderate — 10 Miler Fidelity, Glen View–Fidelity |
-| W3 (2 June) | 8K Easy — Flat 10K, Glen View–Budiriro | 10K Tempo — Flat 10K, Glen View–Budiriro | REST | 13K Steady — 10 Miler Fidelity, 13 km portion | REST | 16.43K Push Pace — 10 Miler Fidelity, Glen View–Fidelity |
-| W4 (9 June) | 8K Easy — Flat 10K, Glen View–Budiriro | 10K Tempo — Trabablas 10K, Glen Norah loop | REST | 14K Steady — 10 Miler Fidelity, 14 km portion | REST | ★ 21.95K Half Marathon — Blasco 21K, Glen View–Fidelity loop |
-| W5 (16 June) | 8K Easy — Flat 10K, Glen View–Budiriro | 10K Intervals — Flat 10K, Glen View–Budiriro | REST | 15K Steady — 10 Miler Fidelity, 15 km portion | REST | 21K / 22.43K Split — Blasco 21K (21K group) / 22K Route Glen Norah–Hopley (42K group) |
-| W6 (23 June) | 8K Easy — Flat 10K, Glen View–Budiriro | 10K Easy — Flat 10K, Glen View–Budiriro | REST | 12K Easy — 10 Miler Fidelity, 12 km portion | REST | 21K / 35.4K Split — Blasco 21K (21K taper) / 35K Training Route (42K — the big one!) |
-| W7 (30 June) | 6K Shake-out — easy 6 km | 5K Easy — easy 5 km | REST | REST | REST | 🏁 RACE DAY — Sunday 5 July 2026, Victoria Falls — 21K & 42K |
+<div class="table-responsive rounded shadow-sm">
+<table class="table table-bordered table-hover align-middle mb-0" style="font-size:0.875rem;min-width:700px;">
+  <thead style="background:#31221c;color:#fff;">
+    <tr>
+      <th style="background:#31221c;color:#fff;white-space:nowrap;width:90px;">Week</th>
+      <th style="background:#31221c;color:#fff;">Monday</th>
+      <th style="background:#31221c;color:#fff;">Tuesday</th>
+      <th style="background:#31221c;color:#fff;white-space:nowrap;">Wed</th>
+      <th style="background:#31221c;color:#fff;">Thursday</th>
+      <th style="background:#31221c;color:#fff;white-space:nowrap;">Fri</th>
+      <th style="background:#ff3e05;color:#fff;">Saturday — Group Run</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="white-space:nowrap;font-weight:700;color:#31221c;">W1<br><small class="text-muted fw-normal">19 May</small></td>
+      <td>8K Easy<br><small class="text-muted">Flat 10K · Glen View–Budiriro</small></td>
+      <td>10K Easy<br><small class="text-muted">Trabablas 10K · Glen Norah loop</small></td>
+      <td class="text-center fw-semibold" style="color:#1a6e2e;">REST</td>
+      <td>10K Steady<br><small class="text-muted">Trabablas 10K · Glen Norah loop</small></td>
+      <td class="text-center fw-semibold" style="color:#1a6e2e;">REST</td>
+      <td style="background:#fff7f5;">16K Easy<br><small class="text-muted">10 Miler Fidelity · Glen View–Fidelity</small></td>
+    </tr>
+    <tr style="background:#fff3ee;">
+      <td style="white-space:nowrap;font-weight:700;color:#31221c;">W2<br><small class="text-muted fw-normal">26 May</small></td>
+      <td style="background:#fff0e6;"><span style="color:#ff3e05;font-weight:700;">★</span> 21.95K Special<br><small class="text-muted">Blasco 21K · Glen View–Fidelity loop</small></td>
+      <td>10K Easy<br><small class="text-muted">Flat 10K · Glen View–Budiriro</small></td>
+      <td class="text-center fw-semibold" style="color:#1a6e2e;">REST</td>
+      <td>12K Steady<br><small class="text-muted">10 Miler Fidelity · 12 km portion</small></td>
+      <td class="text-center fw-semibold" style="color:#1a6e2e;">REST</td>
+      <td style="background:#fff7f5;">16.43K Moderate<br><small class="text-muted">10 Miler Fidelity · Glen View–Fidelity</small></td>
+    </tr>
+    <tr>
+      <td style="white-space:nowrap;font-weight:700;color:#31221c;">W3<br><small class="text-muted fw-normal">2 June</small></td>
+      <td>8K Easy<br><small class="text-muted">Flat 10K · Glen View–Budiriro</small></td>
+      <td>10K Tempo<br><small class="text-muted">Flat 10K · Glen View–Budiriro</small></td>
+      <td class="text-center fw-semibold" style="color:#1a6e2e;">REST</td>
+      <td>13K Steady<br><small class="text-muted">10 Miler Fidelity · 13 km portion</small></td>
+      <td class="text-center fw-semibold" style="color:#1a6e2e;">REST</td>
+      <td style="background:#fff7f5;">16.43K Push Pace<br><small class="text-muted">10 Miler Fidelity · Glen View–Fidelity</small></td>
+    </tr>
+    <tr style="background:#fff3ee;">
+      <td style="white-space:nowrap;font-weight:700;color:#31221c;">W4<br><small class="text-muted fw-normal">9 June</small></td>
+      <td>8K Easy<br><small class="text-muted">Flat 10K · Glen View–Budiriro</small></td>
+      <td>10K Tempo<br><small class="text-muted">Trabablas 10K · Glen Norah loop</small></td>
+      <td class="text-center fw-semibold" style="color:#1a6e2e;">REST</td>
+      <td>14K Steady<br><small class="text-muted">10 Miler Fidelity · 14 km portion</small></td>
+      <td class="text-center fw-semibold" style="color:#1a6e2e;">REST</td>
+      <td style="background:#fff0e6;"><span style="color:#ff3e05;font-weight:700;">★</span> 21.95K Half Marathon<br><small class="text-muted">Blasco 21K · Glen View–Fidelity loop</small></td>
+    </tr>
+    <tr>
+      <td style="white-space:nowrap;font-weight:700;color:#31221c;">W5<br><small class="text-muted fw-normal">16 June</small></td>
+      <td>8K Easy<br><small class="text-muted">Flat 10K · Glen View–Budiriro</small></td>
+      <td>10K Intervals<br><small class="text-muted">Flat 10K · Glen View–Budiriro</small></td>
+      <td class="text-center fw-semibold" style="color:#1a6e2e;">REST</td>
+      <td>15K Steady<br><small class="text-muted">10 Miler Fidelity · 15 km portion</small></td>
+      <td class="text-center fw-semibold" style="color:#1a6e2e;">REST</td>
+      <td style="background:#fff7f5;">21K / 22.43K Split<br><small class="text-muted">Blasco 21K (21K group) · 22K Route Glen Norah–Hopley (42K group)</small></td>
+    </tr>
+    <tr style="background:#fff3ee;">
+      <td style="white-space:nowrap;font-weight:700;color:#31221c;">W6<br><small class="text-muted fw-normal">23 June</small></td>
+      <td>8K Easy<br><small class="text-muted">Flat 10K · Glen View–Budiriro</small></td>
+      <td>10K Easy<br><small class="text-muted">Flat 10K · Glen View–Budiriro</small></td>
+      <td class="text-center fw-semibold" style="color:#1a6e2e;">REST</td>
+      <td>12K Easy<br><small class="text-muted">10 Miler Fidelity · 12 km portion</small></td>
+      <td class="text-center fw-semibold" style="color:#1a6e2e;">REST</td>
+      <td style="background:#fff0e6;font-weight:600;">21K / 35.4K Split<br><small class="text-muted fw-normal">Blasco 21K (21K taper) · 35K Training Route (42K — the big one!)</small></td>
+    </tr>
+    <tr style="background:#fff9c4;">
+      <td style="white-space:nowrap;font-weight:700;color:#31221c;">W7<br><small class="text-muted fw-normal">30 June</small></td>
+      <td>6K Shake-out<br><small class="text-muted">easy 6 km</small></td>
+      <td>5K Easy<br><small class="text-muted">easy 5 km</small></td>
+      <td class="text-center fw-semibold" style="color:#1a6e2e;">REST</td>
+      <td class="text-center fw-semibold" style="color:#1a6e2e;">REST</td>
+      <td class="text-center fw-semibold" style="color:#1a6e2e;">REST</td>
+      <td style="background:#ffe066;font-weight:700;color:#31221c;">🏁 RACE DAY<br><small style="font-weight:600;color:#b02e00;">Sunday 5 July 2026 · Vic Falls · 21K &amp; 42K</small></td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
-*★ Monday 26 May is a special club run — the Blasco 21K on a Monday. It is the only time a 21K+ route appears on a weekday. All other 21K+ distances are reserved for the weekend group runs.*
+<p class="mt-2"><small><em>★ Monday 26 May is a special club run — the Blasco 21K on a Monday. It is the only time a 21K+ route appears on a weekday. All other 21K+ distances are reserved for the weekend group runs.</em></small></p>
 
 ---
 
