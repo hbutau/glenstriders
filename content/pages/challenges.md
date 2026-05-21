@@ -1,57 +1,13 @@
 Title: Challenges
-Date: 2026-02-26
+Date: 2026-05-21
 Slug: challenges
 Template: page_challenges
 Status: published
 Description: Glen Striders monthly running challenges and leaderboards. Each month we set a unique named challenge – compete with fellow club members for glory!
 
-## Ruzivo
-
-**Challenge Period:** February 1 – February 10, 2026
-
-**Goal:** Rack up the most total elevation gain across all your activities this month
-
-**Type:** Distance
-
-**Status:** Current
-
-| Rank | Athlete | Distance (km) | Activities |
-|------|---------|---------------|------------|
-| 1 | Yvonne D. | 167.6 | 13 |
-| 2 | Lazarus M. | 157.2 | 15 |
-| 3 | Linda M. | 127.6 | 14 |
-| 4 | Mabwe T. | 119.9 | 7 |
-| 5 | Humphrey B. | 109.9 | 17 |
-| 6 | Joel J. | 103.7 | 9 |
-| 7 | Stive C. | 96.6 | 9 |
-| 8 | Tawanda T. | 91.4 | 7 |
-| 9 | Tendai C. | 89.4 | 7 |
-| 10 | Trust M. | 81.0 | 9 |
-| 11 | Max S. | 79.0 | 8 |
-| 12 | Tinei M. | 77.0 | 6 |
-| 13 | Barnabas S. | 70.6 | 5 |
-| 14 | Nyatie.08 .. | 69.9 | 4 |
-| 15 | Tracy M. | 68.1 | 7 |
-| 16 | Yonna K. | 67.5 | 5 |
-| 17 | Tonderai J. | 57.8 | 4 |
-| 18 | Moreblessings M. | 56.7 | 6 |
-| 19 | Isaac M. | 52.2 | 6 |
-| 20 | Simbarashe S. | 41.2 | 4 |
-| 21 | Pfungwa B. | 39.8 | 2 |
-| 22 | Ruth M. | 26.9 | 3 |
-| 23 | Prince M. | 22.2 | 4 |
-| 24 | Racheal Fadzai M. | 22.2 | 7 |
-| 25 | Ashley T. | 18.5 | 2 |
-| 26 | Audrey M. | 17.0 | 3 |
-| 27 | Elton C. | 10.1 | 1 |
-| 28 | jonathan T. | 9.3 | 1 |
-| 29 | Healingtone Munashe M. | 8.3 | 3 |
-| 30 | Kudzie C. | 7.4 | 2 |
-| 31 | Christabel M. | 4.7 | 1 |
-
 ## spine challenge
 
-**Challenge Period:** February 1 – February 10, 2026
+**Challenge Period:** February 26 – February 28, 2026
 
 **Goal:** Rack up the most total elevation gain across all your activities this month
 
@@ -61,46 +17,40 @@ Description: Glen Striders monthly running challenges and leaderboards. Each mon
 
 | Rank | Athlete | Distance (km) | Activities |
 |------|---------|---------------|------------|
-| 1 | Yvonne D. | 167.6 | 13 |
-| 2 | Lazarus M. | 157.2 | 15 |
-| 3 | Linda M. | 127.6 | 14 |
-| 4 | Mabwe T. | 119.9 | 7 |
-| 5 | Humphrey B. | 109.9 | 17 |
-| 6 | Joel J. | 103.7 | 9 |
-| 7 | Stive C. | 96.6 | 9 |
-| 8 | Tawanda T. | 91.4 | 7 |
-| 9 | Tendai C. | 89.4 | 7 |
-| 10 | Trust M. | 81.0 | 9 |
-| 11 | Max S. | 79.0 | 8 |
-| 12 | Tinei M. | 77.0 | 6 |
-| 13 | Barnabas S. | 70.6 | 5 |
-| 14 | Nyatie.08 .. | 69.9 | 4 |
-| 15 | Tracy M. | 68.1 | 7 |
-| 16 | Yonna K. | 67.5 | 5 |
-| 17 | Tonderai J. | 57.8 | 4 |
-| 18 | Moreblessings M. | 56.7 | 6 |
-| 19 | Isaac M. | 52.2 | 6 |
-| 20 | Simbarashe S. | 41.2 | 4 |
-| 21 | Pfungwa B. | 39.8 | 2 |
-| 22 | Ruth M. | 26.9 | 3 |
-| 23 | Prince M. | 22.2 | 4 |
-| 24 | Racheal Fadzai M. | 22.2 | 7 |
-| 25 | Ashley T. | 18.5 | 2 |
-| 26 | Audrey M. | 17.0 | 3 |
-| 27 | Elton C. | 10.1 | 1 |
-| 28 | jonathan T. | 9.3 | 1 |
-| 29 | Healingtone Munashe M. | 8.3 | 3 |
-| 30 | Kudzie C. | 7.4 | 2 |
-| 31 | Christabel M. | 4.7 | 1 |
-
-## Wafa Wafa
-
-**Challenge Period:** February 1 – February 28, 2026
-
-**Goal:** Rack up the most total elevation gain across all your activities this month
-
-**Type:** Distance
-
-**Status:** Passed
-
-_No leaderboard data available yet._
+| 1 | Max S. | 181.2 | 9 |
+| 2 | Janet D. | 151.2 | 11 |
+| 3 | Tinei M. | 137.6 | 11 |
+| 4 | Moreblessings M. | 132.6 | 3 |
+| 5 | Linda M. | 122.7 | 10 |
+| 6 | Yvonne D. | 98.1 | 13 |
+| 7 | Nyatie.08 .. | 97.6 | 6 |
+| 8 | Tendai C. | 95.7 | 7 |
+| 9 | Isaac M. | 90.4 | 9 |
+| 10 | Tawanda T. | 90.0 | 6 |
+| 11 | Humphrey B. | 85.8 | 7 |
+| 12 | Strive C. | 72.4 | 8 |
+| 13 | Macdonald C. | 66.2 | 4 |
+| 14 | Joel J. | 59.8 | 4 |
+| 15 | Trust M. | 59.2 | 8 |
+| 16 | Lazarus M. | 57.9 | 6 |
+| 17 | Tonderai J. | 54.2 | 4 |
+| 18 | Yonna K. | 49.4 | 5 |
+| 19 | Ruth M. | 41.1 | 5 |
+| 20 | Brenda M. | 40.6 | 6 |
+| 21 | Barnabas S. | 39.1 | 3 |
+| 22 | Tanatswa M. | 36.3 | 6 |
+| 23 | Pfungwa B. | 31.2 | 2 |
+| 24 | Dominic C. | 29.5 | 8 |
+| 25 | Polite M. | 27.9 | 4 |
+| 26 | Chipo D. | 24.3 | 2 |
+| 27 | Az D. | 18.6 | 2 |
+| 28 | Rumbidzai G. | 16.0 | 2 |
+| 29 | Patience Z. | 15.2 | 1 |
+| 30 | Simbarashe S. | 15.0 | 1 |
+| 31 | Learnmore T. | 13.0 | 1 |
+| 32 | Emely Daisy M. | 10.0 | 2 |
+| 33 | Mabwe T. | 9.0 | 1 |
+| 34 | Jojo H. | 9.0 | 1 |
+| 35 | veronica M. | 8.4 | 4 |
+| 36 | Ethildah Kudzai C. | 6.7 | 1 |
+| 37 | Denise Zvipozvashe M. | 4.8 | 1 |
