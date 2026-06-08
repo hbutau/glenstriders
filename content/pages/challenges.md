@@ -1,5 +1,5 @@
 Title: Challenges
-Date: 2026-06-04
+Date: 2026-06-08
 Slug: challenges
 Template: page_challenges
 Status: published
@@ -17,41 +17,42 @@ Description: Glen Striders monthly running challenges and leaderboards. Each mon
 
 | Rank | Athlete | Distance (km) | Activities |
 |------|---------|---------------|------------|
-| 1 | Janet D. | 182.5 | 15 |
-| 2 | Yvonne D. | 99.2 | 10 |
-| 3 | Strive C. | 94.6 | 9 |
-| 4 | Tendai C. | 93.6 | 7 |
-| 5 | Tinei M. | 93.0 | 7 |
-| 6 | Tawanda T. | 91.9 | 5 |
-| 7 | Isaac M. | 89.3 | 9 |
-| 8 | Lazarus M. | 87.1 | 8 |
-| 9 | Lenny T. | 80.3 | 6 |
-| 10 | Linda M. | 74.2 | 7 |
-| 11 | Humphrey B. | 71.8 | 7 |
-| 12 | Polite M. | 63.4 | 3 |
-| 13 | Trust M. | 62.5 | 8 |
-| 14 | Dominic C. | 62.2 | 4 |
-| 15 | Joel J. | 56.1 | 5 |
-| 16 | Brenda M. | 54.0 | 5 |
-| 17 | Barnabas S. | 42.0 | 3 |
-| 18 | Max S. | 41.2 | 2 |
-| 19 | Tonderai J. | 40.1 | 5 |
-| 20 | Ruth M. | 39.0 | 3 |
-| 21 | Az D. | 36.4 | 10 |
-| 22 | Nyatie.08 .. | 35.9 | 4 |
-| 23 | Tanatswa M. | 32.2 | 5 |
-| 24 | Rumbidzai G. | 30.2 | 4 |
-| 25 | Macdonald C. | 30.0 | 1 |
-| 26 | Ethildah Kudzai C. | 29.1 | 4 |
-| 27 | Pfungwa B. | 27.5 | 3 |
-| 28 | Brighton M. | 26.0 | 3 |
-| 29 | Chipo D. | 24.8 | 2 |
-| 30 | Yonna K. | 21.5 | 2 |
-| 31 | Mabwe T. | 15.1 | 2 |
-| 32 | Denise Zvipozvashe M. | 12.0 | 2 |
-| 33 | veronica M. | 11.8 | 2 |
-| 34 | Emely Daisy M. | 10.7 | 3 |
-| 35 | Nyasha junior K. | 10.6 | 1 |
-| 36 | Jojo H. | 10.2 | 1 |
-| 37 | Simbarashe S. | 10.0 | 1 |
-| 38 | christopher M. | 6.2 | 1 |
+| 1 | Janet D. | 152.3 | 13 |
+| 2 | Strive C. | 101.2 | 10 |
+| 3 | Isaac M. | 100.8 | 8 |
+| 4 | Tawanda T. | 87.7 | 6 |
+| 5 | Tendai C. | 77.7 | 7 |
+| 6 | Yvonne D. | 75.9 | 8 |
+| 7 | Tinei M. | 73.7 | 6 |
+| 8 | Lazarus M. | 71.2 | 6 |
+| 9 | Az D. | 67.5 | 14 |
+| 10 | Lenny T. | 63.5 | 5 |
+| 11 | Tonderai J. | 61.6 | 6 |
+| 12 | Linda M. | 57.4 | 6 |
+| 13 | Humphrey B. | 56.8 | 7 |
+| 14 | Nyatie.08 .. | 53.3 | 5 |
+| 15 | Brenda M. | 53.0 | 6 |
+| 16 | Brighton M. | 47.9 | 6 |
+| 17 | Polite M. | 46.4 | 3 |
+| 18 | Simbarashe S. | 41.2 | 3 |
+| 19 | Trust M. | 36.8 | 5 |
+| 20 | Barnabas S. | 35.2 | 4 |
+| 21 | Joel J. | 30.7 | 5 |
+| 22 | Macdonald C. | 30.0 | 1 |
+| 23 | Rumbidzai G. | 27.2 | 3 |
+| 24 | Tanatswa M. | 26.2 | 4 |
+| 25 | Chipo D. | 24.8 | 2 |
+| 26 | Yonna K. | 23.0 | 2 |
+| 27 | Dominic C. | 22.3 | 3 |
+| 28 | Nyasha junior K. | 21.0 | 2 |
+| 29 | R̶o̶g̶u̶e̶ P. | 17.7 | 2 |
+| 30 | Denise Zvipozvashe M. | 17.0 | 3 |
+| 31 | Mabwe T. | 15.4 | 2 |
+| 32 | Ruth M. | 15.2 | 1 |
+| 33 | Emely Daisy M. | 10.7 | 3 |
+| 34 | Ethildah Kudzai C. | 10.1 | 2 |
+| 35 | veronica M. | 10.0 | 1 |
+| 36 | Pfungwa B. | 8.7 | 1 |
+| 37 | christopher M. | 6.2 | 1 |
+| 38 | Max S. | 5.8 | 2 |
+| 39 | Audrey M. | 2.4 | 2 |
