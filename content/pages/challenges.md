@@ -1,5 +1,5 @@
 Title: Challenges
-Date: 2026-06-25
+Date: 2026-06-29
 Slug: challenges
 Template: page_challenges
 Status: published
@@ -17,34 +17,34 @@ Description: Glen Striders monthly running challenges and leaderboards. Each mon
 
 | Rank | Athlete | Distance (km) | Activities |
 |------|---------|---------------|------------|
-| 1 | Humphrey B. | 155.5 | 13 |
-| 2 | Linda M. | 147.4 | 15 |
-| 3 | Strive C. | 141.8 | 15 |
-| 4 | Dominic C. | 135.3 | 6 |
-| 5 | Tendai C. | 129.7 | 7 |
-| 6 | Isaac M. | 126.8 | 9 |
-| 7 | Yvonne D. | 121.8 | 14 |
-| 8 | Lazarus M. | 110.5 | 10 |
-| 9 | Trust M. | 107.5 | 9 |
-| 10 | Lenny T. | 98.8 | 6 |
-| 11 | Tonderai J. | 95.3 | 10 |
-| 12 | Brighton M. | 84.7 | 7 |
-| 13 | Tawanda T. | 75.6 | 7 |
-| 14 | Tanatswa M. | 74.4 | 6 |
-| 15 | Nyatie.08 .. | 64.1 | 5 |
-| 16 | Simbarashe S. | 59.7 | 6 |
-| 17 | Brenda M. | 59.2 | 6 |
-| 18 | Polite M. | 59.1 | 5 |
-| 19 | Barnabas S. | 50.6 | 5 |
-| 20 | Ethildah Kudzai C. | 46.2 | 8 |
-| 21 | Nyasha junior K. | 40.0 | 2 |
-| 22 | Tinei M. | 37.6 | 2 |
-| 23 | Annah C. | 34.6 | 3 |
-| 24 | Rumbidzai G. | 23.0 | 3 |
-| 25 | Pfungwa B. | 22.0 | 1 |
-| 26 | Ruth M. | 19.5 | 2 |
-| 27 | Moreblessings M. | 17.9 | 3 |
-| 28 | Yonna K. | 8.8 | 1 |
-| 29 | Emely Daisy M. | 8.5 | 2 |
+| 1 | Happymore M. | 210.6 | 9 |
+| 2 | Strive C. | 186.7 | 15 |
+| 3 | Humphrey B. | 183.5 | 13 |
+| 4 | Isaac M. | 169.2 | 10 |
+| 5 | Linda M. | 166.4 | 14 |
+| 6 | Dominic C. | 140.4 | 6 |
+| 7 | Tendai C. | 139.4 | 7 |
+| 8 | Tonderai J. | 97.6 | 11 |
+| 9 | Brighton M. | 94.4 | 7 |
+| 10 | Trust M. | 89.8 | 9 |
+| 11 | Yvonne D. | 89.7 | 10 |
+| 12 | Lenny T. | 85.8 | 5 |
+| 13 | Lazarus M. | 81.3 | 8 |
+| 14 | Tawanda T. | 77.6 | 7 |
+| 15 | Nyatie.08 .. | 77.5 | 5 |
+| 16 | Tanatswa M. | 65.0 | 4 |
+| 17 | Simbarashe S. | 59.7 | 6 |
+| 18 | Brenda M. | 58.5 | 6 |
+| 19 | Barnabas S. | 55.1 | 5 |
+| 20 | Ethildah Kudzai C. | 51.2 | 9 |
+| 21 | Moreblessings M. | 43.2 | 5 |
+| 22 | Nyasha junior K. | 40.0 | 2 |
+| 23 | Tinei M. | 37.6 | 2 |
+| 24 | Annah C. | 34.6 | 3 |
+| 25 | Ruth M. | 33.0 | 4 |
+| 26 | Pfungwa B. | 29.7 | 2 |
+| 27 | Rumbidzai G. | 23.0 | 3 |
+| 28 | Audrey M. | 12.2 | 2 |
+| 29 | Yonna K. | 8.8 | 1 |
 | 30 | Denise Zvipozvashe M. | 5.9 | 1 |
-| 31 | Audrey M. | 5.0 | 1 |
+| 31 | Emely Daisy M. | 2.0 | 1 |
