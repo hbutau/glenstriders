@@ -52,9 +52,10 @@
 {% block content %}
   <section id="blog-post" class="about section">
     <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <article>
-        <div class="row justify-content-center">
-          <div class="col-lg-10">
+      <div class="row justify-content-center g-4">
+        <!-- Main article column -->
+        <div class="col-lg-8">
+          <article>
             <header class="mb-5 text-center">
               <h1 class="section-heading mb-3">{{ article.title }}</h1>
               <div class="meta-info mb-4 text-muted">
@@ -81,12 +82,55 @@
             </div>
             {% endif %}
 
-            <div class="back-to-blog mt-5 text-center">
+            <div class="back-to-blog mt-5">
               <a href="{{ SITEURL }}/blog.html" class="btn btn-primary"><i class="bi bi-arrow-left"></i> Back to Blog</a>
             </div>
-          </div>
+          </article>
         </div>
-      </article>
+
+        <!-- Sidebar column -->
+        <div class="col-lg-4">
+          <aside class="blog-sidebar">
+            <!-- Recent Posts Widget -->
+            <div class="sidebar-widget">
+              <h4><i class="bi bi-clock-history me-2"></i>Recent Posts</h4>
+              {% for recent_article in articles[:5] %}
+              <div class="recent-post-item">
+                {% if recent_article.image %}
+                <a href="{{ SITEURL }}/{{ recent_article.url }}">
+                  <img src="{{ SITEURL }}/{{ recent_article.image }}" alt="Featured image for {{ recent_article.title }}">
+                </a>
+                {% endif %}
+                <div class="post-info">
+                  <a href="{{ SITEURL }}/{{ recent_article.url }}">{{ recent_article.title }}</a>
+                  <span><i class="bi bi-calendar3 me-1"></i>{{ recent_article.date.strftime('%b %d, %Y') }}</span>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+
+            <!-- Follow Us Widget -->
+            <div class="sidebar-widget">
+              <h4><i class="bi bi-share me-2"></i>Follow Us</h4>
+              <p class="text-muted small mb-3">Stay connected and follow our running journey on social media.</p>
+              <div class="sidebar-social">
+                {% if SOCIAL %}
+                {% for name, link in SOCIAL %}
+                <a href="{{ link }}" title="{{ name }}" aria-label="Follow us on {{ name }}"><i class="bi bi-{{ name|lower }}"></i></a>
+                {% endfor %}
+                {% endif %}
+              </div>
+            </div>
+
+            <!-- About Widget -->
+            <div class="sidebar-widget">
+              <h4><i class="bi bi-info-circle me-2"></i>About Glen Striders</h4>
+              <p class="text-muted small">We are a premier running club based in Harare, serving Glen View, Glen Norah, NBS, Fidelity, South View Park, Waterfalls, and South Lea Park.</p>
+              <a href="{{ SITEURL }}/membership.html" class="btn btn-primary btn-sm mt-2">Join Us <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </aside>
+        </div>
+      </div>
     </div>
   </section>
 {% endblock %}
