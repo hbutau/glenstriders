@@ -9,7 +9,6 @@ authors:
 summary: Prepare for the HAC 20 Miler 32km road race on December 6th! Join Glen Striders Running Club in Harare for structured hill repeats, speed sessions, and guided long runs
 keywords: HAC 20 Miler 2026 <92>HAC 20 Miler 2026</92> Harare marathons and road runs Glen Striders Running Club  running events Zimbabwe 2026 Shamva Road long distance run Comrades Marathon prep runs Zimbabwe Two Oceans Marathon qualifier training long distance running training Harare how to prepare for HAC 20 Miler best running clubs for marathon prep in Harare join a running club in Glen View Harare
 status: published
-
 ---
 
 <img src="images/strive&moyo.jpg" alt="Strive and Moyo at HAC 20 miler" style="width: 100%; display: block; margin: 0 auto;">
