@@ -58,6 +58,7 @@
           <article>
             <header class="mb-5">
               <h1 class="section-heading mb-3">{{ article.title }}</h1>
+              <h2 class="section-sub-heading mb4">{{ article.subtitle }}</h2>
               <div class="meta-info mb-4 text-muted">
                 <span class="post-date"><i class="bi bi-calendar3" aria-hidden="true"></i> {{ article.date.strftime('%B %d, %Y') }}</span>
                 {% if article.author %}
