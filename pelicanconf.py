@@ -96,3 +96,11 @@ SITEMAP = {
 # 404 Page Configuration
 # Include 404 template in direct templates for static generation
 TEMPLATE_PAGES = {'404.html': '404.html'}
+
+# Kimbia SPA (user registration & club management app)
+# Published as-is to /kimbia/ — a static copy of the Kimbia frontend that
+# talks cross-origin to the real Kimbia API (see kimbia/static/js/utils/api.js
+# for the KIMBIA_API_BASE override). Keep this in sync by hand with the
+# upstream templates/static files under kimbia/ whenever the SPA changes.
+STATIC_PATHS = ["images", "kimbia"]
+ARTICLE_EXCLUDES = ["kimbia"]
