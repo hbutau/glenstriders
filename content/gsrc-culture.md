@@ -1,5 +1,6 @@
 ---
 title: Every runner has a lane.
+subtitle: A short reflection on who we are, and who we're trying to be.
 date: 2026-09-28 22:00
 tags: running, culture, community
 image: images/every-runner-has-a-lane.png"
@@ -9,7 +10,6 @@ authors:
 status: published
 ---
 
-*A short reflection on who we are, and who we're trying to be.*
 
 <img src="images/every-runner-has-a-lane.png" alt="Chief Makoni" style="width: 100%; display: block; margin: 0 auto;">
 
