@@ -14,8 +14,8 @@
 :root {
 /*  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
 
-  --default-font: "Lora",  system-ui, -apple-system, "Lora-roboto", Roboto, "Lora-local", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
+  --default-font: "Newsreader", serif,  system-ui, -apple-system, "Lora-roboto", Roboto, "Lora-local", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Jost", Futura  sans-serif !important;
   --nav-font: "Montserrat",  sans-serif;
 }
 
@@ -3679,7 +3679,8 @@ section,
 
 /* Article page layout adjustments */
 #blog-post .entry-content {
-  font-size: 1.05rem;
+  color: black;
+  font-size: 1.3rem;
   line-height: 1.85;
 }
 
