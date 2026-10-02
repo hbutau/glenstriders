@@ -1,0 +1,19 @@
+{% if success %}
+<div class="alert alert-success" role="status">
+  <strong>Welcome to Kimbia!</strong> Your account has been created. Check your
+  email to finish joining a club.
+</div>
+{% else %}
+{% if errors %}
+<div class="alert alert-danger" role="alert">
+  <strong>We couldn't create your account:</strong>
+  <ul class="mb-0">
+    {% for field, messages in errors.items %}
+    {% for message in messages %}
+    <li>{{ field }}: {{ message }}</li>
+    {% endfor %}
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+{% endif %}

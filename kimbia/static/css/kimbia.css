@@ -1,0 +1,52 @@
+/* ===================================================================
+   Kimbia custom CSS
+   Extends Bootstrap 5 with club-specific styles.
+   =================================================================== */
+
+/* ---- Sidebar ---- */
+#sidebar {
+  position: sticky;
+  top: 0;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+/* ---- Navbar brand ---- */
+.navbar-brand {
+  letter-spacing: -0.02em;
+}
+
+/* ---- Cards ---- */
+.card {
+  border-radius: 0.75rem;
+}
+
+/* ---- KO loading fade ---- */
+[data-bind*="visible"] {
+  transition: opacity 0.15s ease-in-out;
+}
+
+/* ---- QR membership card ---- */
+.membership-card img {
+  max-width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,.15);
+}
+
+/* ---- Finance stat cards ---- */
+.stat-card {
+  border-left: 4px solid var(--bs-primary);
+}
+
+/* ---- Mobile adjustments ---- */
+@media (max-width: 767.98px) {
+  #sidebar {
+    width: 100% !important;
+    min-width: 0 !important;
+    position: relative;
+    min-height: auto;
+  }
+  #app .d-flex {
+    flex-direction: column;
+  }
+}
