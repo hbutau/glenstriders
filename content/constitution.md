@@ -1,11 +1,10 @@
 title: Glen Striders Running Club Constitution
-date: 2026-09-29 11:00
+date: 2025-02-28 11:00
 template: page_const
 slug: glen-striders-running-club-constitution
 status: hidden
 
 
-## TABLE OF CONTENTS
 1. [Definitions and Terms](#definitions-and-terms)
 2. [The Name](#the-name)
 3. [Address](#address)
@@ -34,9 +33,9 @@ shall have the meaning which is hereby ascribed to them.
 
 1.1. “Constitution” means this constitution and appendices hereto.
 
-1.2. “Club” means Glen Striders Running Club.
+1.2. “Club” means **Glen Striders Running Club**.
 
-1.3. “HAB” means Harare Athletics Board.
+1.3. “HAB” means **Harare Athletics Board**.
 
 1.4. “Committee” means the Chairperson, Vice Chairperson, Secretary, Treasurer,
 Social Secretary, Club Captain, and any additional members.
@@ -64,15 +63,16 @@ of conduct and handling misconduct issues.
 <h2 id="the-name"></h2>
 ## 2.The Name
 
-        The name of the Club shall be Glen Striders Running Club.
+   The name of the Club shall be **Glen Striders Running Club**.
 
 <h2 id="address"></h2>
 ## 3.ADDRESS
 
-        3.1. The postal address shall be:
-            New Glen View Hall, Glen View, Harare
-        3.2. The physical address shall be:
-            New Glen View Hall, Glen View, Harare
+    3.1. The postal address shall be:
+      New Glen View Hall, Glen View, Harare
+
+    3.2. The physical address shall be:
+      New Glen View Hall, Glen View, Harare
 
 <h2 id="colors"></h2>
 ## 4.COLOURS
@@ -121,13 +121,14 @@ sport of amateur athletics in all its forms, particularly long-distance running,
 ## 7.MEMBERSHIP
 
 7.1. Membership is open to all persons.
+
 7.2. Application for membership to the Club must be done via the club website.
 
 
 <h2 id="misconduct-of-members"></h2>
 ## 8.MISCONDUCT OF MEMBERS
 
-8.1. The Code of Conduct Team
+#### 8.1. The Code of Conduct Team
 
 8.1.1. The Code of Conduct Team shall consist of three volunteer members who are trustworthy, discreet, and capable of handling sensitive matters (the “Code of Conduct Team”).
 
@@ -135,9 +136,13 @@ sport of amateur athletics in all its forms, particularly long-distance running,
 
 8.1.3. Volunteers for the Code of Conduct Team shall be approved by the Committee or membership to ensure appropriate balance and capability.
 
-8.1.4. The functions of the Code of Conduct Team shall include, but not be limited to: - 8.1.4.1. Investigating any alleged contraventions by Members of the Code of Conduct; - 8.1.4.2. Convening disciplinary meetings; and - 8.1.4.3. Taking such disciplinary action against Members as it deems necessary.
+8.1.4. The functions of the Code of Conduct Team shall include, but not be limited to:
 
-8.2. Hearings
+* 8.1.4.1. Investigating any alleged contraventions by Members of the Code of Conduct;
+* 8.1.4.2. Convening disciplinary meetings; and
+* 8.1.4.3. Taking such disciplinary action against Members as it deems necessary.
+
+#### 8.2. Hearings
 
 8.2.1. The Secretary shall notify in writing a Member concerned of any complaint against him/her and call for any explanation or representations in writing he/she may wish to make to the Code of Conduct Team, which explanation or representation must be received by the Secretary no later than 14 (fourteen) days after receipt of the Secretary’s notice.
 
@@ -169,6 +174,7 @@ The Committee shall consist of:
 9.6. The names of the nominated Members for elected positions must be submitted to the Secretary within 14 days after the date of the notice of the Annual General Meeting.
 
 9.7. Should any vacancies occur in the Committee, the remaining members shall have the power to fill such vacancies except that of the Chairperson who has to be elected by a general meeting, and to appoint, whenever necessary an acting Chairperson pending the election of such officer.
+
 9.8. The Committee shall meet at least once a quarter.
 
 9.9. Members of the outgoing Committee, provided they are willing to stand, may be nominated and re-elected for consecutive terms.
@@ -207,6 +213,7 @@ The powers of the Committee shall be:
 ## 11.MEETINGS
 
 Meetings of the Committee:
+
 11.1. The Committee shall meet once every quarter when and as required.
 
 11.2. All meetings of the Committee shall be convened by written or verbal notice to be addressed to all members of the Committee at least 7 (seven) days before date of such meeting.
@@ -254,7 +261,9 @@ There shall be two kinds of General Meetings:
 
 12.1.3.5. Adoption of the minutes and matters arising
 
-12.1.3.6. Annual report - 12.1.3.7. Financial report
+12.1.3.6. Annual report
+
+12.1.3.7. Financial report
 
 12.1.3.8. Election of Committee members
 
@@ -270,6 +279,7 @@ Special General Meeting of the Club shall be called:
 12.2.2. Upon receipt of the requisition for such a Special General Meeting, signed on behalf of at least 30% of the Members, and giving reasons for holding such a Special General Meeting.
 
 12.2.3. The Secretary shall send out notices in writing to all Club Members within 7 (seven) days of receipt of such requisition, giving venue, date and time and clearly stating the business of such a Special General Meeting.
+
 12.2.4. The date of such a Special General Meeting shall not be less than 14 (fourteen) days and not more than 21 (twenty-one) days from date of dispatch of the notice convening such a Special General Meeting.
 
 12.2.5. The business of such a Special General Meeting shall be to deal with the special business for which the Special General Meeting has been called.
@@ -280,6 +290,7 @@ Special General Meeting of the Club shall be called:
 ## 13.REPRESENTATIVES OF GENERAL MEETINGS
 
 13.1. At every General Meeting of the Club, Members shall be entitled to vote.
+
 13.2. Members of the outgoing Committee, provided they are willing to stand, may be nominated for re-election.
 
 <h2 id="procedure-at-general-meetings"></h2>
@@ -343,7 +354,9 @@ Amendments must be supported by at least two-thirds (2/3) of Members present and
 ## 17.DISSOLUTION OF THE CLUB
 
 The dissolution of the Club may only be effected when:
+
 17.1. A resolution is supported by at least 70% of the Members and passed at a Special General Meeting called specifically for this purpose.
+
 17.2. On the dissolution of the Club, the assets and liabilities of the Club shall be transferred to another nominated, similar, non-profit organization.
 
 
@@ -351,10 +364,3 @@ The dissolution of the Club may only be effected when:
 ## 18.POLICY APPROVAL
 
 This constitution shall be approved at a General Meeting or Special General Meeting of Glen Striders Running Club.
-Approval Details:
-Name	Title	Date	Signature
-Chairperson
-Secretary
-
-END OF CONSTITUTION
-Glen Striders Running Club - Fostering a Culture of Fitness and Excellence in Our Community
