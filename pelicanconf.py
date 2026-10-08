@@ -1,12 +1,12 @@
-AUTHOR = 'GlenStriders'
-SITENAME = 'GlenStriders | Premier Running Club in Harare'
+AUTHOR = "GlenStriders"
+SITENAME = "GlenStriders | Premier Running Club in Harare"
 SITEURL = ""
 
 PATH = "content"
 
-TIMEZONE = 'Africa/Harare'
+TIMEZONE = "Africa/Harare"
 
-DEFAULT_LANG = 'en'
+DEFAULT_LANG = "en"
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -39,11 +39,11 @@ DEFAULT_PAGINATION = 10
 RELATIVE_URLS = False
 
 # Page URL configuration - serve pages on root instead of pages/ subdirectory
-PAGE_URL = '{slug}.html'
-PAGE_SAVE_AS = '{slug}.html'
+PAGE_URL = "{slug}.html"
+PAGE_SAVE_AS = "{slug}.html"
 
 # Blog/Archives URL configuration - save archives as blog.html
-ARCHIVES_SAVE_AS = 'blog.html'
+ARCHIVES_SAVE_AS = "blog.html"
 
 # MENUITEMS = [
 #     ("Home", ""),
@@ -77,22 +77,28 @@ FOOTER_PHONE = "0778459367"
 FOOTER_EMAIL = "info@glenstriders.co.zw"
 
 # Sitemap Configuration
-PLUGINS = ['pelican.plugins.sitemap']
+PLUGINS = ["pelican.plugins.sitemap"]
 
 SITEMAP = {
-    'format': 'xml',
-    'priorities': {
-        'articles': 0.5,
-        'indexes': 0.5,
-        'pages': 0.5
-    },
-    'changefreqs': {
-        'articles': 'monthly',
-        'indexes': 'daily',
-        'pages': 'monthly'
-    }
+    "format": "xml",
+    "priorities": {"articles": 0.5, "indexes": 0.5, "pages": 0.5},
+    "changefreqs": {"articles": "monthly", "indexes": "daily", "pages": "monthly"},
 }
 
 # 404 Page Configuration
 # Include 404 template in direct templates for static generation
-TEMPLATE_PAGES = {'404.html': '404.html'}
+TEMPLATE_PAGES = {"404.html": "404.html"}
+
+# Race Theme
+
+THEME_TEMPLATES_OVERRIDES = ["race_theme/templates"]
+
+STATIC_PATHS = ["images", "race"]  # keep whatever you already list
+
+TEMPLATE_PAGES = {
+    "race/glenstriders10k.html": "glenstriders10k/index.html",
+}
+
+RACE_WHATSAPP_NUMBER = (
+    "263778459367"  # your number: country code first, digits only, no + or spaces
+)

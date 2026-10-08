@@ -102,3 +102,5 @@ header.hero.has-image .btn{background:var(--lane);color:#270a00}
 header.hero.has-image .btn.ghost{background:transparent;color:#FFEDEC;border-color:#FFEDEC}
 header.hero.has-image .status{background:var(--lane);color:#270a00}
 header.hero.has-image :focus-visible{outline-color:#FFEDEC}
+
+.btn.wa{background:#25D366;color:#072b12}
