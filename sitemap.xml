@@ -6,14 +6,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://glenstriders.co.zw/</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://glenstriders.co.zw/404.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -34,98 +27,98 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://glenstriders.co.zw/author/glen-striders.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/author/glenstriders.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/author/humphrey-linda.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/author/linda.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/authors.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/blog.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/categories.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/category/athlete-stories.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/category/community.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/category/news.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/category/our-story.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/category/social.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/category/training.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/challenges.html</loc>
-<lastmod>2026-05-18T00:00:00+02:00</lastmod>
+<lastmod>2026-06-29T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -180,6 +173,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://glenstriders.co.zw/glenstriders10k/</loc>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>https://glenstriders.co.zw/long-slow-distance-runs.html</loc>
 <lastmod>2026-01-18T10:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
@@ -209,287 +209,287 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://glenstriders.co.zw/tag/10k-running.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/african-runners.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/aotm.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/athlete-stories.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/beginner-runner.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/body-confidence.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/community.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/couples-running.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/culture.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/endurance.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/fitness-transformation.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/fitness-zimbabwe.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/fitness.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/glen-striders.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/hac-20miler.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/half-marathon.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/harare.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/her-miles-harare.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/marathon-running-zimbabwe.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/marathon.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/mental-health-running.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/morning-running.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/motivation.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/running-burnout-recovery.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/running-club-harare.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/running-community-zimbabwe.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/running-for-women.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/running-motivation.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/running-self-belief.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/running-tips.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/running.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/social.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/training-programme.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/training.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/vic-falls-marathon.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/weight-loss-running.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/weight-loss.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/winter-training.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/women-running.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tag/zimbabwe.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://glenstriders.co.zw/tags.html</loc>
-<lastmod>2026-10-02T14:39:12-00:00</lastmod>
+<lastmod>2026-10-08T19:44:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
