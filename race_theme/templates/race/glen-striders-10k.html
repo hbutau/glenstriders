@@ -1,0 +1,134 @@
+{% extends "race/base.html" %}
+
+{# Uncomment to use a background image in the hero (put the file in content/race/): #}
+{# {% set hero_image = SITEURL ~ '/race/hero.jpg' %} #}
+{# {% set hero_position = 'center 30%' %} #}
+
+{% block title %}The Glen Striders 10K | {{ SITENAME }}{% endblock %}
+{% block meta_description %}Glen Striders Running Club's first 10K road race. Date to be announced. Register your interest.{% endblock %}
+{% block og_title %}The Glen Striders 10K{% endblock %}
+
+{% block hero %}
+    <div class="hero-grid">
+      <div>
+        <span class="status">Upcoming event · Date to be announced</span>
+        <h1>The Glen Striders 10K</h1>
+        <p class="lead">Our first road race. Come run with the club that shows up every week, whether you're chasing a personal best or lining up for your very first 10K.</p>
+        <a class="btn" href="#interest">Register your interest</a>
+        <a class="btn ghost" href="#about">About the race</a>
+      </div>
+      <div class="bib" role="img" aria-label="Race bib reading Glen Striders 10K">
+        <div class="club">GLEN STRIDERS</div>
+        <div class="num">10K</div>
+        <div class="bar"></div>
+        <div class="row"><span>Coming soon</span><span>#GlenStriders10K</span></div>
+      </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="wrap">
+  <div class="facts">
+    <div class="fact"><b>When</b><span class="ph">[Date TBA]</span></div>
+    <div class="fact"><b>Where</b><span class="ph">[Venue]</span></div>
+    <div class="fact"><b>Start time</b><span class="ph">[e.g. 6:30 am]</span></div>
+    <div class="fact"><b>Distance</b><span>10 km <small style="font-family:var(--body);font-weight:500">+ optional 5 km</small></span></div>
+  </div>
+  <p class="fees">Entry: 10 km <span class="ph">[amount]</span> · 5 km <span class="ph">[amount]</span>. Registration opens <span class="ph">[date]</span>.</p>
+  <div class="btns">
+    <span class="btn dim" aria-disabled="true">Race results: available after race day</span>
+    <span class="btn dim" aria-disabled="true">Race photos: available after race day</span>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap two">
+    <div>
+      <h2>About the event</h2>
+      <p>Glen Striders Running Club was built on early mornings, shared kilometres and people who show up for each other. The Glen Striders 10K is how we open that circle wider.</p>
+      <p>The route will take you through <span class="ph">[landmarks, neighbourhoods or green spaces]</span>, with water points, marshals and club members cheering along the way.</p>
+      <p>A 5 km option will include junior prize categories, so children of different ages can race in their own age groups.</p>
+    </div>
+    <div class="box">
+      <h3>What to expect</h3>
+      <ul class="clean">
+        <li>A well-marshalled <span class="ph">[flat / rolling]</span> route</li>
+        <li>Water points along the course</li>
+        <li>Finisher medals for everyone</li>
+        <li>Overall and age-category prizes</li>
+        <li>Post-race refreshments and a club meet-up</li>
+        <li>A low-waste race: refillable water stations and a post-race litter pick</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="rules">
+  <div class="wrap two">
+    <div>
+      <h2>Race rules and route</h2>
+      <ol class="rules">
+        <li>The event is held under the rules of <span class="ph">[athletics governing body]</span> and the race regulations.</li>
+        <li>All participants run at their own risk. By entering, you confirm you are medically fit to take part.</li>
+      </ol>
+      <a class="more" href="#interest">Full rules and route map coming soon</a>
+    </div>
+    <div>
+      <h2>Parking and getting there</h2>
+      <p>Safe, secure parking will be available at the venue <span class="ph">[at no additional charge]</span>. <span class="ph">[Add carpool, shuttle or public transport details.]</span></p>
+      <a class="more" href="#">View map (coming soon)</a>
+    </div>
+  </div>
+</section>
+
+<section id="get-involved">
+  <div class="wrap two">
+    <div class="box">
+      <h3>Volunteer</h3>
+      <p>We need marshals, water-point crews, registration helpers and finish-line support. Many hands make a good race.</p>
+      <a class="more" href="mailto:volunteer@example.com?subject=Glen%20Striders%2010K%20volunteer">Sign up to help</a>
+    </div>
+    <div class="box">
+      <h3>Corporate and sponsor packages</h3>
+      <p>Bring the whole team. Packages include team entries, branded water points and post-race hospitality.</p>
+      <a class="more" href="mailto:sponsors@example.com?subject=Glen%20Striders%2010K%20sponsorship">Email us about partnering</a>
+    </div>
+  </div>
+</section>
+
+<section id="story">
+  <div class="wrap two">
+    <div>
+      <h2>Our story</h2>
+      <ol class="tl">
+        <li><strong class="ph">[Year]</strong><br>Glen Striders Running Club is founded by friends who love to run.</li>
+        <li><strong class="ph">[Year]</strong><br>The club grows into a community of all ages and abilities, with weekly group runs and volunteer-led projects.</li>
+        <li><strong class="ph">[Year]</strong><br>The idea of a Glen Striders race is born.</li>
+        <li class="race"><strong class="ph">[Race year]</strong><br>The first Glen Striders 10K. See you at the start line.</li>
+      </ol>
+    </div>
+    <div>
+      <h2>Striders in action</h2>
+      <div class="gallery" aria-label="Photo placeholders">
+        <div>Weekly group run</div><div>Club volunteers</div><div>Race-day photos coming soon</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="interest">
+  <div class="wrap">
+    <h2>Register your interest</h2>
+    <p>Be the first to hear when registration opens. Send us a message and we'll add you to the list.</p>
+    <form action="mailto:raceinfo@example.com" method="post" enctype="text/plain">
+      <div class="nm">
+        <label>First name<input name="first" autocomplete="given-name" required></label>
+        <label>Last name<input name="last" autocomplete="family-name" required></label>
+      </div>
+      <label>Email<input type="email" name="email" autocomplete="email" required></label>
+      <label>Message<textarea name="message" rows="4"></textarea></label>
+      <button class="btn" type="submit">Send message</button>
+    </form>
+  </div>
+</section>
+{% endblock %}
