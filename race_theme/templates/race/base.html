@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{% block title %}{{ SITENAME }}{% endblock %}</title>
+<meta name="description" content="{% block meta_description %}{{ SITENAME }}{% endblock %}">
+<meta property="og:title" content="{% block og_title %}{{ SITENAME }}{% endblock %}">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="{{ SITEURL }}/race/race.css">
+{% block head_extra %}{% endblock %}
+</head>
+<body class="{% block body_class %}race-page{% endblock %}">
+
+{# Orange hero: top bar + page-specific hero content + lane strip #}
+{# Optional: a page sets {% set hero_image = SITEURL ~ '/race/hero.jpg' %} above its blocks #}
+<header class="hero{% if hero_image %} has-image{% endif %}"{% if hero_image %} style="--hero-img:url('{{ hero_image }}'){% if hero_position %};--hero-pos:{{ hero_position }}{% endif %}"{% endif %}>
+  <div class="wrap">
+    <div class="top">
+      <a href="{{ SITEURL }}/" aria-label="{{ SITENAME }} home"><strong>{{ SITENAME }}</strong></a>
+      {% block cta %}<a class="btn-sm" href="#interest">Register interest</a>{% endblock %}
+    </div>
+{% block hero %}{% endblock %}
+  </div>
+  <div class="lanes" aria-hidden="true"></div>
+</header>
+
+<main>
+{% block content %}{% endblock %}
+</main>
+
+{% block footer %}
+<footer>
+  <div class="wrap">
+    <strong>{{ SITENAME }}</strong>
+    <p style="margin:.6rem 0 1rem">{% block footer_contact %}Race office: <span class="" style="color:#FFEDEC">0778 459 367</span> · <span class="" style="color:#FFEDEC">info@glenstriders.co.zw</span>{% endblock %}</p>
+    {% block footer_links %}<a href="#">Facebook</a><a href="https://facebook.com/glenstriders">Instagram</a><a href="https://whatsapp.com/channel/0029VbDzXSXHLHQVgYLawW0x" target="_blank" rel="noopener">WhatsApp</a>{% endblock %}
+    <small>{% block footer_note %}#GlenStriders10K{% endblock %}</small>
+  </div>
+</footer>
+{% endblock %}
+
+{% block scripts %}{% endblock %}
+</body>
+</html>
