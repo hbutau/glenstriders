@@ -87,8 +87,6 @@ SITEMAP = {
 
 # 404 Page Configuration
 # Include 404 template in direct templates for static generation
-<<<<<<< HEAD
-TEMPLATE_PAGES = {'404.html': '404.html'}
 
 # Kimbia SPA (user registration & club management app)
 # Published as-is to /kimbia/ — a static copy of the Kimbia frontend that
@@ -97,7 +95,6 @@ TEMPLATE_PAGES = {'404.html': '404.html'}
 # upstream templates/static files under kimbia/ whenever the SPA changes.
 STATIC_PATHS = ["images", "kimbia"]
 ARTICLE_EXCLUDES = ["kimbia"]
-=======
 TEMPLATE_PAGES = {"404.html": "404.html"}
 
 # Race Theme
@@ -113,4 +110,3 @@ TEMPLATE_PAGES = {
 RACE_WHATSAPP_NUMBER = (
     "263778459367"  # your number: country code first, digits only, no + or spaces
 )
->>>>>>> glenstriders-10k
