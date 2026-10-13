@@ -3,6 +3,86 @@
    Extends Bootstrap 5 with club-specific styles.
    =================================================================== */
 
+/* ---- Project color theme ----
+   Mirrors the palette defined in buibui-theme/static/css/main.css so the
+   Kimbia app matches the rest of the glenstriders site. Bootstrap's
+   "primary" color (and anything derived from it) is retargeted to the
+   project's accent color instead of the default Bootstrap blue. */
+:root {
+  --kimbia-background-color: #ffffff;
+  --kimbia-default-color: #52413a;
+  --kimbia-heading-color: #31221c;
+  --kimbia-accent-color: #ff3e05;
+  --kimbia-accent-color-hover: #e63805;
+  --kimbia-contrast-color: #ffffff;
+
+  /* Bootstrap "primary" theme color overrides */
+  --bs-primary: var(--kimbia-accent-color);
+  --bs-primary-rgb: 255, 62, 5;
+  --bs-primary-text-emphasis: #7a1e02;
+  --bs-primary-bg-subtle: #ffe3d8;
+  --bs-primary-border-subtle: #ffb393;
+  --bs-link-color: var(--kimbia-accent-color);
+  --bs-link-color-rgb: 255, 62, 5;
+  --bs-link-hover-color: var(--kimbia-accent-color-hover);
+  --bs-link-hover-color-rgb: 230, 56, 5;
+  --bs-focus-ring-color: rgba(255, 62, 5, 0.25);
+}
+
+body {
+  color: var(--kimbia-default-color);
+  background-color: var(--kimbia-background-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--kimbia-heading-color);
+}
+
+/* .btn-primary / .btn-outline-primary define their own local custom
+   properties with fixed Bootstrap-blue hex values, so the root-level
+   --bs-primary override above doesn't reach them; re-theme explicitly. */
+.btn-primary {
+  --bs-btn-bg: var(--kimbia-accent-color);
+  --bs-btn-border-color: var(--kimbia-accent-color);
+  --bs-btn-hover-bg: var(--kimbia-accent-color-hover);
+  --bs-btn-hover-border-color: var(--kimbia-accent-color-hover);
+  --bs-btn-active-bg: var(--kimbia-accent-color-hover);
+  --bs-btn-active-border-color: var(--kimbia-accent-color-hover);
+  --bs-btn-disabled-bg: var(--kimbia-accent-color);
+  --bs-btn-disabled-border-color: var(--kimbia-accent-color);
+  --bs-btn-focus-shadow-rgb: 255, 62, 5;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--kimbia-accent-color);
+  --bs-btn-border-color: var(--kimbia-accent-color);
+  --bs-btn-hover-bg: var(--kimbia-accent-color);
+  --bs-btn-hover-border-color: var(--kimbia-accent-color);
+  --bs-btn-active-bg: var(--kimbia-accent-color);
+  --bs-btn-active-border-color: var(--kimbia-accent-color);
+  --bs-btn-disabled-color: var(--kimbia-accent-color);
+  --bs-btn-disabled-border-color: var(--kimbia-accent-color);
+  --bs-btn-focus-shadow-rgb: 255, 62, 5;
+}
+
+/* Form controls / checkboxes default to Bootstrap blue with fixed hex
+   values too, so re-theme their focus and checked states as well. */
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--kimbia-accent-color);
+  box-shadow: 0 0 0 0.25rem rgba(255, 62, 5, 0.25);
+}
+
+.form-check-input:checked {
+  background-color: var(--kimbia-accent-color);
+  border-color: var(--kimbia-accent-color);
+}
+
+.form-check-input:focus {
+  border-color: var(--kimbia-accent-color);
+  box-shadow: 0 0 0 0.25rem rgba(255, 62, 5, 0.25);
+}
+
 /* ---- Sidebar ---- */
 #sidebar {
   position: sticky;
