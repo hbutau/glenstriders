@@ -2,15 +2,12 @@
 title: We have one of the best running routes in town
 date: 2026-10-22 14:00
 tags:
-image:
+image: ./images/routes/striders.webp
 category: news
 slug:
 authors:
 status: published
 ---
-
-
-*By Glen Striders Running Club*
 
 <img src="images/routes/striders.webp" alt="Strive and Moyo at HAC 20 miler" style="width: 100%; display: block; margin: 0 auto;">
 
