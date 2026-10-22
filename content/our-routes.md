@@ -4,6 +4,8 @@ date: 2026-10-22 14:00
 tags:
 image: ./images/routes/striders.webp
 category: news
+Keywords: running routes Harare, best running routes in Harare, Glen View running routes, Glen Norah running routes, Harare running club, Glen Striders Running Club, 5K, 10K, 21K and 42K routes Harare, half marathon route Harare, marathon training routes Harare, where to run in Harare, running clubs in Zimbabwe, where can I run 10K in Harare, half marathon training route in Harare, Lake Chivero running route, Gango route 42K Harare, beginner running routes Harare, join a running club in Harare
+summary: Explore the best running routes in Harare, from 5K to 42K, with maps and elevation profiles from Glen Striders Running Club
 slug:
 authors:
 status: published
