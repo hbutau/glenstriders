@@ -3,7 +3,7 @@ title: Every runner has a lane.
 subtitle: A short reflection on who we are, and who we're trying to be.
 date: 2026-09-28 22:00
 tags: running, culture, community
-image: images/every-runner-has-a-lane.png"
+image: images/every-runner-has-a-lane.png
 category: community
 slug: glenstriders-culture
 authors:
